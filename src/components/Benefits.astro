@@ -1,0 +1,93 @@
+---
+import Title from '../components/Title.astro';
+import Section from './Section.astro';
+import IconCheck from './icons/IconCheck.astro';
+---
+
+<Section color="var(--bg-color)">
+  <div class="benefits">
+    <Title
+      text="¿Por qué elegir Firmeasy?"
+      body="Sencilla, flexible y confiable."
+    />
+    <div class="content">
+      <article>
+        <i><IconCheck /></i>
+        <p>Alta Validez Juridica en la firma (Longeva)</p>
+      </article>
+      <article>
+        <i><IconCheck /></i>
+        <p>Validez de identidad facial IA</p>
+      </article>
+      <article>
+        <i><IconCheck /></i>
+        <p>Analisis de contrado con IA</p>
+      </article>
+      <article>
+        <i><IconCheck /></i>
+        <p>Firma con Whatsapp</p>
+      </article>
+      <article>
+        <i><IconCheck /></i>
+        <p>Expedientes Digitales con sellos de tiempo</p>
+      </article>
+      <article>
+        <i><IconCheck /></i>
+        <p>Autoridad Certificadora</p>
+      </article>
+    </div>
+  </div>
+</section>
+<style>
+  .benefits {
+    max-width: var(--container-max-width);
+    width: 100%;
+    height: 100%;
+    padding: 0 var(--container-padding);
+    box-sizing: border-box;
+    margin: 0 auto;
+    .content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+      margin-top: calc(var(--container-padding-y) / 2);
+      article {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: var(--text-size);
+        font-weight: 500;
+        color: var(--text-color);
+        background-color: white;
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow);
+        padding: 1.5rem;
+        p {
+          background: var(--bg-gradient-text);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          line-height: var(--title-line-height-xl);
+          user-select: none;
+        }
+        i {
+          background: var(--bg-gradient);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          svg {
+            width: 20px;
+            height: 20px;
+            path {
+              fill: white;
+            }
+          }
+        }
+      }
+    }
+  }
+</style>

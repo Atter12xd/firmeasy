@@ -34,22 +34,44 @@ const { title } = Astro.props;
 <style is:global>
   :root {
     --container-max-width: 1200px;
-    --container-padding: 1rem;
+    --container-padding: 1.5rem;
+    --container-padding-y: 6rem;
+
     --border-color-dark: rgb(0, 0, 0, 0.4);
     --border-color: rgb(0, 0, 0, 0.1);
+    --border-color-light: rgb(0, 0, 0, 0.07);
     --text-color: #01022e;
     --dark-color: var(--text-color);
     --accent-color: #00a280;
     --tertiary-color: #4646a7;
     --secondary-color: #01a182;
+    --bg-color: #f7f7f7;
+    --bg-gradient: linear-gradient(
+      90deg,
+      var(--accent-color) 0%,
+      var(--secondary-color) 30%,
+      var(--tertiary-color) 100%
+    );
+
+    --bg-gradient-text: linear-gradient(
+      90deg,
+      var(--text-color) 0%,
+      var(--accent-color) 100%
+    );
+
     --font: 'IBM Plex Sans', sans-serif;
+    --text-size-sm: 0.75rem;
     --text-size: 0.9rem;
+    --text-size-lg: 1rem;
     --title-size-xl: 2rem;
+    --title-size-lg: 1.8rem;
     --title-size: 1.2rem;
     --title-line-height-xl: 1.1;
     --title-line-height: 1.4;
+    --text-line-height: 1.4;
     --border-radius: 16px;
-    --shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+    --shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.05);
+    --shadow-light: 0 2px 15px 0 rgba(0, 0, 0, 0.025);
   }
 
   *,
@@ -64,6 +86,7 @@ const { title } = Astro.props;
     font-weight: 500;
     font-size: var(--text-size);
     display: flex;
+    justify-content: center;
     gap: 0.5rem;
     align-items: center;
     i {
@@ -80,15 +103,11 @@ const { title } = Astro.props;
       background-color: transparent;
       border: 1px solid var(--text-color);
       color: var(--text-color);
+      box-sizing: border-box;
     }
 
     &.gradient {
-      background: linear-gradient(
-        90deg,
-        var(--accent-color) 0%,
-        var(--secondary-color) 30%,
-        var(--tertiary-color) 100%
-      );
+      background: var(--bg-gradient);
       color: white;
       border: none;
     }

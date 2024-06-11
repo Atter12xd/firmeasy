@@ -1,0 +1,35 @@
+---
+interface Props {
+	text: string;
+  body: string;
+}
+
+const { text, body } = Astro.props;
+---
+
+<div class="title">
+  <h1>{text}</h1>
+  <p>{body}</p>
+</div>
+
+<style>
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-color);
+    h1 {
+      font-size: var(--title-size-lg);
+      font-weight: 600;
+      text-wrap: balance;
+      max-width: 500px;
+      line-height: var(--title-line-height-xl);
+    }
+    p {
+      font-size: var(--text-size-lg);
+      line-height: var(--title-line-height);
+      font-weight: 300;
+    }
+  }
+</style>

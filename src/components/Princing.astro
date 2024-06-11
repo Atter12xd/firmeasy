@@ -1,0 +1,238 @@
+---
+import Section from './Section.astro';
+import Title from './Title.astro';
+import IconCheck from './icons/IconCheck.astro';
+import IconSpark from './icons/IconSpark.astro';
+---
+
+<Section>
+  <div class="pricing">
+    <Title
+      text="Precios y Planes"
+      body="Puedes cancelar tu plan en cualquier momento."
+    />
+    <div class="content">
+      <article>
+        <div class="info">
+          <h1>Personal</h1>
+          <p>10 documentos / Mes</p>
+          <h2>S/ 80 <span> / Mes</span></h2>
+        </div>
+        <ul>
+          <li>
+            <i><IconCheck /></i>
+            <p>5 Firmantes por documento</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Envío automático y recordatorios por correo</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Validar firmante con reconocimiento facial</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Envío automático y recordatorios WhatsApp</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Verificación correo con código único (OTP)</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Solicitar al firmante selfie o foto del documento</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Orden de firmas</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Firma en lote</p>
+          </li>
+        </ul>
+        <button class="outline">Solicitar Plan</button>
+      </article>
+      <article class="recommended">
+        <div class="info">
+          <h1>
+            Profesional
+            <span>
+              <i><IconSpark /></i>
+              <p>Recomendado</p>
+            </span>
+          </h1>
+          <p>20 documentos / Mes</p>
+          <h2>S/ 100 <span> / Mes</span></h2>
+        </div>
+        <ul>
+          <li>
+            <i><IconCheck /></i>
+            <p>5 Firmantes por documento</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Envío automático y recordatorios por correo</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Validar firmante con reconocimiento facial</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Envío automático y recordatorios WhatsApp</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Verificación correo con código único (OTP)</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Solicitar al firmante selfie o foto del documento</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Orden de firmas</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Firma en lote</p>
+          </li>
+        </ul>
+        <button class="gradient">Solicitar Plan</button>
+      </article>
+      <article>
+        <div class="info">
+          <h1>Empresarial</h1>
+          <p>40 documentos / Mes</p>
+          <h2>S/ 120 <span> / Mes</span></h2>
+        </div>
+        <ul>
+          <li>
+            <i><IconCheck /></i>
+            <p>5 Firmantes por documento</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Envío automático y recordatorios por correo</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Validar firmante con reconocimiento facial</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Envío automático y recordatorios WhatsApp</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Verificación correo con código único (OTP)</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Solicitar al firmante selfie o foto del documento</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Orden de firmas</p>
+          </li>
+          <li>
+            <i><IconCheck /></i>
+            <p>Firma en lote</p>
+          </li>
+        </ul>
+        <button class="outline">Solicitar Plan</button>
+      </article>
+    </div>
+  </div>
+</Section>
+
+<style>
+  .pricing {
+    .content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+      margin-top: calc(var(--container-padding-y) / 2);
+      article {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        font-size: var(--text-size);
+        font-weight: 500;
+        color: var(--text-color);
+        background-color: white;
+        border: 1px solid var(--border-color-light);
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow-light);
+        padding: 2rem 2.5rem;
+        &.recommended {
+          border: 1px solid var(--border-color);
+          box-shadow: var(--shadow);
+        }
+        .info {
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem;
+          border-bottom: 1px solid var(--border-color-light);
+          padding-bottom: 1rem;
+          h1 {
+            font-size: var(--title-size);
+            min-height: 1.5rem;
+            span {
+              font-weight: 400;
+              border: 1px solid var(--border-color-light);
+              box-sizing: border-box;
+              border-radius: var(--border-radius);
+              display: inline-flex;
+              align-items: center;
+              gap: 0.5rem;
+              width: fit-content;
+              margin-left: 0.25rem;
+              padding: 0 0.5rem;
+              p {
+                font-size: var(--text-size-sm);
+                background: var(--bg-gradient);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                user-select: none;
+              }
+            }
+          }
+          p {
+            font-size: var(--text-size);
+            font-weight: 400;
+          }
+          h2 {
+            font-size: var(--title-size-lg);
+            span {
+              font-size: var(--text-size);
+              font-weight: 400;
+            }
+          }
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem;
+          li {
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            line-height: var(--text-line-height);
+            color: var(--text-color);
+            i {
+              svg {
+                width: 18px;
+                height: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+</style>

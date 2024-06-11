@@ -1,0 +1,102 @@
+---
+import Section from './Section.astro';
+import Title from './Title.astro';
+---
+
+<Section>
+  <Title
+    text="Casos de Exito"
+    body="Historias de exito de nuestros clientes."
+  />
+  <div class="quotes">
+    <article>
+      <p>
+        "Ahora podemos seguir las etapas de atención al cliente [...]
+        En pocos minutos, toda la información está disponible para
+        nosotros, lo que representa un gran avance en nuestros
+        procesos internos."
+      </p>
+      <span>
+        <img src="/public/images/quotes/1.png" alt="metropolitano" />
+        <div class="person">
+          <p>Metropolitano</p>
+          <small>Juan Perez Palacios - Gerente</small>
+        </div>
+      </span>
+    </article>
+    <article>
+      <p>
+        "Ahora podemos seguir las etapas de atención al cliente [...]
+        En pocos minutos, toda la información está disponible para
+        nosotros, lo que representa un gran avance en nuestros
+        procesos internos."
+      </p>
+      <span>
+        <img src="/public/images/quotes/1.png" alt="metropolitano" />
+        <div class="person">
+          <p>Metropolitano</p>
+          <small>Juan Perez Palacios - Gerente</small>
+        </div>
+      </span>
+    </article>
+    <article>
+      <p>
+        "Ahora podemos seguir las etapas de atención al cliente [...]
+        En pocos minutos, toda la información está disponible para
+        nosotros, lo que representa un gran avance en nuestros
+        procesos internos."
+      </p>
+      <span>
+        <img src="/public/images/quotes/1.png" alt="metropolitano" />
+        <div class="person">
+          <p>Metropolitano</p>
+          <small>Juan Perez Palacios - Gerente</small>
+        </div>
+      </span>
+    </article>
+  </div>
+</Section>
+
+<style>
+  .quotes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: calc(var(--container-padding-y) / 2);
+    article {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      font-size: var(--text-size);
+      font-weight: 500;
+      color: var(--text-color);
+      background-color: white;
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      p {
+        font-weight: 400;
+        line-height: var(--text-line-height);
+      }
+      span {
+        display: flex;
+        align-items: center;
+        margin-top: 0.5rem;
+        gap: 1rem;
+        img {
+          width: 36px;
+          height: 36px;
+        }
+        .person {
+          p {
+            font-weight: 500;
+          }
+          small {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+</style>
