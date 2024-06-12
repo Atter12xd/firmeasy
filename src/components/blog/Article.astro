@@ -1,20 +1,18 @@
 ---
-const { title, resume } = Astro.props;
+const { title, resume, url, date } = Astro.props;
 ---
 
-<article class="article">
-  <small>27 octubre 2023</small>
+<a href={url} class="article transition-up">
+  <small>{date}</small>
   <h1>
-    ¿Cuál es la diferencia entre la firma electrónica y una firma
-    digital?
+    {title}
   </h1>
   <p>
-    La tecnología está transformando la forma en que las empresas en
-    Latinoamérica operan y gestionan...
+    {resume}
   </p>
-</article>
+</a>
 <style>
-  .article {
+  a.article {
     display: flex;
     flex-direction: column;
     gap: var(--card-gap-sm);
@@ -25,6 +23,7 @@ const { title, resume } = Astro.props;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     padding: var(--card-padding-y) var(--card-padding);
+    text-decoration: none;
     small {
       font-size: var(--text-size);
       opacity: 0.7;

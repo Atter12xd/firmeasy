@@ -129,4 +129,16 @@ const { title } = Astro.props;
       border: none;
     }
   }
+
+  .transition-up {
+    transition: all 0.3s ease;
+    transform: translate(0, 0);
+    &:hover {
+      transform: translate(3px, -3px);
+    }
+    &:is(button, a):hover {
+      transform: translate(1px, -1px);
+    }
+  }
+
 </style>

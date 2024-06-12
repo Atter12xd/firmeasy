@@ -1,17 +1,17 @@
 ---
+import { navigate } from 'astro:transitions/client';
 import ChipRecommended from '../shared/ChipRecommended.astro';
 
 export interface Props {
-  button?: {
-    text: string;
-    url: string;
-  };
+  buttonText?: string;
+  url: string;
   imageUrl?: string;
 }
-const { button, imageUrl } = Astro.props;
+const { buttonText, imageUrl, url } = Astro.props;
 ---
 
-<article class="article-ad">
+<article class="article-ad" data-url={url}>
+  {(!buttonText && url) && <a href={url} class="overlay-link" />}
   {
     imageUrl && (
       <div class="image">
@@ -26,9 +26,9 @@ const { button, imageUrl } = Astro.props;
   </h1>
   <p>Simplifica los procesos de firma de tu empresa.</p>
   {
-    button?.text && (
-      <a href={button.url || '/'} class="button gradient ad-link">
-        {button.text}
+    buttonText && (
+      <a href={url || '/'} class="button gradient ad-link transition-up">
+        {buttonText}
       </a>
     )
   }
@@ -46,6 +46,18 @@ const { button, imageUrl } = Astro.props;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     padding: var(--card-padding-y) var(--card-padding);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    .overlay-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background-color: transparent;
+    }
     .image {
       border: 1px solid var(--border-color);
       border-radius: var(--border-radius-sm);
@@ -69,7 +81,7 @@ const { button, imageUrl } = Astro.props;
     }
     a.ad-link {
       width: 100%;
-      max-width: 150px;
+      max-width: 120px;
       margin-top: 0.5rem;
     }
   }
