@@ -1,7 +1,7 @@
 ---
-import Title from '../components/Title.astro';
-import Section from './Section.astro';
-import IconCheck from './icons/IconCheck.astro';
+import Title from '../shared/Title.astro';
+import Section from '../shared/Section.astro';
+import IconCheck from '../icons/IconCheck.astro';
 ---
 
 <Section color="var(--bg-color)">
@@ -37,24 +37,23 @@ import IconCheck from './icons/IconCheck.astro';
       </article>
     </div>
   </div>
-</section>
+</Section>
 <style>
   .benefits {
     max-width: var(--container-max-width);
     width: 100%;
     height: 100%;
-    padding: 0 var(--container-padding);
     box-sizing: border-box;
     margin: 0 auto;
     .content {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 3rem;
+      gap: var(--grid-gap);
       margin-top: calc(var(--container-padding-y) / 2);
       article {
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: var(--card-gap);
         font-size: var(--text-size);
         font-weight: 500;
         color: var(--text-color);
@@ -62,7 +61,7 @@ import IconCheck from './icons/IconCheck.astro';
         border: 1px solid var(--border-color);
         border-radius: var(--border-radius);
         box-shadow: var(--shadow);
-        padding: 1.5rem;
+        padding: var(--card-padding);
         p {
           background: var(--bg-gradient-text);
           -webkit-background-clip: text;

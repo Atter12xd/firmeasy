@@ -1,8 +1,8 @@
 ---
 import Section from './Section.astro';
 import Title from './Title.astro';
-import IconCheck from './icons/IconCheck.astro';
-import IconSpark from './icons/IconSpark.astro';
+import IconCheck from '../icons/IconCheck.astro';
+import ChipRecommended from './ChipRecommended.astro';
 ---
 
 <Section>
@@ -11,6 +11,16 @@ import IconSpark from './icons/IconSpark.astro';
       text="Precios y Planes"
       body="Puedes cancelar tu plan en cualquier momento."
     />
+    <div class="switch">
+      <div class="switch-wrapper">
+        <span class="active">
+          <p>Mensual</p>
+        </span>
+        <span>
+          <p>Anual・<b>Ahorra 10%</b></p>
+        </span>
+      </div>
+    </div>
     <div class="content">
       <article>
         <div class="info">
@@ -58,10 +68,7 @@ import IconSpark from './icons/IconSpark.astro';
         <div class="info">
           <h1>
             Profesional
-            <span>
-              <i><IconSpark /></i>
-              <p>Recomendado</p>
-            </span>
+            <ChipRecommended />
           </h1>
           <p>20 documentos / Mes</p>
           <h2>S/ 100 <span> / Mes</span></h2>
@@ -150,15 +157,55 @@ import IconSpark from './icons/IconSpark.astro';
 
 <style>
   .pricing {
+    .switch {
+      margin: 0 auto;
+      width: fit-content;
+      min-width: 320px;
+      margin-top: calc(var(--container-padding-y) / 4);
+      .switch-wrapper {
+        display: flex;
+        background-color: var(--border-color-light);
+        padding: 0.5rem;
+        box-sizing: border-box;
+        border-radius: 50px;
+        gap: .5rem;
+        span {
+          flex: 1;
+          flex-basis: 0;
+          border-radius: 25px;
+          padding: 0.5rem;
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          p {
+            font-weight: 500;
+            font-size: var(--text-size);
+            b {
+              opacity: 0.7;
+            }
+          }
+          &:hover {
+            background: var(--border-color-light);
+          }
+          &.active {
+            background: var(--bg-gradient);
+            color: white;
+          }
+        }
+      }
+    }
     .content {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 3rem;
+      gap: var(--grid-gap);
       margin-top: calc(var(--container-padding-y) / 2);
       article {
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: var(--card-gap-lg);
         font-size: var(--text-size);
         font-weight: 500;
         color: var(--text-color);
@@ -180,26 +227,6 @@ import IconSpark from './icons/IconSpark.astro';
           h1 {
             font-size: var(--title-size);
             min-height: 1.5rem;
-            span {
-              font-weight: 400;
-              border: 1px solid var(--border-color-light);
-              box-sizing: border-box;
-              border-radius: var(--border-radius);
-              display: inline-flex;
-              align-items: center;
-              gap: 0.5rem;
-              width: fit-content;
-              margin-left: 0.25rem;
-              padding: 0 0.5rem;
-              p {
-                font-size: var(--text-size-sm);
-                background: var(--bg-gradient);
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-                user-select: none;
-              }
-            }
           }
           p {
             font-size: var(--text-size);

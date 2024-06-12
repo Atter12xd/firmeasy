@@ -1,5 +1,5 @@
 ---
-import Section from "./Section.astro";
+import Section from "../shared/Section.astro";
 ---
 
 <Section color="var(--bg-color)">
@@ -33,7 +33,7 @@ import Section from "./Section.astro";
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
+    gap: var(--grid-gap);
     article {
       display: flex;
       flex-direction: column;

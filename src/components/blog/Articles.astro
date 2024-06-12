@@ -1,0 +1,90 @@
+---
+import Article from './Article.astro';
+import ArticleAd from './ArticleAd.astro';
+
+interface ArticleType {
+  id: number;
+  date: string;
+  title: string;
+  resume: string;
+}
+const articles: ArticleType[] = [
+  {
+    id: 1,
+    date: '27 octubre 2023',
+    title:
+      '¿Cuál es la diferencia entre la firma electrónica y una firma digital?',
+    resume:
+      'La tecnología está transformando la forma en que las empresas en Latinoamérica operan y gestionan...',
+  },
+  {
+    id: 2,
+    date: '27 octubre 2023',
+    title:
+      '¿Cuál es la diferencia entre la firma electrónica y una firma digital?',
+    resume:
+      'La tecnología está transformando la forma en que las empresas en Latinoamérica operan y gestionan...',
+  },
+  {
+    id: 3,
+    date: '27 octubre 2023',
+    title:
+      '¿Cuál es la diferencia entre la firma electrónica y una firma digital?',
+    resume:
+      'La tecnología está transformando la forma en que las empresas en Latinoamérica operan y gestionan...',
+  },
+  {
+    id: 3,
+    date: '27 octubre 2023',
+    title:
+      '¿Cuál es la diferencia entre la firma electrónica y una firma digital?',
+    resume:
+      'La tecnología está transformando la forma en que las empresas en Latinoamérica operan y gestionan...',
+  },
+  {
+    id: 4,
+    date: '27 octubre 2023',
+    title:
+      '¿Cuál es la diferencia entre la firma electrónica y una firma digital?',
+    resume:
+      'La tecnología está transformando la forma en que las empresas en Latinoamérica operan y gestionan...',
+  },
+  {
+    id: 5,
+    date: '27 octubre 2023',
+    title:
+      '¿Cuál es la diferencia entre la firma electrónica y una firma digital?',
+    resume:
+      'La tecnología está transformando la forma en que las empresas en Latinoamérica operan y gestionan...',
+  },
+  {
+    id: 6,
+    date: '27 octubre 2023',
+    title:
+      '¿Cuál es la diferencia entre la firma electrónica y una firma digital?',
+    resume:
+      'La tecnología está transformando la forma en que las empresas en Latinoamérica operan y gestionan...',
+  },
+  {
+    id: 7,
+    date: '27 octubre 2023',
+    title:
+      '¿Cuál es la diferencia entre la firma electrónica y una firma digital?',
+    resume:
+      'La tecnología está transformando la forma en que las empresas en Latinoamérica operan y gestionan...',
+  },
+];
+---
+
+<section class="articles-grid">
+  <ArticleAd />
+  {articles.map((article: ArticleType) => <Article {...article} />)}
+</section>
+<style>
+  .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--grid-gap);
+    margin-top: calc(var(--container-padding-y) / 2);
+  }
+</style>

@@ -1,0 +1,36 @@
+---
+import ChipRecommended from '../shared/ChipRecommended.astro';
+---
+
+<article class="article-ad">
+  <ChipRecommended />
+  <h1>
+    Plataforma que permite cumplimiento Legal de acuerdos y
+    prevenciones de fraude de identidad para Pymes
+  </h1>
+  <p>Simplifica los procesos de firma de tu empresa.</p>
+</article>
+
+<style>
+  article.article-ad {
+    display: flex;
+    flex-direction: column;
+    gap: var(--card-gap-sm);
+    font-size: var(--text-size);
+    color: var(--text-color);
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: var(--card-padding-y) var(--card-padding);
+    h1 {
+      font-size: var(--text-size-lg);
+      line-height: var(--text-line-height);
+      font-weight: 500;
+    }
+    p {
+      font-size: var(--text-size);
+      line-height: var(--text-line-height);
+    }
+  }
+</style>

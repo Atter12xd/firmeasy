@@ -11,13 +11,17 @@
 <nav>
   <div class="wrapper">
     <div class="logo">
-      <img src="/public/images/logo.png" alt="logo firmeasy" />
+      <a href="/">
+        <img src="/public/images/logo.png" alt="logo firmeasy" />
+      </a>
     </div>
     <div class="menu">
       <ul>
         <li>Precios</li>
         <li>Casos de Exito</li>
-        <li>Blog</li>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
       </ul>
       <div class="actions">
         <button class="outline">Probar Demo</button>
@@ -62,6 +66,12 @@
           align-items: center;
           height: 100%;
           gap: 1.5rem;
+          li {
+            a {
+              color: var(--text-color);
+              text-decoration: none;
+            }
+          }
         }
         .actions {
           display: flex;
