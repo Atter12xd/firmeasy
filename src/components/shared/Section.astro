@@ -5,15 +5,21 @@ export interface Props {
 
 const { color } = Astro.props;
 ---
-<section class="section" style={`background-color: ${color || 'white'}`}>
+
+<section
+  class="section"
+  style={`background-color: ${color || 'white'}`}
+>
+  <slot name="bg" />
   <div class="wrapper">
     <slot />
   </div>
 </section>
 
 <style>
-  .section{
+  .section {
     padding: var(--container-padding-y) 0;
+    position: relative;
     .wrapper {
       max-width: var(--container-max-width);
       width: 100%;
@@ -21,6 +27,8 @@ const { color } = Astro.props;
       padding: 0 var(--container-padding);
       box-sizing: border-box;
       margin: 0 auto;
+      position: relative;
+      z-index: 2;
     }
   }
 </style>

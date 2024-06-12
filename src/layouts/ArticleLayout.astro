@@ -4,6 +4,7 @@ import ArticleHeader from '../components/blog/ArticleHeader.astro';
 import ArticleBody from '../components/blog/ArticleBody.astro';
 import Section from '../components/shared/Section.astro';
 import ArticleAd from '../components/blog/ArticleAd.astro';
+import BackgroundPattern from '../components/shared/BackgroundPattern.astro';
 
 export interface Props {
   frontmatter: {
@@ -18,14 +19,19 @@ const { frontmatter } = Astro.props;
 
 <Layout title={`Firmeasy | Blog | ${frontmatter.title}`}>
   <Section>
-    <ArticleHeader title={frontmatter.title} date={frontmatter.date} url={frontmatter.url} />
+    <BackgroundPattern slot="bg" />
+    <ArticleHeader
+      title={frontmatter.title}
+      date={frontmatter.date}
+      url={frontmatter.url}
+    />
     <div class="article-content">
       <ArticleBody>
         <slot />
       </ArticleBody>
       <ArticleAd
         buttonText="Saber más"
-        url='/oferta'
+        url="/oferta"
         imageUrl="/images/screen.png"
       />
     </div>
