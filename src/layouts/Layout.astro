@@ -65,6 +65,7 @@ const { title } = Astro.props;
     );
 
     --font: 'IBM Plex Sans', sans-serif;
+
     --text-size-sm: 0.75rem;
     --text-size: 0.9rem;
     --text-size-lg: 1rem;
@@ -72,9 +73,12 @@ const { title } = Astro.props;
     --title-size-lg: 1.8rem;
     --title-size: 1.2rem;
     --title-line-height-xl: 1.1;
+    --title-line-height-lg: 1.2;
     --title-line-height: 1.4;
     --text-line-height: 1.4;
+
     --border-radius: 16px;
+    --border-radius-sm: 8px;
     --shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.05);
     --shadow-light: 0 2px 15px 0 rgba(0, 0, 0, 0.025);
     --grid-gap: 3rem;
@@ -90,7 +94,8 @@ const { title } = Astro.props;
     font-family: var(--font);
   }
 
-  button {
+  button,
+  a.button {
     height: 40px;
     border-radius: 25px;
     padding: 0 1rem;
@@ -100,6 +105,7 @@ const { title } = Astro.props;
     justify-content: center;
     gap: 0.5rem;
     align-items: center;
+    text-decoration: none;
     i {
       display: flex;
       align-items: center;

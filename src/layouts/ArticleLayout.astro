@@ -1,0 +1,44 @@
+---
+import Layout from './Layout.astro';
+import ArticleHeader from '../components/blog/ArticleHeader.astro';
+import Section from '../components/shared/Section.astro';
+import ArticleAd from '../components/blog/ArticleAd.astro';
+
+export interface Props {
+  frontmatter: {
+    title: string;
+  };
+}
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={`Firmeasy | Blog | ${frontmatter.title}`}>
+  <Section>
+    <ArticleHeader />
+    <div class="article-content">
+      <div class="article-body">
+        <slot />
+      </div>
+      <ArticleAd button={{ text: 'Saber más', url: '/blog' }} imageUrl='/images/screen.png' />
+    </div>
+  </Section>
+</Layout>
+
+<style>
+  .article-content {
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--grid-gap);
+    margin-top: calc(var(--container-padding-y) / 2);
+    .article-body {
+      grid-column: 1 / 3;
+      color: var(--text-color);
+    }
+    .article-ad {
+      position: sticky;
+      top: var(--container-padding-y)
+    }
+  }
+</style>

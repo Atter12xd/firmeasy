@@ -1,0 +1,82 @@
+---
+import IconFacebook from '../icons/IconFacebook.astro';
+import IconLinkedin from '../icons/IconLinkedin.astro';
+import IconX from '../icons/IconX.astro';
+---
+
+<div class="article-header">
+  <h1>
+    ¿Cuál es la diferencia entre la firma electrónica y una firma
+    digital?
+  </h1>
+  <p>27 octubre 2023</p>
+  <div class="social-share">
+    <a target="_blank" href="#">
+      <i>
+        <IconFacebook />
+      </i>
+    </a>
+    <a data-size="sm" target="_blank" href="#">
+      <i>
+        <IconX />
+      </i>
+    </a>
+    <a target="_blank" href="#">
+      <i>
+        <IconLinkedin />
+      </i>
+    </a>
+  </div>
+</div>
+
+<style>
+  .article-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--card-gap);
+    padding-bottom: var(--card-padding-y);
+    margin-bottom: var(--card-padding-y);
+    border-bottom: 1px solid var(--border-color);
+    h1 {
+      font-size: var(--title-size-lg);
+      font-weight: 600;
+      text-wrap: balance;
+      max-width: 500px;
+      line-height: var(--title-line-height-lg);
+      color: var(--text-color);
+    }
+    p {
+      font-size: var(--text-size-lg);
+      font-weight: 400;
+      color: var(--text-color);
+    }
+    .social-share {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      a {
+        i {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border: 1px solid var(--border-color);
+          border-radius: 50%;
+          svg {
+            width: 20px;
+            height: 20px;
+          }
+        }
+        &[data-size='sm'] {
+          i {
+            svg {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+</style>

@@ -1,14 +1,37 @@
 ---
 import ChipRecommended from '../shared/ChipRecommended.astro';
+
+export interface Props {
+  button?: {
+    text: string;
+    url: string;
+  };
+  imageUrl?: string;
+}
+const { button, imageUrl } = Astro.props;
 ---
 
 <article class="article-ad">
+  {
+    imageUrl && (
+      <div class="image">
+        <img src={imageUrl} alt="ad firmeasy" />
+      </div>
+    )
+  }
   <ChipRecommended />
   <h1>
     Plataforma que permite cumplimiento Legal de acuerdos y
     prevenciones de fraude de identidad para Pymes
   </h1>
   <p>Simplifica los procesos de firma de tu empresa.</p>
+  {
+    button?.text && (
+      <a href={button.url || '/'} class="button gradient ad-link">
+        {button.text}
+      </a>
+    )
+  }
 </article>
 
 <style>
@@ -23,6 +46,18 @@ import ChipRecommended from '../shared/ChipRecommended.astro';
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     padding: var(--card-padding-y) var(--card-padding);
+    .image {
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius-sm);
+      overflow: hidden;
+      box-shadow: var(--shadow-light);
+      margin-bottom: 0.5rem;
+      img {
+        width: 100%;
+        border-radius: var(--border-radius-sm);
+        aspect-ratio: 300/183;
+      }
+    }
     h1 {
       font-size: var(--text-size-lg);
       line-height: var(--text-line-height);
@@ -31,6 +66,11 @@ import ChipRecommended from '../shared/ChipRecommended.astro';
     p {
       font-size: var(--text-size);
       line-height: var(--text-line-height);
+    }
+    a.ad-link {
+      width: 100%;
+      max-width: 150px;
+      margin-top: 0.5rem;
     }
   }
 </style>
