@@ -4,12 +4,15 @@ import Section from '../components/shared/Section.astro';
 import Articles from '../components/blog/Articles.astro';
 import Layout from '../layouts/Layout.astro';
 import BackgroundPattern from '../components/shared/BackgroundPattern.astro';
+import Fullpage from '../components/shared/Fullpage.astro';
 ---
 
 <Layout title="Firmeasy | Blog">
-  <Section>
-    <BackgroundPattern slot="bg" />
-    <Title text="Blog" body="Artículos y novedades." />
-    <Articles />
-  </Section>
+  <Fullpage>
+    <Section>
+      <BackgroundPattern slot="bg" />
+      <Title text="Blog" body="Artículos y novedades." />
+      <Articles />
+    </Section>
+  </Fullpage>
 </Layout>

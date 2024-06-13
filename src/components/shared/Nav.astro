@@ -17,22 +17,32 @@
     </div>
     <div class="menu">
       <ul>
-        <li>Precios</li>
-        <li>Casos de Exito</li>
+        <li>
+          <a href="/precios">
+            Precios
+          </a>
+        </li>
+        <li>
+          <a href="/casos-de-exito">
+            Casos de Éxito
+          </a>
+        </li>
         <li>
           <a href="/blog">Blog</a>
         </li>
       </ul>
       <div class="actions">
         <button class="outline transition-up">Probar Demo</button>
-        <button class="gradient transition-up">Contactar Ventas</button>
+        <button class="gradient transition-up"
+          >Contactar Ventas</button
+        >
       </div>
     </div>
   </div>
 </nav>
 <style>
   nav {
-    height: 70px;
+    height: var(--nav-height);
     width: 100%;
     border-bottom: 1px solid var(--border-color);
     position: sticky;

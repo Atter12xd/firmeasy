@@ -10,8 +10,8 @@ export interface Props {
 const { buttonText, imageUrl, url } = Astro.props;
 ---
 
-<article class="article-ad" data-url={url}>
-  {(!buttonText && url) && <a href={url} class="overlay-link" />}
+<article class="article-ad transition-up" data-url={url}>
+  {!buttonText && url && <a href={url} class="overlay-link" />}
   {
     imageUrl && (
       <div class="image">
@@ -27,7 +27,10 @@ const { buttonText, imageUrl, url } = Astro.props;
   <p>Simplifica los procesos de firma de tu empresa.</p>
   {
     buttonText && (
-      <a href={url || '/'} class="button gradient ad-link transition-up">
+      <a
+        href={url || '/'}
+        class="button gradient ad-link transition-up"
+      >
         {buttonText}
       </a>
     )

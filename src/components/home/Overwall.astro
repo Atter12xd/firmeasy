@@ -1,34 +1,41 @@
 ---
-import Section from "../shared/Section.astro";
+import Section from '../shared/Section.astro';
 ---
 
 <Section color="var(--bg-color)">
   <div class="overwall">
     <article>
-      <h1>70 mil</h1>
-      <p>Documentos firmados</p>
+      <span>
+        <h1>70 mil</h1>
+        <p>Documentos firmados</p>
+      </span>
     </article>
     <article>
-      <h1>2 paises</h1>
-      <p>Usan Firmeasy</p>
+      <span>
+        <h1>2 paises</h1>
+        <p>Usan Firmeasy</p>
+      </span>
     </article>
     <article>
-      <h1>+ 5 mil</h1>
-      <p>Usuarios activos</p>
+      <span>
+        <h1>+ 5 mil</h1>
+        <p>Usuarios activos</p>
+      </span>
     </article>
     <article>
-      <h1>+ 1 mil</h1>
-      <p>Confian en nosotros</p>
+      <span>
+        <h1>+ 1 mil</h1>
+        <p>Confian en nosotros</p>
+      </span>
     </article>
   </div>
-</section>
+</Section>
 
 <style>
   .overwall {
     max-width: var(--container-max-width);
     width: 100%;
     height: 100%;
-    padding: 0 var(--container-padding);
     box-sizing: border-box;
     margin: 0 auto;
     display: grid;
@@ -39,24 +46,35 @@ import Section from "../shared/Section.astro";
       flex-direction: column;
       align-items: center;
       text-align: left;
-      gap: 0.75rem;
       color: var(--text-color);
-      h1 {
-        font-size: var(--title-size-lg);
-        font-weight: 600;
-        text-wrap: balance;
-        max-width: 500px;
-        line-height: var(--title-line-height-xl);
-        background: var(--bg-gradient-text);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        user-select: none;
+      &:first-child {
+        align-items: flex-start;
       }
-      p {
-        font-size: var(--text-size);
-        font-weight: 500;
-        color: var(--text-color);
+      &:last-child {
+        align-items: flex-end;
+      }
+      span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+        h1 {
+          font-size: var(--title-size-lg);
+          font-weight: 600;
+          text-wrap: balance;
+          max-width: 500px;
+          line-height: var(--title-line-height-xl);
+          background: var(--bg-gradient-text);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          user-select: none;
+        }
+        p {
+          font-size: var(--text-size);
+          font-weight: 500;
+          color: var(--text-color);
+        }
       }
     }
   }

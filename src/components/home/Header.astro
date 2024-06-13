@@ -1,5 +1,5 @@
 ---
-import BackgroundPattern from "../shared/BackgroundPattern.astro";
+import BackgroundPattern from '../shared/BackgroundPattern.astro';
 ---
 
 <header>
@@ -28,7 +28,9 @@ import BackgroundPattern from "../shared/BackgroundPattern.astro";
       </div>
     </div>
     <div class="image">
-      <img src="/public/images/screen.png" alt="header firmeasy" />
+      <div class="image image-wrapper">
+        <img src="/public/images/screen.png" alt="header firmeasy" />
+      </div>
     </div>
   </div>
 </header>
@@ -85,6 +87,14 @@ import BackgroundPattern from "../shared/BackgroundPattern.astro";
         border-radius: var(--border-radius);
         overflow: hidden;
         box-shadow: var(--shadow);
+        padding: 1rem;
+        background-color: white;
+
+        .image-wrapper {
+          box-shadow: none;
+          padding: 0;
+          border-radius: var(--border-radius-sm);
+        }
         img {
           display: block;
         }

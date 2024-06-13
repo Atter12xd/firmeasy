@@ -65,6 +65,7 @@ const { title } = Astro.props;
     );
 
     --font: 'IBM Plex Sans', sans-serif;
+    --nav-height: 70px;
 
     --text-size-sm: 0.75rem;
     --text-size: 0.9rem;
@@ -117,7 +118,7 @@ const { title } = Astro.props;
     }
 
     &.outline {
-      background-color: transparent;
+      background-color: white;
       border: 1px solid var(--text-color);
       color: var(--text-color);
       box-sizing: border-box;
@@ -127,6 +128,20 @@ const { title } = Astro.props;
       background: var(--bg-gradient);
       color: white;
       border: none;
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 8px;
+        left: 50%;
+        width: 80%;
+        height: 20%;
+        transform: translate(-50%, 100%);
+        background: var(--bg-gradient);
+        /* background:red; */
+        z-index: -1;
+        border-radius: 25px;
+        filter: blur(8px);
+      }
     }
   }
 
@@ -140,5 +155,4 @@ const { title } = Astro.props;
       transform: translate(1px, -1px);
     }
   }
-
 </style>
