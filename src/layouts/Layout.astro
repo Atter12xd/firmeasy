@@ -156,4 +156,17 @@ const { title } = Astro.props;
       transform: translate(1px, -1px);
     }
   }
+
+  .truncate-text-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    display: -webkit-box;
+    display: box !important;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-height: var(--text-line-height);
+  }
 </style>

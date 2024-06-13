@@ -1,8 +1,7 @@
 ---
-layout: '../../layouts/ArticleLayout.astro'
-title: '¿Cuál es la diferencia entre la firma electrónica?'
-date: '27 octubre 2023'
-url: '/blog/firma-eletronica'
+title: 'Diferentes tipos de firma eletronica.'
+date: '22 octubre 2023'
+resume: 'La mejor tecnología está transformando la forma en que las empresas en Latinoamérica operan y gestionan sus documentos. La adopción de soluciones tecnológicas se ha vuelto esencial para mejorar la rentabilidad.'
 ---
 
 <!-- guia de sintaxis: https://www.markdownguide.org/basic-syntax/ -->
