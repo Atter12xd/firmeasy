@@ -8,25 +8,35 @@
 // const { href, title, body } = Astro.props;
 ---
 
-<nav>
+<footer>
   <div class="wrapper">
     <div class="logo">
       <img src="/public/images/logo_dark.png" alt="logo firmeasy" />
     </div>
     <div class="menu">
       <ul>
-        <li>Precios</li>
-        <li>Casos de Éxito</li>
-        <li>Blog</li>
-        <li>Repositorio</li>
-        <li>Validez Jurídica</li>
+        <li>
+          <a href="/precios">Precios</a>
+        </li>
+        <li>
+          <a href="/casos-de-exito">Casos de Éxito</a>
+        </li>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <li>
+          <a href="/repository">Repositorio</a>
+        </li>
+        <li>
+          <a href="/validez-juridica">Validez Jurídica</a>
+        </li>
       </ul>
     </div>
     <span> Copyright © 2024. Firmeasy </span>
   </div>
-</nav>
+</footer>
 <style>
-  nav {
+  footer {
     width: 100%;
     border-bottom: 1px solid var(--border-color);
     background-color: var(--dark-color);
@@ -59,6 +69,12 @@
           align-items: center;
           height: 100%;
           gap: 1.5rem;
+          li {
+            a {
+              color: white;
+              text-decoration: none;
+            }
+          }
         }
       }
       span {

@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Fullpage from '../components/shared/Fullpage.astro';
+import Section from '../components/shared/Section.astro';
+import RepositoryList from '../components/shared/RepositoryList.astro';
+import BackgroundPattern from '../components/shared/BackgroundPattern.astro';
+import Title from '../components/shared/Title.astro';
+---
+
+<Layout title="Firmeasy | Repositorio">
+  <Fullpage>
+    <Section>
+      <BackgroundPattern slot="bg" />
+      <Title
+        text="Repositorio"
+        body="Documentos , políticas y  guías."
+      />
+      <RepositoryList />
+    </Section>
+  </Fullpage>
+</Layout>

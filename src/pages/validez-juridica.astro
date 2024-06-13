@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Fullpage from '../components/shared/Fullpage.astro';
+import Section from '../components/shared/Section.astro';
+import ValidationsList from '../components/shared/ValidationsList.astro';
+import BackgroundPattern from '../components/shared/BackgroundPattern.astro';
+import Title from '../components/shared/Title.astro';
+---
+
+<Layout title="Firmeasy | Validez Jurídica">
+  <Fullpage>
+    <Section>
+      <BackgroundPattern slot="bg" />
+      <Title
+        text="Validez Jurídica"
+        body="Marco legal de las firmas electrónicas"
+      />
+      <ValidationsList />
+    </Section>
+  </Fullpage>
+</Layout>
