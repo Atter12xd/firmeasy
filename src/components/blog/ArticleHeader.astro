@@ -2,37 +2,61 @@
 import IconFacebook from '../icons/IconFacebook.astro';
 import IconLinkedin from '../icons/IconLinkedin.astro';
 import IconX from '../icons/IconX.astro';
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  LinkedInShareButton,
+} from 'astro-social-share';
+
+const BUTTONS = [
+  TwitterShareButton,
+  FacebookShareButton,
+  LinkedInShareButton,
+];
 
 export interface Props {
   title: string;
   date: string;
   url: string;
+  resume: string;
 }
 
-const { title, date, url } = Astro.props;
+const { title, date, resume } = Astro.props;
 ---
 
 <div class="article-header">
   <h1>
     {title}
   </h1>
-  <p>{date}</p>
+  <date>{date}</date>
   <div class="social-share">
-    <!-- <a target="_blank" href="#">
+    <FacebookShareButton
+      title={title}
+      description={resume}
+      via="firmeasy"
+    >
       <i>
         <IconFacebook />
       </i>
-    </a>
-    <a data-size="sm" target="_blank" href="#">
+    </FacebookShareButton>
+    <TwitterShareButton
+      title={title}
+      description={resume}
+      via="firmeasy"
+    >
       <i>
         <IconX />
       </i>
-    </a>
-    <a target="_blank" href="#">
+    </TwitterShareButton>
+    <LinkedInShareButton
+      title={title}
+      description={resume}
+      via="firmeasy"
+    >
       <i>
         <IconLinkedin />
       </i>
-    </a> -->
+    </LinkedInShareButton>
   </div>
 </div>
 
@@ -52,10 +76,11 @@ const { title, date, url } = Astro.props;
       line-height: var(--title-line-height-lg);
       color: var(--text-color);
     }
-    p {
+    date {
       font-size: var(--text-size-lg);
       font-weight: 400;
       color: var(--text-color);
+      margin-bottom: 0.5rem;
     }
     .social-share {
       display: flex;
@@ -70,6 +95,7 @@ const { title, date, url } = Astro.props;
           height: 40px;
           border: 1px solid var(--border-color);
           border-radius: 50%;
+          background-color: white;
           svg {
             width: 20px;
             height: 20px;

@@ -3,7 +3,7 @@ const { title, resume, url, date } = Astro.props;
 ---
 
 <a href={url} class="article transition-up">
-  <small>{date}</small>
+  <date>{date}</date>
   <h1>
     {title}
   </h1>
@@ -24,7 +24,7 @@ const { title, resume, url, date } = Astro.props;
     box-shadow: var(--shadow);
     padding: var(--card-padding-y) var(--card-padding);
     text-decoration: none;
-    small {
+    date {
       font-size: var(--text-size);
       opacity: 0.7;
     }
