@@ -1,0 +1,103 @@
+---
+import IconCheck from '../icons/IconCheck.astro';
+import site from '@site';
+import ChipRecommended from './ChipRecommended.astro';
+
+export interface Props {
+  plan: 'personal' | 'pro' | 'enterprise';
+  period: 'monthly' | 'yearly';
+  recommended?: boolean;
+}
+
+const { plan, period, recommended } = Astro.props;
+---
+
+<article class={recommended ? 'recommended' : ''}>
+  <div class="info">
+    <h1>
+      {site.pricing[plan].info.name}
+      { recommended 
+        ? (
+          <>&nbsp;<ChipRecommended /></>
+        ) 
+        : ''
+      }
+    </h1>
+    <p>{site.pricing[plan].info.documents[period]} documentos / { period === 'monthly' ? 'Mes' : 'Anual'}</p>
+    <h2>
+      {site.pricing.coin}
+      {site.pricing[plan].info.amount[period]}
+      <span> / { period === 'monthly' ? 'Mes' : 'Anual'}</span>
+    </h2>
+  </div>
+  <ul>
+    {site.pricing[plan].items.map((item) => (
+      <li>
+        <i><IconCheck /></i>
+        <p>{item}</p>
+      </li>
+    ))}
+  </ul>
+  <button class=`${recommended ? 'gradient' : 'outline'} transition-up`>{site.pricing.buttonText}</button>
+</article>
+
+<style>
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: var(--card-gap-lg);
+    font-size: var(--text-size);
+    font-weight: 500;
+    color: var(--text-color);
+    background-color: white;
+    border: 1px solid var(--border-color-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    padding: 2rem 2.5rem;
+    &.recommended {
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow);
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      border-bottom: 1px solid var(--border-color-light);
+      padding-bottom: 1rem;
+      h1 {
+        font-size: var(--title-size);
+        min-height: 1.5rem;
+      }
+      p {
+        font-size: var(--text-size);
+        font-weight: 400;
+      }
+      h2 {
+        font-size: var(--title-size-lg);
+        span {
+          font-size: var(--text-size);
+          font-weight: 400;
+        }
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      li {
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        line-height: var(--text-line-height);
+        color: var(--text-color);
+        i {
+          svg {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
+  }
+</style>

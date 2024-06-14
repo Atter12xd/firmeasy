@@ -1,0 +1,75 @@
+{
+  "pricing": {
+    "coin": "S/",
+    "buttonText": "Solicitar Plan",
+    "personal": {
+      "info": {
+        "name": "Personal",
+        "documents": {
+          "monthly": 10,
+          "yearly": 100
+        },
+        "amount": {
+          "monthly": 10,
+          "yearly": 120
+        }
+      },
+      "items": [
+        "5 Firmantes por documento",
+        "Envío automático y recordatorios por correo",
+        "Validar firmante con reconocimiento facial",
+        "Envío automático y recordatorios WhatsApp",
+        "Verificación correo con código único (OTP)",
+        "Solicitar al firmante selfie o foto del documento",
+        "Orden de firmas",
+        "Firma en lote"
+      ]
+    },
+    "pro": {
+      "info": {
+        "name": "Profesional",
+        "documents": {
+          "monthly": 20,
+          "yearly": 200
+        },
+        "amount": {
+          "monthly": 20,
+          "yearly": 240
+        }
+      },
+      "items": [
+        "10 Firmantes por documento",
+        "Envío automático y recordatorios por correo",
+        "Validar firmante con reconocimiento facial",
+        "Envío automático y recordatorios WhatsApp",
+        "Verificación correo con código único (OTP)",
+        "Solicitar al firmante selfie o foto del documento",
+        "Orden de firmas",
+        "Firma en lote"
+      ]
+    },
+    "enterprise": {
+      "info": {
+        "name": "Empresarial",
+        "documents": {
+          "monthly": 40,
+          "yearly": 400
+        },
+        "amount": {
+          "monthly": 40,
+          "yearly": 480
+        }
+      },
+      "items": [
+        "20 Firmantes por documento",
+        "Envío automático y recordatorios por correo",
+        "Validar firmante con reconocimiento facial",
+        "Envío automático y recordatorios WhatsApp",
+        "Verificación correo con código único (OTP)",
+        "Solicitar al firmante selfie o foto del documento",
+        "Orden de firmas",
+        "Firma en lote"
+      ]
+    }
+  }
+}

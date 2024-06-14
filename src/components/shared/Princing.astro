@@ -1,10 +1,45 @@
 ---
 import Section from './Section.astro';
 import Title from './Title.astro';
-import IconCheck from '../icons/IconCheck.astro';
-import ChipRecommended from './ChipRecommended.astro';
 import BackgroundPattern from './BackgroundPattern.astro';
+import Plan from './Plan.astro';
+
+const period = 'monthly';
 ---
+
+<script>
+  // get the active span
+  const $chipMontly: HTMLDivElement | null = document.querySelector(
+    '#switch-period .switch-wrapper span:first-child'
+  );
+  const $chipYearly: HTMLDivElement | null = document.querySelector(
+    '#switch-period .switch-wrapper span:last-child'
+  );
+  const $chipWeb: HTMLDivElement | null = document.querySelector(
+    '#switch-type .switch-wrapper span:first-child'
+  );
+  const $chipApi: HTMLDivElement | null = document.querySelector(
+    '#switch-type .switch-wrapper span:last-child'
+  );
+  // get all spans
+  $chipMontly?.addEventListener('click', (e) => {
+    $chipMontly.classList.add('active');
+    $chipYearly?.classList.remove('active');
+  });
+  $chipYearly?.addEventListener('click', (e) => {
+    $chipYearly.classList.add('active');
+    $chipMontly?.classList.remove('active');
+  });
+
+  $chipWeb?.addEventListener('click', (e) => {
+    $chipWeb.classList.add('active');
+    $chipApi?.classList.remove('active');
+  });
+  $chipApi?.addEventListener('click', (e) => {
+    $chipApi.classList.add('active');
+    $chipWeb?.classList.remove('active');
+  });
+</script>
 
 <Section>
   <BackgroundPattern slot="bg" />
@@ -13,8 +48,7 @@ import BackgroundPattern from './BackgroundPattern.astro';
       text="Precios y Planes"
       body="Puedes cancelar tu plan en cualquier momento."
     />
-
-    <div class="switch">
+    <div class="switch" id="switch-period">
       <div class="switch-wrapper">
         <span class="active">
           <p>Mensual</p>
@@ -24,7 +58,7 @@ import BackgroundPattern from './BackgroundPattern.astro';
         </span>
       </div>
     </div>
-    <div class="switch tiny">
+    <div class="switch tiny" id="switch-type">
       <div class="switch-wrapper">
         <span class="active">
           <p>WEB</p>
@@ -35,134 +69,9 @@ import BackgroundPattern from './BackgroundPattern.astro';
       </div>
     </div>
     <div class="content">
-      <article>
-        <div class="info">
-          <h1>Personal</h1>
-          <p>10 documentos / Mes</p>
-          <h2>S/ 80 <span> / Mes</span></h2>
-        </div>
-        <ul>
-          <li>
-            <i><IconCheck /></i>
-            <p>5 Firmantes por documento</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Envío automático y recordatorios por correo</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Validar firmante con reconocimiento facial</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Envío automático y recordatorios WhatsApp</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Verificación correo con código único (OTP)</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Solicitar al firmante selfie o foto del documento</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Orden de firmas</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Firma en lote</p>
-          </li>
-        </ul>
-        <button class="outline transition-up">Solicitar Plan</button>
-      </article>
-      <article class="recommended">
-        <div class="info">
-          <h1>
-            Profesional &nbsp;<ChipRecommended />
-          </h1>
-          <p>20 documentos / Mes</p>
-          <h2>S/ 100 <span> / Mes</span></h2>
-        </div>
-        <ul>
-          <li>
-            <i><IconCheck /></i>
-            <p>5 Firmantes por documento</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Envío automático y recordatorios por correo</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Validar firmante con reconocimiento facial</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Envío automático y recordatorios WhatsApp</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Verificación correo con código único (OTP)</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Solicitar al firmante selfie o foto del documento</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Orden de firmas</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Firma en lote</p>
-          </li>
-        </ul>
-        <button class="gradient transition-up">Solicitar Plan</button>
-      </article>
-      <article>
-        <div class="info">
-          <h1>Empresarial</h1>
-          <p>40 documentos / Mes</p>
-          <h2>S/ 120 <span> / Mes</span></h2>
-        </div>
-        <ul>
-          <li>
-            <i><IconCheck /></i>
-            <p>5 Firmantes por documento</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Envío automático y recordatorios por correo</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Validar firmante con reconocimiento facial</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Envío automático y recordatorios WhatsApp</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Verificación correo con código único (OTP)</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Solicitar al firmante selfie o foto del documento</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Orden de firmas</p>
-          </li>
-          <li>
-            <i><IconCheck /></i>
-            <p>Firma en lote</p>
-          </li>
-        </ul>
-        <button class="outline transition-up">Solicitar Plan</button>
-      </article>
+      <Plan period="monthly" plan="personal" />
+      <Plan period="monthly" plan="pro" recommended={true} />
+      <Plan period="monthly" plan="enterprise" />
     </div>
   </div>
 </Section>
@@ -185,6 +94,7 @@ import BackgroundPattern from './BackgroundPattern.astro';
 
           span {
             padding: 0.25rem;
+            transition: all 0.3s ease-in-out;
             p {
               font-size: var(--text-size-sm);
               color: var(--text-color);
@@ -227,6 +137,7 @@ import BackgroundPattern from './BackgroundPattern.astro';
             b {
               opacity: 0.7;
               font-size: var(--text-size-sm);
+              pointer-events: none;
             }
           }
           &:hover {
@@ -244,64 +155,6 @@ import BackgroundPattern from './BackgroundPattern.astro';
       grid-template-columns: repeat(3, 1fr);
       gap: var(--grid-gap);
       margin-top: calc(var(--container-padding-y) / 2);
-      article {
-        display: flex;
-        flex-direction: column;
-        gap: var(--card-gap-lg);
-        font-size: var(--text-size);
-        font-weight: 500;
-        color: var(--text-color);
-        background-color: white;
-        border: 1px solid var(--border-color-light);
-        border-radius: var(--border-radius);
-        box-shadow: var(--shadow-light);
-        padding: 2rem 2.5rem;
-        &.recommended {
-          border: 1px solid var(--border-color);
-          box-shadow: var(--shadow);
-        }
-        .info {
-          display: flex;
-          flex-direction: column;
-          gap: 0.75rem;
-          border-bottom: 1px solid var(--border-color-light);
-          padding-bottom: 1rem;
-          h1 {
-            font-size: var(--title-size);
-            min-height: 1.5rem;
-          }
-          p {
-            font-size: var(--text-size);
-            font-weight: 400;
-          }
-          h2 {
-            font-size: var(--title-size-lg);
-            span {
-              font-size: var(--text-size);
-              font-weight: 400;
-            }
-          }
-        }
-        ul {
-          display: flex;
-          flex-direction: column;
-          gap: 0.75rem;
-          li {
-            font-weight: 400;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            line-height: var(--text-line-height);
-            color: var(--text-color);
-            i {
-              svg {
-                width: 18px;
-                height: 18px;
-              }
-            }
-          }
-        }
-      }
     }
   }
 </style>
