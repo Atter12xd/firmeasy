@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Article from './Article.astro';
 import ArticleAd from './ArticleAd.astro';
+import {blog} from '@site'
 
 export interface ArticleType {
   id: number;
@@ -14,13 +15,14 @@ export interface ArticleType {
 const allBlogPosts = await getCollection('blog');
 
 const articles: ArticleType[] = [];
+
 allBlogPosts.map(({ data, slug }: { data: ArticleType, slug: string }) => {
   articles.push( {...{url: `/blog/${slug}`}, ...data})
 });
 ---
 
 <section class="articles-grid">
-  <ArticleAd url="/oferta" />
+  <ArticleAd {...blog.ad} />
   {articles.map((article: ArticleType) => <Article {...article} />)}
 </section>
 <style>

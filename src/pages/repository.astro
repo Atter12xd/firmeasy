@@ -5,16 +5,14 @@ import Section from '../components/shared/Section.astro';
 import RepositoryList from '../components/shared/RepositoryList.astro';
 import BackgroundPattern from '../components/shared/BackgroundPattern.astro';
 import Title from '../components/shared/Title.astro';
+import { repository } from '@site';
 ---
 
 <Layout title="Firmeasy | Repositorio">
   <Fullpage>
     <Section>
       <BackgroundPattern slot="bg" />
-      <Title
-        text="Repositorio"
-        body="Documentos , políticas y  guías."
-      />
+      <Title text={repository.title} body={repository.description} />
       <RepositoryList />
     </Section>
   </Fullpage>

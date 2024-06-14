@@ -1,33 +1,20 @@
 ---
 import Section from '../shared/Section.astro';
+import { overwall } from '@site';
 ---
 
 <Section color="var(--bg-color)">
   <div class="overwall">
-    <article>
-      <span>
-        <h1>70 mil</h1>
-        <p>Documentos firmados</p>
-      </span>
-    </article>
-    <article>
-      <span>
-        <h1>2 paises</h1>
-        <p>Usan Firmeasy</p>
-      </span>
-    </article>
-    <article>
-      <span>
-        <h1>+ 5 mil</h1>
-        <p>Usuarios activos</p>
-      </span>
-    </article>
-    <article>
-      <span>
-        <h1>+ 1 mil</h1>
-        <p>Confian en nosotros</p>
-      </span>
-    </article>
+    {
+      overwall.map((item) => (
+        <article>
+          <span>
+            <h1>{item.amount}</h1>
+            <p>{item.description}</p>
+          </span>
+        </article>
+      ))
+    }
   </div>
 </Section>
 

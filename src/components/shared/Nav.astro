@@ -1,11 +1,5 @@
 ---
-// interface Props {
-// 	title: string;
-// 	body: string;
-// 	href: string;
-// }
-
-// const { href, title, body } = Astro.props;
+import { nav } from '@site';
 ---
 
 <nav>
@@ -17,21 +11,17 @@
     </div>
     <div class="menu">
       <ul>
-        <li>
-          <a href="/precios">Precios</a>
-        </li>
-        <li>
-          <a href="/casos-de-exito">Casos de Éxito</a>
-        </li>
-        <li>
-          <a href="/blog">Blog</a>
-        </li>
+        {
+          nav.menu.map((item) => (
+            <li>
+              <a href={item.link}>{item.name}</a>
+            </li>
+          ))
+        }
       </ul>
       <div class="actions">
-        <button class="outline transition-up">Probar Demo</button>
-        <button class="gradient transition-up"
-          >Contactar Ventas</button
-        >
+        <a href={nav.button1.link} class="button outline transition-up">{nav.button1.text}</button>
+        <a href={nav.button2.link} class="button gradient transition-up">{nav.button2.text}</button>
       </div>
     </div>
   </div>

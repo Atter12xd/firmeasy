@@ -1,34 +1,32 @@
 ---
-import { navigate } from 'astro:transitions/client';
 import ChipRecommended from '../shared/ChipRecommended.astro';
 
 export interface Props {
   buttonText?: string;
-  url: string;
-  imageUrl?: string;
+  link: string;
+  image?: string;
+  title: string;
+  description: string;
 }
-const { buttonText, imageUrl, url } = Astro.props;
+const { buttonText, image, link, title, description } = Astro.props;
 ---
 
-<article class="article-ad transition-up" data-url={url}>
-  {!buttonText && url && <a href={url} class="overlay-link" />}
+<article class=`article-ad ${!buttonText ? 'transition-up' : ''}`>
+  {!buttonText && link && <a href={link} class="overlay-link" ></a>}
   {
-    imageUrl && (
+    image && (
       <div class="image">
-        <img src={imageUrl} alt="ad firmeasy" />
+        <img src={image} alt="ad firmeasy" />
       </div>
     )
   }
   <ChipRecommended />
-  <h1>
-    Plataforma que permite cumplimiento Legal de acuerdos y
-    prevenciones de fraude de identidad para Pymes
-  </h1>
-  <p>Simplifica los procesos de firma de tu empresa.</p>
+  <h1>{title}</h1>
+  <p>{description}</p>
   {
     buttonText && (
       <a
-        href={url || '/'}
+        href={link || '/'}
         class="button gradient ad-link transition-up"
       >
         {buttonText}

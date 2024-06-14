@@ -73,8 +73,8 @@ const { title } = Astro.props;
     --text-size-lg: 1rem;
     --title-size-xl: 2rem;
     --title-size-lg: 1.8rem;
-    --title-size: 1.2rem;
-    --title-line-height-xl: 1.1;
+    --title-size: 1.1rem;
+    --title-line-height-xl: 1.2;
     --title-line-height-lg: 1.2;
     --title-line-height: 1.4;
     --text-line-height: 1.4;
@@ -168,5 +168,25 @@ const { title } = Astro.props;
     box-orient: vertical;
     -webkit-line-clamp: 4;
     line-height: var(--text-line-height);
+  }
+
+  span.chip_recommended {
+    font-weight: 400;
+    border: 1px solid var(--border-color-light);
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: fit-content;
+    padding: 0 0.5rem;
+    p {
+      font-size: var(--text-size-sm);
+      background: var(--bg-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      user-select: none;
+    }
   }
 </style>

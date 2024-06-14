@@ -1,35 +1,48 @@
 ---
 import BackgroundPattern from '../shared/BackgroundPattern.astro';
+import { header } from '@site';
 ---
 
 <header>
   <BackgroundPattern />
   <div class="wrapper">
     <div class="text">
-      <h1>La firma electrónica más fácil de usar</h1>
-      <h2>
-        Simplifica los procesos de firma de tu empresa. Crea, envía,
-        firma y almacena documentos de forma segura con validez legal.
-      </h2>
+      <h1>{header.title}</h1>
+      <h2>{header.description}</h2>
       <div class="actions">
-        <button class="gradient transition-up"
-          >Contactar Ventas</button
-        >
-        <button class="outline transition-up">
-          <i>
-            <svg width="32" height="32" viewBox="0 0 24 24"
-              ><path
-                fill="currentColor"
-                d="M9 17.192V6.808L17.154 12z"></path></svg
+        {
+          header.button1.text && (
+            <a
+              href={header.button1.link}
+              class="button gradient transition-up"
             >
-          </i>
-          Ver video
-        </button>
+              {header.button1.text}
+            </a>
+          )
+        }
+        {
+          header.button2.text && (
+            <a
+              href={header.button2.link}
+              class="button outline transition-up"
+            >
+              <i>
+                <svg width="32" height="32" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M9 17.192V6.808L17.154 12z"
+                  />
+                </svg>
+              </i>
+              {header.button2.text}
+            </a>
+          )
+        }
       </div>
     </div>
     <div class="image">
       <div class="image image-wrapper">
-        <img src="/public/images/screen.png" alt="header firmeasy" />
+        <img src={header.image} alt="firmeasy" />
       </div>
     </div>
   </div>
@@ -50,12 +63,6 @@ import BackgroundPattern from '../shared/BackgroundPattern.astro';
       margin: 0 auto;
       position: relative;
       z-index: 2;
-      .image {
-        img {
-          width: 100%;
-          max-width: 560px;
-        }
-      }
       .text {
         display: flex;
         flex-direction: column;
@@ -97,6 +104,8 @@ import BackgroundPattern from '../shared/BackgroundPattern.astro';
         }
         img {
           display: block;
+          width: 100%;
+          max-width: 520px;
         }
       }
     }

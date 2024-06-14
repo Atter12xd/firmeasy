@@ -1,75 +1,381 @@
 {
-  "pricing": {
-    "coin": "S/",
-    "buttonText": "Solicitar Plan",
-    "personal": {
-      "info": {
-        "name": "Personal",
-        "documents": {
-          "monthly": 10,
-          "yearly": 100
-        },
-        "amount": {
-          "monthly": 10,
-          "yearly": 120
-        }
+  "nav": {
+    "menu": [
+      {
+        "name": "Precios",
+        "link": "/precios"
       },
-      "items": [
-        "5 Firmantes por documento",
-        "Envío automático y recordatorios por correo",
-        "Validar firmante con reconocimiento facial",
-        "Envío automático y recordatorios WhatsApp",
-        "Verificación correo con código único (OTP)",
-        "Solicitar al firmante selfie o foto del documento",
-        "Orden de firmas",
-        "Firma en lote"
-      ]
+      {
+        "name": "Casos de Éxito",
+        "link": "/casos-de-exito"
+      },
+      {
+        "name": "Blog",
+        "link": "/blog"
+      }
+    ],
+    "button1": {
+      "text": "Probar Demo",
+      "link": "/"
     },
-    "pro": {
-      "info": {
-        "name": "Profesional",
-        "documents": {
-          "monthly": 20,
-          "yearly": 200
-        },
-        "amount": {
-          "monthly": 20,
-          "yearly": 240
-        }
-      },
-      "items": [
-        "10 Firmantes por documento",
-        "Envío automático y recordatorios por correo",
-        "Validar firmante con reconocimiento facial",
-        "Envío automático y recordatorios WhatsApp",
-        "Verificación correo con código único (OTP)",
-        "Solicitar al firmante selfie o foto del documento",
-        "Orden de firmas",
-        "Firma en lote"
-      ]
-    },
-    "enterprise": {
-      "info": {
-        "name": "Empresarial",
-        "documents": {
-          "monthly": 40,
-          "yearly": 400
-        },
-        "amount": {
-          "monthly": 40,
-          "yearly": 480
-        }
-      },
-      "items": [
-        "20 Firmantes por documento",
-        "Envío automático y recordatorios por correo",
-        "Validar firmante con reconocimiento facial",
-        "Envío automático y recordatorios WhatsApp",
-        "Verificación correo con código único (OTP)",
-        "Solicitar al firmante selfie o foto del documento",
-        "Orden de firmas",
-        "Firma en lote"
-      ]
+     "button2": {
+      "text": "Contactar Ventas",
+      "link": "/"
     }
+  },
+  "header": {
+    "title": "La firma electrónica más fácil de usar",
+    "description": "Simplifica los procesos de firma de tu empresa. Crea, envía, firma y almacena documentos de forma segura con validez legal.",
+    "button1": {
+      "text": "Contactar Ventas",
+      "link": "/contact"
+    },
+    "button2": {
+      "text": "Ver video",
+      "link": "/video"
+    },
+    "image": "/public/images/screen.png"
+  },
+  "benefits": {
+    "title": "¿Por qué elegir Firmeasy?",
+    "description": "Sencilla, flexible y confiable.",
+    "items": [
+      "Alta Validez Juridica en la firma (Longeva)",
+      "Validez de identidad facial IA",
+      "Analisis de contrado con IA",
+      "Firma con Whatsapp",
+      "Expedientes Digitales con sellos de tiempo",
+      "Autoridad Certificadora"
+    ]
+  },
+  "pricing": {
+    "title": "Precios y Planes",
+    "description": "Puedes cancelar tu plan en cualquier momento.",
+    "web": {
+      "coin": "S/",
+      "buttonText": "Solicitar Plan",
+      "plan1": {
+        "recommended": false,
+        "info": {
+          "name": "Personal",
+          "documents": {
+            "monthly": 10,
+            "yearly": 100
+          },
+          "amount": {
+            "monthly": 10,
+            "yearly": 120
+          }
+        },
+        "items": [
+          "5 Firmantes por documento",
+          "Envío automático y recordatorios por correo",
+          "Validar firmante con reconocimiento facial",
+          "Envío automático y recordatorios WhatsApp",
+          "Verificación correo con código único (OTP)",
+          "Solicitar al firmante selfie o foto del documento",
+          "Orden de firmas",
+          "Firma en lote"
+        ]
+      },
+      "plan2": {
+        "recommended": true,
+        "info": {
+          "name": "Profesional",
+          "documents": {
+            "monthly": 20,
+            "yearly": 200
+          },
+          "amount": {
+            "monthly": 20,
+            "yearly": 240
+          }
+        },
+        "items": [
+          "10 Firmantes por documento",
+          "Envío automático y recordatorios por correo",
+          "Validar firmante con reconocimiento facial",
+          "Envío automático y recordatorios WhatsApp",
+          "Verificación correo con código único (OTP)",
+          "Solicitar al firmante selfie o foto del documento",
+          "Orden de firmas",
+          "Firma en lote"
+        ]
+      },
+      "plan3": {
+        "recommended": false,
+        "info": {
+          "name": "Empresarial",
+          "documents": {
+            "monthly": 40,
+            "yearly": 400
+          },
+          "amount": {
+            "monthly": 40,
+            "yearly": 480
+          }
+        },
+        "items": [
+          "20 Firmantes por documento",
+          "Envío automático y recordatorios por correo",
+          "Validar firmante con reconocimiento facial",
+          "Envío automático y recordatorios WhatsApp",
+          "Verificación correo con código único (OTP)",
+          "Solicitar al firmante selfie o foto del documento",
+          "Orden de firmas",
+          "Firma en lote"
+        ]
+      }
+    },
+    "api": {
+      "coin": "S/",
+      "buttonText": "Solicitar Plan",
+      "plan1": {
+        "recommended": false,
+        "info": {
+          "name": "Api Despegar",
+          "documents": {
+            "monthly": 10,
+            "yearly": 100
+          },
+          "amount": {
+            "monthly": 8,
+            "yearly": 108
+          }
+        },
+        "items": [
+          "5 Firmantes por documento",
+          "Envío automático y recordatorios por correo",
+          "Validar firmante con reconocimiento facial",
+          "Envío automático y recordatorios WhatsApp",
+          "Verificación correo con código único (OTP)",
+          "Solicitar al firmante selfie o foto del documento",
+          "Orden de firmas",
+          "Firma en lote"
+        ]
+      },
+      "plan2": {
+        "recommended": true,
+        "info": {
+          "name": "Api Crecer",
+          "documents": {
+            "monthly": 20,
+            "yearly": 200
+          },
+          "amount": {
+            "monthly": 16,
+            "yearly": 216
+          }
+        },
+        "items": [
+          "10 Firmantes por documento",
+          "Envío automático y recordatorios por correo",
+          "Validar firmante con reconocimiento facial",
+          "Envío automático y recordatorios WhatsApp",
+          "Verificación correo con código único (OTP)",
+          "Solicitar al firmante selfie o foto del documento",
+          "Orden de firmas",
+          "Firma en lote"
+        ]
+      },
+      "plan3": {
+        "recommended": false,
+        "info": {
+          "name": "Api Escalar",
+          "documents": {
+            "monthly": 40,
+            "yearly": 400
+          },
+          "amount": {
+            "monthly": 24,
+            "yearly": 224
+          }
+        },
+        "items": [
+          "20 Firmantes por documento",
+          "Envío automático y recordatorios por correo",
+          "Validar firmante con reconocimiento facial",
+          "Envío automático y recordatorios WhatsApp",
+          "Verificación correo con código único (OTP)",
+          "Solicitar al firmante selfie o foto del documento",
+          "Orden de firmas",
+          "Firma en lote"
+        ]
+      }
+    }
+  },
+  "overwall": [
+    {
+      "amount": "70 Mil",
+      "description": "Documentos firmados"
+    },
+    {
+      "amount": "2 Paises",
+      "description": "Usan Firmeasy"
+    },
+    {
+      "amount": "+ 5 Mil",
+      "description": "Usuarios activos"
+    },
+    {
+      "amount": "+ 1 Mil",
+      "description": "Clientes satisfechos"
+    }
+  ],
+  "quotes": {
+    "title": "Casos de Éxito",
+    "description": "Historias de exito de nuestros clientes.",
+    "items": [
+      {
+        "quote": "Ahora podemos seguir las etapas de atención al cliente [...] En pocos minutos, toda la información está disponible para nosotros, lo que representa un gran avance en nuestros procesos internos.",
+        "author": "Metropolitano",
+        "position": "Juan Perez Palacios - Gerente",
+        "image": "/public/images/quotes/1.png"
+      },
+      {
+        "quote": "Ahora podemos seguir las etapas de atención al cliente [...] En pocos minutos, toda la información está disponible para nosotros, lo que representa un gran avance en nuestros procesos internos.",
+        "author": "Metropolitano",
+        "position": "Juan Perez Palacios - Gerente",
+        "image": "/public/images/quotes/1.png"
+      },
+      {
+        "quote": "Ahora podemos seguir las etapas de atención al cliente [...] En pocos minutos, toda la información está disponible para nosotros, lo que representa un gran avance en nuestros procesos internos.",
+        "author": "Metropolitano",
+        "position": "Juan Perez Palacios - Gerente",
+        "image": "/public/images/quotes/1.png"
+      },
+      {
+        "quote": "Ahora podemos seguir las etapas de atención al cliente [...] En pocos minutos, toda la información está disponible para nosotros, lo que representa un gran avance en nuestros procesos internos.",
+        "author": "Metropolitano",
+        "position": "Juan Perez Palacios - Gerente",
+        "image": "/public/images/quotes/1.png"
+      },
+      {
+        "quote": "Ahora podemos seguir las etapas de atención al cliente [...] En pocos minutos, toda la información está disponible para nosotros, lo que representa un gran avance en nuestros procesos internos.",
+        "author": "Metropolitano",
+        "position": "Juan Perez Palacios - Gerente",
+        "image": "/public/images/quotes/1.png"
+      },
+      {
+        "quote": "Ahora podemos seguir las etapas de atención al cliente [...] En pocos minutos, toda la información está disponible para nosotros, lo que representa un gran avance en nuestros procesos internos.",
+        "author": "Metropolitano",
+        "position": "Juan Perez Palacios - Gerente",
+        "image": "/public/images/quotes/1.png"
+      }
+    ]
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Artículos y novedades.",
+    "ad": {
+      "title": "Plataforma que permite cumplimiento Legal de acuerdos y prevenciones de fraude de identidad para Pymes",
+      "description": "Simplifica los procesos de firma de tu empresa.",
+      "link": "/oferta"
+    },
+    "article": {
+      "ad": {
+        "title": "Plataforma que permite cumplimiento Legal de acuerdos y prevenciones de fraude de identidad para Pymes",
+        "description": "Simplifica los procesos de firma de tu empresa.",
+        "link": "/oferta",
+        "image": "/public/images/screen.png",
+        "buttonText": "Saber más"
+      }
+    }
+  },
+  "repository": {
+    "title": "Repositorio",
+    "description": "Documentos , políticas y guías.",
+    "files": [
+      {
+        "name": "Declaraciones de prácticas",
+        "description": "Documentos y normas para la firma de la información.",
+        "link": "/docs/declaraciones-de-practicas"
+      },
+      {
+        "name": "Políticas de privacidad",
+        "description": "Documentos y normas para la firma de la información.",
+        "link": "/docs/declaraciones-de-practicas"
+      },
+      {
+        "name": "Políticas de registro",
+        "description": "Documentos y normas para la firma de la información.",
+        "link": "/docs/declaraciones-de-practicas"
+      },
+      {
+        "name": "Políticas de seguridad",
+        "description": "Documentos y normas para la firma de la información.",
+        "link": "/docs/declaraciones-de-practicas"
+      },
+      {
+        "name": "Plan de privacidad",
+        "description": "Documentos y normas para la firma de la información.",
+        "link": "/docs/declaraciones-de-practicas"
+      },
+      {
+        "name": "Vinculación entre ER y EC",
+        "description": "Documentos y normas para la firma de la información.",
+        "link": "/docs/declaraciones-de-practicas"
+      }
+    ]
+  },
+  "validations": {
+    "title": "Validez Jurídica",
+    "description": "Marco legal de las firmas electrónicas.",
+    "items": [
+      {
+        "name": "Argentina",
+        "description": "Firma electrónica simple",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, consequatur blanditiis. Eveniet eos, a esse inventore blanditiis omnis mollitia possimus exercitationem explicabo ullam quibusdam recusandae, nostrum, molestias cupiditate voluptatem minima!"  
+      },
+      {
+        "name": "Bolivia",
+        "description": "Firma electrónica simple",
+        "content": "..."
+      },
+      {
+        "name": "Brasil",
+        "description": "Firma electrónica simple",
+        "content": "..."
+      },
+      {
+        "name": "Colombia",
+        "description": "Firma electrónica simple",
+        "content": "..."
+      },
+      {
+        "name": "Chile",
+        "description": "Firma electrónica y digital",
+        "content": "..."
+      },
+      {
+        "name": "Perú",
+        "description": "Firma electrónica avanzada",
+        "content": "..."
+      }
+    ]
+  },
+  "footer": {
+    "menu": [
+      {
+        "name": "Precios",
+        "link": "/precios"
+      },
+      {
+        "name": "Casos de Éxito",
+        "link": "/casos-de-exito"
+      },
+      {
+        "name": "Blog",
+        "link": "/blog"
+      },
+      {
+        "name": "Repositorio",
+        "link": "/repositorio"
+      },
+      {
+        "name": "Validez Jurídica",
+        "link": "/validez-juridica"
+      }
+    ]
   }
 }

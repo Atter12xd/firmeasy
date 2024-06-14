@@ -2,39 +2,22 @@
 import Title from '../shared/Title.astro';
 import Section from '../shared/Section.astro';
 import IconCheck from '../icons/IconCheck.astro';
+import { benefits } from '@site'
 ---
 
 <Section color="var(--bg-color)">
   <div class="benefits">
     <Title
-      text="¿Por qué elegir Firmeasy?"
-      body="Sencilla, flexible y confiable."
+      text={benefits.title}
+      body={benefits.description}
     />
     <div class="content">
-      <article>
-        <i><IconCheck /></i>
-        <p>Alta Validez Juridica en la firma (Longeva)</p>
-      </article>
-      <article>
-        <i><IconCheck /></i>
-        <p>Validez de identidad facial IA</p>
-      </article>
-      <article>
-        <i><IconCheck /></i>
-        <p>Analisis de contrado con IA</p>
-      </article>
-      <article>
-        <i><IconCheck /></i>
-        <p>Firma con Whatsapp</p>
-      </article>
-      <article>
-        <i><IconCheck /></i>
-        <p>Expedientes Digitales con sellos de tiempo</p>
-      </article>
-      <article>
-        <i><IconCheck /></i>
-        <p>Autoridad Certificadora</p>
-      </article>
+      {benefits.items.map(item => (
+        <article>
+          <i><IconCheck /></i>
+          <p>{item}</p>
+        </article>
+      ))}
     </div>
   </div>
 </Section>

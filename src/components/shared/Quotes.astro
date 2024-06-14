@@ -2,6 +2,7 @@
 import BackgroundPattern from './BackgroundPattern.astro';
 import Section from './Section.astro';
 import Title from './Title.astro';
+import { quotes } from '@site';
 
 interface Props {
   more?: boolean;
@@ -12,10 +13,7 @@ const { more } = Astro.props;
 
 <Section>
   <BackgroundPattern slot="bg" />
-  <Title
-    text="Casos de Éxito"
-    body="Historias de exito de nuestros clientes."
-  />
+  <Title text={quotes.title} body={quotes.description} />
   <div class="quotes">
     {
       more && (
@@ -26,110 +24,23 @@ const { more } = Astro.props;
         </div>
       )
     }
-    <article>
-      <p>
-        "Ahora podemos seguir las etapas de atención al cliente [...]
-        En pocos minutos, toda la información está disponible para
-        nosotros, lo que representa un gran avance en nuestros
-        procesos internos."
-      </p>
-      <span>
-        <img src="/public/images/quotes/1.png" alt="metropolitano" />
-        <div class="person">
-          <p>Metropolitano</p>
-          <small>Juan Perez Palacios - Gerente</small>
-        </div>
-      </span>
-    </article>
-    <article>
-      <p>
-        "Ahora podemos seguir las etapas de atención al cliente [...]
-        En pocos minutos, toda la información está disponible para
-        nosotros, lo que representa un gran avance en nuestros
-        procesos internos."
-      </p>
-      <span>
-        <img src="/public/images/quotes/1.png" alt="metropolitano" />
-        <div class="person">
-          <p>Metropolitano</p>
-          <small>Juan Perez Palacios - Gerente</small>
-        </div>
-      </span>
-    </article>
-    <article>
-      <p>
-        "Ahora podemos seguir las etapas de atención al cliente [...]
-        En pocos minutos, toda la información está disponible para
-        nosotros, lo que representa un gran avance en nuestros
-        procesos internos."
-      </p>
-      <span>
-        <img src="/public/images/quotes/1.png" alt="metropolitano" />
-        <div class="person">
-          <p>Metropolitano</p>
-          <small>Juan Perez Palacios - Gerente</small>
-        </div>
-      </span>
-    </article>
     {
-      !more && (
-        <>
-          <article>
-            <p>
-              "Ahora podemos seguir las etapas de atención al cliente
-              [...] En pocos minutos, toda la información está
-              disponible para nosotros, lo que representa un gran
-              avance en nuestros procesos internos."
-            </p>
-            <span>
-              <img
-                src="/public/images/quotes/1.png"
-                alt="metropolitano"
-              />
-              <div class="person">
-                <p>Metropolitano</p>
-                <small>Juan Perez Palacios - Gerente</small>
-              </div>
-            </span>
-          </article>
-          <article>
-            <p>
-              "Ahora podemos seguir las etapas de atención al cliente
-              [...] En pocos minutos, toda la información está
-              disponible para nosotros, lo que representa un gran
-              avance en nuestros procesos internos."
-            </p>
-            <span>
-              <img
-                src="/public/images/quotes/1.png"
-                alt="metropolitano"
-              />
-              <div class="person">
-                <p>Metropolitano</p>
-                <small>Juan Perez Palacios - Gerente</small>
-              </div>
-            </span>
-          </article>
-          <article>
-            <p>
-              "Ahora podemos seguir las etapas de atención al cliente
-              [...] En pocos minutos, toda la información está
-              disponible para nosotros, lo que representa un gran
-              avance en nuestros procesos internos."
-            </p>
-            <span>
-              <img
-                src="/public/images/quotes/1.png"
-                alt="metropolitano"
-              />
-              <div class="person">
-                <p>Metropolitano</p>
-                <small>Juan Perez Palacios - Gerente</small>
-              </div>
-            </span>
-          </article>
-        </>
-      )
+      quotes.items
+        .map((item, i) => {
+          return (
+            <article>
+              <p>{item.quote}</p>
+              <span>
+                <img src={item.image} alt="metropolitano" />
+                <div class="person">
+                  <p>{item.author}</p>
+                  <small>{item.position}</small>
+                </div>
+              </span>
+            </article>
+          );
+        })
+        .filter((_, i) => (more ? i < 3 : true))
     }
   </div>
 </Section>

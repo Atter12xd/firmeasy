@@ -5,13 +5,14 @@ import Articles from '../components/blog/Articles.astro';
 import Layout from '../layouts/Layout.astro';
 import BackgroundPattern from '../components/shared/BackgroundPattern.astro';
 import Fullpage from '../components/shared/Fullpage.astro';
+import { blog } from '@site';
 ---
 
 <Layout title="Firmeasy | Blog">
   <Fullpage>
     <Section>
       <BackgroundPattern slot="bg" />
-      <Title text="Blog" body="Artículos y novedades." />
+      <Title text={blog.title} body={blog.description} />
       <Articles />
     </Section>
   </Fullpage>

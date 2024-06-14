@@ -6,6 +6,7 @@ import Section from '../components/shared/Section.astro';
 import ArticleAd from '../components/blog/ArticleAd.astro';
 import BackgroundPattern from '../components/shared/BackgroundPattern.astro';
 import Fullpage from '../components/shared/Fullpage.astro';
+import { blog } from '@site';
 
 export interface Props {
   frontmatter: {
@@ -32,9 +33,7 @@ const { frontmatter } = Astro.props;
           <slot />
         </ArticleBody>
         <ArticleAd
-          buttonText="Saber más"
-          url="/oferta"
-          imageUrl="/images/screen.png"
+          {...blog.article.ad}
         />
       </div>
     </Section>

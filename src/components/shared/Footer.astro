@@ -1,11 +1,5 @@
 ---
-// interface Props {
-// 	title: string;
-// 	body: string;
-// 	href: string;
-// }
-
-// const { href, title, body } = Astro.props;
+import { footer } from '@site';
 ---
 
 <footer>
@@ -15,21 +9,13 @@
     </div>
     <div class="menu">
       <ul>
-        <li>
-          <a href="/precios">Precios</a>
-        </li>
-        <li>
-          <a href="/casos-de-exito">Casos de Éxito</a>
-        </li>
-        <li>
-          <a href="/blog">Blog</a>
-        </li>
-        <li>
-          <a href="/repository">Repositorio</a>
-        </li>
-        <li>
-          <a href="/validez-juridica">Validez Jurídica</a>
-        </li>
+        {
+          footer.menu.map((item) => (
+            <li>
+              <a href={item.link}>{item.name}</a>
+            </li>
+          ))
+        }
       </ul>
     </div>
     <span> Copyright © 2024. Firmeasy </span>

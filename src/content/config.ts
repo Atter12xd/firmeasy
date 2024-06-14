@@ -1,5 +1,5 @@
 import { z, defineCollection } from 'astro:content';
-const blogCollection = defineCollection({
+const blogCollection = defineCollection<any>({
   type: 'content',
   schema: z.object({
     date: z.string(),

@@ -1,69 +1,26 @@
 ---
 import IconPdf from '../icons/IconPdf.astro';
+import { repository } from '@site';
 ---
 
 <section class="repository-list">
   <ul>
-    <li>
-      <i>
-        <IconPdf />
-      </i>
-      <div class="repository-name">
-        <p>Declaraciones de prácticas</p>
-        <small> Declaraciones de prácticas </small>
-      </div>
-      <a href="#" class="outline button">Ver archivo</a>
-    </li>
-    <li>
-      <i>
-        <IconPdf />
-      </i>
-      <div class="repository-name">
-        <p>Políticas de privacidad</p>
-        <small> Políticas de privacidad </small>
-      </div>
-      <a href="#" class="outline button">Ver archivo</a>
-    </li>
-    <li>
-      <i>
-        <IconPdf />
-      </i>
-      <div class="repository-name">
-        <p>Políticas de registro</p>
-        <small> Políticas de registro </small>
-      </div>
-      <a href="#" class="outline button">Ver archivo</a>
-    </li>
-    <li>
-      <i>
-        <IconPdf />
-      </i>
-      <div class="repository-name">
-        <p>Políticas de seguridad</p>
-        <small> Políticas de seguridad </small>
-      </div>
-      <a href="#" class="outline button">Ver archivo</a>
-    </li>
-    <li>
-      <i>
-        <IconPdf />
-      </i>
-      <div class="repository-name">
-        <p>Plan de privacidad</p>
-        <small> Plan de privacidad </small>
-      </div>
-      <a href="#" class="outline button">Ver archivo</a>
-    </li>
-    <li>
-      <i>
-        <IconPdf />
-      </i>
-      <div class="repository-name">
-        <p>Vinculación entre ER y EC</p>
-        <small>Vinculación entre ER y EC</small>
-      </div>
-      <a href="#" class="outline button">Ver archivo</a>
-    </li>
+    {
+      repository.files.map((file) => (
+        <li>
+          <i>
+            <IconPdf />
+          </i>
+          <div class="repository-name">
+            <p>{file.name}</p>
+            <small>{file.description}</small>
+          </div>
+          <a target="_blank" href={file.link} class="outline button">
+            Ver archivo
+          </a>
+        </li>
+      ))
+    }
   </ul>
 </section>
 <style>
