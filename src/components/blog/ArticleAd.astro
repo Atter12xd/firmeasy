@@ -12,7 +12,7 @@ const { buttonText, image, link, title, description } = Astro.props;
 ---
 
 <article class=`article-ad ${!buttonText ? 'transition-up' : ''}`>
-  {!buttonText && link && <a href={link} class="overlay-link" ></a>}
+  {!buttonText && link && <a href={link} class="overlay-link" />}
   {
     image && (
       <div class="image">
@@ -20,22 +20,25 @@ const { buttonText, image, link, title, description } = Astro.props;
       </div>
     )
   }
-  <ChipRecommended />
-  <h1>{title}</h1>
-  <p>{description}</p>
-  {
-    buttonText && (
-      <a
-        href={link || '/'}
-        class="button gradient ad-link transition-up"
-      >
-        {buttonText}
-      </a>
-    )
-  }
+  <div class="article-ad-content">
+    <ChipRecommended />
+    <h1>{title}</h1>
+    <p>{description}</p>
+    {
+      buttonText && (
+        <a
+          href={link || '/'}
+          class="button gradient ad-link transition-up"
+        >
+          {buttonText}
+        </a>
+      )
+    }
+  </div>
 </article>
 
-<style>
+<style lang="scss">
+  @import '../../assets/breakpoints.scss';
   article.article-ad {
     display: flex;
     flex-direction: column;
@@ -65,25 +68,32 @@ const { buttonText, image, link, title, description } = Astro.props;
       overflow: hidden;
       box-shadow: var(--shadow-light);
       margin-bottom: 0.5rem;
+      max-width: 350px;
       img {
         width: 100%;
         border-radius: var(--border-radius-sm);
         aspect-ratio: 300/183;
       }
     }
-    h1 {
-      font-size: var(--text-size-lg);
-      line-height: var(--text-line-height);
-      font-weight: 500;
-    }
-    p {
-      font-size: var(--text-size);
-      line-height: var(--text-line-height);
-    }
-    a.ad-link {
-      width: 100%;
-      max-width: 120px;
-      margin-top: 0.5rem;
+    .article-ad-content {
+      display: flex;
+      flex-direction: column;
+      gap: var(--card-gap-sm);
+
+      h1 {
+        font-size: var(--text-size-lg);
+        line-height: var(--text-line-height);
+        font-weight: 500;
+      }
+      p {
+        font-size: var(--text-size);
+        line-height: var(--text-line-height);
+      }
+      a.ad-link {
+        width: 100%;
+        max-width: 120px;
+        margin-top: 0.5rem;
+      }
     }
   }
 </style>

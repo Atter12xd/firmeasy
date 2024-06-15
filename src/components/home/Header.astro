@@ -47,7 +47,8 @@ import { header } from '@site';
     </div>
   </div>
 </header>
-<style>
+<style lang="scss">
+  @import '../../assets/breakpoints.scss';
   header {
     position: relative;
     .wrapper {
@@ -63,11 +64,20 @@ import { header } from '@site';
       margin: 0 auto;
       position: relative;
       z-index: 2;
+      gap: var(--grid-gap);
+      @include screen('st') {
+        flex-direction: column;
+        padding: var(--container-padding-y) var(--container-padding);
+      }
       .text {
         display: flex;
         flex-direction: column;
         gap: 0.75rem;
         color: var(--text-color);
+        @include screen('st') {
+          text-align: center;
+          align-items: center;
+        }
         h1 {
           font-size: var(--title-size-xl);
           font-weight: 600;
@@ -87,6 +97,9 @@ import { header } from '@site';
           align-items: center;
           gap: 1rem;
           margin-top: 1rem;
+          @include screen('md') {
+            margin-bottom: 1rem;
+          }
         }
       }
       .image {

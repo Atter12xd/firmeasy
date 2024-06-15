@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import Article from './Article.astro';
 import ArticleAd from './ArticleAd.astro';
-import {blog} from '@site'
+import { blog } from '@site';
 
 export interface ArticleType {
   id: number;
@@ -16,9 +16,11 @@ const allBlogPosts = await getCollection('blog');
 
 const articles: ArticleType[] = [];
 
-allBlogPosts.map(({ data, slug }: { data: ArticleType, slug: string }) => {
-  articles.push( {...{url: `/blog/${slug}`}, ...data})
-});
+allBlogPosts.map(
+  ({ data, slug }: { data: ArticleType; slug: string }) => {
+    articles.push({ ...{ url: `/blog/${slug}` }, ...data });
+  }
+);
 ---
 
 <section class="articles-grid">
@@ -28,8 +30,11 @@ allBlogPosts.map(({ data, slug }: { data: ArticleType, slug: string }) => {
 <style>
   .articles-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: var(--grid-gap);
     margin-top: calc(var(--container-padding-y) / 2);
+    @media screen and (max-width: 375px) {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

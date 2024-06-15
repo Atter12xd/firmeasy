@@ -27,14 +27,13 @@ const { frontmatter } = Astro.props;
         title={frontmatter.title}
         date={frontmatter.date}
         url={frontmatter.url}
+        resume={frontmatter.resume}
       />
       <div class="article-content">
         <ArticleBody>
           <slot />
         </ArticleBody>
-        <ArticleAd
-          {...blog.article.ad}
-        />
+        <ArticleAd {...blog.article.ad} />
       </div>
     </Section>
   </Fullpage>
@@ -46,13 +45,49 @@ const { frontmatter } = Astro.props;
       grid-template-columns: repeat(3, 1fr);
       gap: var(--grid-gap);
       margin-top: calc(var(--container-padding-y) / 2);
+
+      @media screen and (max-width: 1024px) {
+        grid-template-columns: 1fr;
+      }
+
       .article-body {
         grid-column: 1 / 3;
         color: var(--text-color);
+
+        @media screen and (max-width: 1024px) {
+          grid-column: 1;
+        }
       }
       .article-ad {
         position: sticky;
         top: var(--container-padding-y);
+        @media screen and (max-width: 1024px) {
+          .image {
+            display: none;
+          }
+        }
+        @media screen and (max-width: 1024px) {
+          flex-direction: row;
+          gap: var(--card-gap);
+          .image {
+            max-width: 300px !important;
+            display: block;
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+          .image {
+            display: none;
+          }
+        }
+
+        @media screen and (max-width: 375px) {
+          flex-direction: column;
+          gap: var(--card-gap-sm);
+          .image {
+            display: block;
+          }
+        }
       }
     }
   </style>

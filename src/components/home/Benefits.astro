@@ -2,22 +2,23 @@
 import Title from '../shared/Title.astro';
 import Section from '../shared/Section.astro';
 import IconCheck from '../icons/IconCheck.astro';
-import { benefits } from '@site'
+import { benefits } from '@site';
 ---
 
 <Section color="var(--bg-color)">
   <div class="benefits">
-    <Title
-      text={benefits.title}
-      body={benefits.description}
-    />
+    <Title text={benefits.title} body={benefits.description} />
     <div class="content">
-      {benefits.items.map(item => (
-        <article>
-          <i><IconCheck /></i>
-          <p>{item}</p>
-        </article>
-      ))}
+      {
+        benefits.items.map((item) => (
+          <article>
+            <i>
+              <IconCheck />
+            </i>
+            <p>{item}</p>
+          </article>
+        ))
+      }
     </div>
   </div>
 </Section>
@@ -30,9 +31,12 @@ import { benefits } from '@site'
     margin: 0 auto;
     .content {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: var(--grid-gap);
       margin-top: calc(var(--container-padding-y) / 2);
+      @media screen and (max-width: 375px) {
+        grid-template-columns: 1fr;
+      }
       article {
         display: flex;
         align-items: center;

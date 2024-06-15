@@ -48,10 +48,13 @@ const { more } = Astro.props;
 <style>
   .quotes {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: var(--grid-gap);
     margin-top: calc(var(--container-padding-y) / 2);
     position: relative;
+    @media screen and (max-width: 375px) {
+      grid-template-columns: 1fr;
+    }
     &:has(.see-more) {
       padding-bottom: 5rem;
     }

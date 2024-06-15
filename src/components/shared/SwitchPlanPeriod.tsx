@@ -6,7 +6,7 @@ export default function SwitchPlanPeriod({ period, setPeriod }: { period: 'month
           <p>Mensual</p>
         </span>
         <span className={period === 'yearly' ? 'active' : ''} onClick={() => setPeriod('yearly')}>
-          <p>Anual・<b>Ahorra 10%</b></p>
+          <p>Anual・<b>10% Dscto</b></p>
         </span>
       </div>
     </div>

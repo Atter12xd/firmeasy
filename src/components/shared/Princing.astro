@@ -9,10 +9,7 @@ import { pricing } from '@site';
 <Section>
   <BackgroundPattern slot="bg" />
   <div class="pricing">
-    <Title
-      text={pricing.title}
-      body={pricing.description}
-    />
+    <Title text={pricing.title} body={pricing.description} />
     <PricingContent client:visible />
   </div>
 </Section>
@@ -22,7 +19,7 @@ import { pricing } from '@site';
     .switch {
       margin: 0 auto;
       width: fit-content;
-      min-width: 300px;
+      min-width: 280px;
       margin-top: calc(var(--container-padding-y) / 4);
       background-color: white;
       &.tiny {
@@ -93,9 +90,12 @@ import { pricing } from '@site';
     }
     .content {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: var(--grid-gap);
       margin-top: calc(var(--container-padding-y) / 2);
+      @media screen and (max-width: 375px) {
+        grid-template-columns: 1fr;
+      }
       article {
         display: flex;
         flex-direction: column;
@@ -107,7 +107,7 @@ import { pricing } from '@site';
         border: 1px solid var(--border-color-light);
         border-radius: var(--border-radius);
         box-shadow: var(--shadow-light);
-        padding: 2rem 2.5rem;
+        padding: var(--plan-padding);
         &.recommended {
           border: 1px solid var(--border-color);
           box-shadow: var(--shadow);
@@ -120,6 +120,8 @@ import { pricing } from '@site';
           padding-bottom: 1rem;
           h1 {
             font-size: var(--title-size);
+            display: flex;
+            align-items: center;
             min-height: 1.5rem;
           }
           p {

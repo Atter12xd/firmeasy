@@ -21,7 +21,8 @@ import { footer } from '@site';
     <span> Copyright © 2024. Firmeasy </span>
   </div>
 </footer>
-<style>
+<style lang="scss">
+  @import '../../assets/breakpoints.scss';
   footer {
     width: 100%;
     border-bottom: 1px solid var(--border-color);
@@ -37,9 +38,14 @@ import { footer } from '@site';
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 1.5rem;
+      flex-wrap: wrap;
       .logo {
         img {
           height: 32px;
+          @include screen('sm') {
+            height: 28px;
+          }
         }
       }
       .menu {
@@ -55,6 +61,7 @@ import { footer } from '@site';
           align-items: center;
           height: 100%;
           gap: 1.5rem;
+          flex-wrap: wrap;
           li {
             a {
               color: white;
@@ -66,6 +73,7 @@ import { footer } from '@site';
       span {
         font-size: var(--text-size);
         font-weight: 500;
+        opacity: 0.7;
       }
     }
   }

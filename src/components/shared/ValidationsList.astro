@@ -26,7 +26,8 @@ import { validations } from '@site';
     }
   </ul>
 </section>
-<style>
+<style lang="scss">
+  @import '../../assets/breakpoints.scss';
   .validations-list {
     display: flex;
     flex-direction: column;
@@ -70,13 +71,6 @@ import { validations } from '@site';
             height: 36px;
             border-radius: 50%;
             border: 1px solid var(--border-color);
-            svg {
-              width: 18px;
-              height: 18px;
-              path {
-                fill: var(--text-color);
-              }
-            }
           }
           .validation-name {
             flex: 1;
@@ -92,6 +86,9 @@ import { validations } from '@site';
           }
           a.button {
             pointer-events: none;
+            @include screen('sm') {
+              display: none;
+            }
           }
         }
         & > p {

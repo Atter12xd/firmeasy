@@ -1,5 +1,7 @@
 ---
 import { nav } from '@site';
+import IconMenu from '../icons/IconMenu.astro';
+import IconClose from '../icons/IconClose.astro';
 ---
 
 <nav>
@@ -9,6 +11,7 @@ import { nav } from '@site';
         <img src="/public/images/logo.png" alt="logo firmeasy" />
       </a>
     </div>
+    <input type="checkbox" id="menu" class="menu-button" />
     <div class="menu">
       <ul>
         {
@@ -20,13 +23,28 @@ import { nav } from '@site';
         }
       </ul>
       <div class="actions">
-        <a href={nav.button1.link} class="button outline transition-up">{nav.button1.text}</button>
-        <a href={nav.button2.link} class="button gradient transition-up">{nav.button2.text}</button>
+        <a
+          href={nav.button1.link}
+          class="button outline transition-up">{nav.button1.text}</a
+        >
+        <a
+          href={nav.button2.link}
+          class="button gradient transition-up">{nav.button2.text}</a
+        >
       </div>
+      <label for="menu" class="menu-button">
+        <i>
+          <IconMenu />
+        </i>
+        <i>
+          <IconClose />
+        </i>
+      </label>
     </div>
   </div>
 </nav>
-<style>
+<style lang="scss">
+  @import '../../assets/breakpoints.scss';
   nav {
     height: var(--nav-height);
     width: 100%;
@@ -48,6 +66,9 @@ import { nav } from '@site';
       .logo {
         img {
           height: 32px;
+          @include screen('sm') {
+            height: 28px;
+          }
         }
       }
       .menu {
@@ -57,12 +78,32 @@ import { nav } from '@site';
         height: 100%;
         font-size: var(--text-size);
         font-weight: 500;
+        @include screen('sm') {
+          gap: 1rem;
+        }
         ul {
           list-style: none;
           display: flex;
           align-items: center;
           height: 100%;
           gap: 1.5rem;
+          @include screen('sm') {
+            gap: 1rem;
+          }
+          @include screen('md') {
+            position: fixed;
+            top: var(--nav-height);
+            left: 0;
+            width: 100%;
+            height: auto;
+            z-index: 10;
+            background-color: white;
+            border: 1px solid var(--border-color);
+            padding: var(--container-padding);
+            flex-wrap: wrap;
+            box-shadow: var(--shadow);
+            display: none;
+          }
           li {
             a {
               color: var(--text-color);
@@ -74,6 +115,57 @@ import { nav } from '@site';
           display: flex;
           align-items: center;
           gap: 1rem;
+          @include screen('sm') {
+            & > a:first-child {
+              display: none;
+            }
+          }
+          @media screen and (max-width: 375px) {
+            & > a:last-child {
+              display: none;
+            }
+          }
+        }
+        .menu-button {
+          display: none;
+          i {
+            display: none;
+            svg {
+              width: 24px;
+              height: 24px;
+            }
+          }
+          @include screen('md') {
+            display: block;
+            i {
+              &:first-child {
+                display: block;
+              }
+              &:last-child {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      #menu {
+        display: none;
+        @include screen('md') {
+          &:checked ~ .menu {
+            ul {
+              display: flex;
+            }
+            .menu-button {
+              i {
+                &:first-child {
+                  display: none;
+                }
+                &:last-child {
+                  display: block;
+                }
+              }
+            }
+          }
         }
       }
     }
