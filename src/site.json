@@ -217,6 +217,106 @@
           "Firma en lote"
         ]
       }
+    },
+    "compare": {
+      "head": [
+        {
+          "name": "Emprende",
+          "link": "/precios",
+          "buttonText": "Prueba Gratis"
+        },
+        {
+          "name": "Escencial",
+          "link": "/precios",
+          "buttonText": "Prueba gratis"
+        },
+        {
+          "name": "Crece",
+          "link": "/precios",
+          "buttonText": "Prueba gratis"
+        },
+        {
+          "name": "Scala",
+          "link": "/precios",
+          "buttonText": "Prueba gratis"
+        },
+        {
+          "name": "Api",
+          "link": "/precios",
+          "buttonText": "Prueba gratis"
+        },
+        {
+          "name": "Firmador",
+          "link": "/precios",
+          "buttonText": "Hablar con ventas"
+        }
+      ],
+      "body": [
+        {
+          "title": "Uso",
+          "items": [
+            [
+              "Documentos creados",
+              "40/mes",
+              "40/mes",
+              "40/mes",
+              "40/mes",
+              "Segun Plan",
+              "Ilimitado"
+            ],
+            [
+              "Cantidad Usuario",
+              "1",
+              "10",
+              "20",
+              "20",
+              "10",
+              "Ilimitado"
+            ],
+            [
+              "Integraciones",
+              "false",
+              "false",
+              "false",
+              "false",
+              "true",
+              "true"
+            ]
+          ]
+        },
+        {
+          "title": "Firmantes",
+          "items": [
+            [
+              "Documentos creados",
+              "40/mes",
+              "40/mes",
+              "40/mes",
+              "40/mes",
+              "Segun Plan",
+              "Ilimitado"
+            ],
+            [
+              "Cantidad Usuario",
+              "1",
+              "10",
+              "20",
+              "20",
+              "10",
+              "Ilimitado"
+            ],
+            [
+              "Integraciones",
+              "false",
+              "false",
+              "false",
+              "false",
+              "true",
+              "true"
+            ]
+          ]
+        }
+      ]
     }
   },
   "overwall": [

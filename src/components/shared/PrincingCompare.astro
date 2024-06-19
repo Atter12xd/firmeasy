@@ -1,0 +1,189 @@
+---
+import { pricing } from '@site';
+import IconCheck from '../icons/IconCheck.astro';
+import IconClose from '../icons/IconClose.astro';
+import IconChevron from '../icons/IconChevron.astro';
+---
+
+<details>
+  <summary>
+    <a href="#" class="outline button">
+      <i>
+        <IconChevron />
+      </i>
+      Comparar Planes
+    </a>
+  </summary>
+  <div class="pricing-table">
+    <div class="pricing-table-wrapper">
+      <div class="head">
+        <div class="col-head"></div>
+        {
+          pricing.compare.head.map((head) => (
+            <div class="col-head">
+              {head.name}
+              <a href={head.link} class="tiny button gradient">
+                {head.buttonText}
+              </a>
+            </div>
+          ))
+        }
+      </div>
+      {
+        pricing.compare.body.map((body) => (
+          <ul class="body">
+            <div class="title">{body.title}</div>
+            {body.items.map((row) => (
+              <li class="row">
+                {row.map((cell) => (
+                  <div class="cell">
+                    {cell === 'true' ? (
+                      <i>
+                        <IconCheck />
+                      </i>
+                    ) : (
+                      ''
+                    )}
+                    {cell === 'false' ? (
+                      <i>
+                        <IconClose />
+                      </i>
+                    ) : (
+                      ''
+                    )}
+                    {cell !== 'false' && cell !== 'true' ? cell : ''}
+                  </div>
+                ))}
+              </li>
+            ))}
+          </ul>
+        ))
+      }
+    </div>
+  </div>
+</details>
+<style>
+  details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: calc(var(--container-padding-y) / 2);
+    width: 100%;
+    &[open] {
+      summary {
+        a {
+          i {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+    summary {
+      list-style: none;
+      width: fit-content;
+      margin: 0 auto;
+      a {
+        pointer-events: none;
+        width: fit-content;
+      }
+    }
+    .pricing-table {
+      margin-top: calc(var(--container-padding-y) / 2);
+      background-color: white;
+      border: 1px solid var(--border-color-light);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-light);
+      padding: var(--plan-padding);
+      box-sizing: border-box;
+      /* gap: 0.5rem; */
+      overflow-x: auto;
+      .pricing-table-wrapper {
+        display: flex;
+        flex-direction: column;
+        min-width: calc(
+          var(--container-max-width) - 2 * var(--container-padding) -
+            2 * 2.5rem
+        );
+      }
+      .head {
+        display: flex;
+        border-bottom: 1px solid var(--border-color);
+        /* position: sticky;
+        top: calc(var(--nav-height) + 1rem); */
+        .col-head {
+          flex: 1;
+          font-weight: 500;
+          font-size: var(--text-size-lg);
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex-direction: column;
+          gap: 0.5rem;
+          padding-bottom: 1rem;
+          padding-top: 1rem;
+          margin-top: -1rem;
+          background-color: white;
+        }
+      }
+      .title {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        font-size: var(--text-size-lg);
+        font-weight: 500;
+        position: sticky;
+        top: var(--nav-height);
+        /* background-color: white; */
+      }
+      .body {
+        display: flex;
+        flex-direction: column;
+        .row {
+          display: flex;
+          .cell {
+            flex: 1;
+            font-size: var(--text-size);
+            padding: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media screen and (max-width: 768px) {
+              padding: 0.75rem 0;
+            }
+            i {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 24px;
+              height: 24px;
+              border-radius: 50%;
+              background-color: var(--border-color-light);
+              svg {
+                transform: scale(0.65);
+              }
+            }
+            /* font-weight: 500; */
+            &:first-child {
+              justify-content: flex-start;
+              font-weight: 400;
+              opacity: 0.7;
+            }
+          }
+          &:first-of-type {
+            border-top: 1px solid var(--border-color);
+          }
+          &:last-of-type {
+            border-bottom: 1px solid var(--border-color);
+          }
+        }
+        &:last-of-type {
+          .row:last-child {
+            border-bottom: 0;
+            .cell {
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+</style>

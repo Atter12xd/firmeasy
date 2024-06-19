@@ -4,6 +4,7 @@ import Title from './Title.astro';
 import BackgroundPattern from './BackgroundPattern.astro';
 import PricingContent from './PricingContent';
 import { pricing } from '@site';
+import PrincingCompare from './PrincingCompare.astro';
 ---
 
 <Section>
@@ -11,6 +12,7 @@ import { pricing } from '@site';
   <div class="pricing">
     <Title text={pricing.title} body={pricing.description} />
     <PricingContent client:visible />
+    <PrincingCompare />
   </div>
 </Section>
 
