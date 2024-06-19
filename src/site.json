@@ -219,6 +219,7 @@
       }
     },
     "compare": {
+      "buttonText": "Comparar Planes",
       "head": [
         {
           "name": "Emprende",
