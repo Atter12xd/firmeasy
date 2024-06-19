@@ -1,4 +1,8 @@
 {
+  "head": {
+    "description": "Firma Digital Certificada y Firma Electrónica Avanzada",
+    "keywords": "firma digital, firma electronica, firma electronica digital, firmeasy legal, firmeasy legal legal, firmeasy legal legal legal"
+  },
   "alert": {
     "visible": true,
     "title": "Verifica la prueba de existencia del documento que se certificó en Firmeasy",
