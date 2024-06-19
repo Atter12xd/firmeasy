@@ -61,6 +61,7 @@
   "pricing": {
     "title": "Precios y Planes",
     "description": "Puedes cancelar tu plan en cualquier momento.",
+    "discount": "10%",
     "web": {
       "coin": "S/",
       "buttonText": "Solicitar Plan",

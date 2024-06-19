@@ -1,5 +1,11 @@
 # Firmeasy Landing
 
+### Configuración
+* Editar secciones desde el archivo `src/site.json`
+* Crear articulos de blog desde la carpeta `src/content/blog` 
+  * guia de sintaxis: https://www.markdownguide.org/basic-syntax/
+
+### Levantar Proyecto
 All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
