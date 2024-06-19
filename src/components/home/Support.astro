@@ -1,0 +1,73 @@
+---
+import Section from '../shared/Section.astro';
+import { support } from '@site';
+---
+
+<Section color="var(--bg-color)">
+  <div class="support">
+    <h2>{support.title}</h2>
+    <div class="grid">
+      <article>
+        <img src="/public/images/support/1.png" alt="despega unach" />
+      </article>
+      <article>
+        <img src="/public/images/support/2.png" alt="startup peru" />
+      </article>
+      <article>
+        <img src="/public/images/support/3.png" alt="ccl" />
+      </article>
+      <article>
+        <img src="/public/images/support/4.png" alt="inovate" />
+      </article>
+      <article>
+        <img src="/public/images/support/5.png" alt="incuba unach" />
+      </article>
+      <article>
+        <img
+          src="/public/images/support/6.png"
+          alt="unheval venture"
+        />
+      </article>
+    </div>
+  </div>
+</Section>
+
+<style lang="scss">
+  @import '../../assets/breakpoints.scss';
+  .support {
+    h2 {
+      font-size: var(--text-size-lg);
+      line-height: var(--title-line-height);
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: calc(var(--container-padding-y) / 2);
+    }
+    .grid {
+      max-width: var(--container-max-width);
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: var(--grid-gap);
+      @include screen('sm') {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        color: var(--text-color);
+        img {
+          width: 100%;
+          height: 36px;
+          object-fit: contain;
+          filter: grayscale(1);
+        }
+      }
+    }
+  }
+</style>

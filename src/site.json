@@ -1,4 +1,14 @@
 {
+  "alert": {
+    "visible": true,
+    "title": "Verifica la prueba de existencia del documento que se certificó en Firmeasy",
+    "links": [
+      {
+        "name": "Portal de Auditoria",
+        "link": "/auditoria"
+      }
+    ]
+  },
   "nav": {
     "menu": [
       {
@@ -32,7 +42,7 @@
     },
     "button2": {
       "text": "Ver video",
-      "link": "/video"
+      "youtubeVideoId": "BnxEXRJDZ3o"
     },
     "image": "/public/images/screen.png"
   },
@@ -287,34 +297,44 @@
     "description": "Documentos , políticas y guías.",
     "files": [
       {
-        "name": "Declaraciones de prácticas",
-        "description": "Documentos y normas para la firma de la información.",
-        "link": "/docs/declaraciones-de-practicas"
+        "title": "Entidad de Registro",
+        "list": [
+          {
+            "name": "Declaraciones de prácticas",
+            "description": "Documentos y normas para la firma de la información.",
+            "link": "/docs/declaraciones-de-practicas"
+          },
+          {
+            "name": "Políticas de privacidad",
+            "description": "Documentos y normas para la firma de la información.",
+            "link": "/docs/declaraciones-de-practicas"
+          },
+          {
+            "name": "Políticas de registro",
+            "description": "Documentos y normas para la firma de la información.",
+            "link": "/docs/declaraciones-de-practicas"
+          },
+          {
+            "name": "Políticas de seguridad",
+            "description": "Documentos y normas para la firma de la información.",
+            "link": "/docs/declaraciones-de-practicas"
+          }
+        ]
       },
       {
-        "name": "Políticas de privacidad",
-        "description": "Documentos y normas para la firma de la información.",
-        "link": "/docs/declaraciones-de-practicas"
-      },
-      {
-        "name": "Políticas de registro",
-        "description": "Documentos y normas para la firma de la información.",
-        "link": "/docs/declaraciones-de-practicas"
-      },
-      {
-        "name": "Políticas de seguridad",
-        "description": "Documentos y normas para la firma de la información.",
-        "link": "/docs/declaraciones-de-practicas"
-      },
-      {
-        "name": "Plan de privacidad",
-        "description": "Documentos y normas para la firma de la información.",
-        "link": "/docs/declaraciones-de-practicas"
-      },
-      {
-        "name": "Vinculación entre ER y EC",
-        "description": "Documentos y normas para la firma de la información.",
-        "link": "/docs/declaraciones-de-practicas"
+        "title": "Sello de Tiempo",
+        "list": [
+          {
+            "name": "Plan de privacidad",
+            "description": "Documentos y normas para la firma de la información.",
+            "link": "/docs/declaraciones-de-practicas"
+          },
+          {
+            "name": "Vinculación entre ER y EC",
+            "description": "Documentos y normas para la firma de la información.",
+            "link": "/docs/declaraciones-de-practicas"
+          }
+        ]
       }
     ]
   },
@@ -377,5 +397,8 @@
         "link": "/validez-juridica"
       }
     ]
+  },
+  "support": {
+    "title": "Soporte y Asociaciones"
   }
 }

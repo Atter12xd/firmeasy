@@ -4,29 +4,34 @@ import { repository } from '@site';
 ---
 
 <section class="repository-list">
-  <ul>
-    {
-      repository.files.map((file) => (
-        <a target="_blank" href={file.link}>
-          <i>
-            <IconPdf />
-          </i>
-          <div class="repository-name">
-            <p>{file.name}</p>
-            <small>{file.description}</small>
-          </div>
-          <button class="outline">Ver archivo</button>
-        </a>
-      ))
-    }
-  </ul>
+  {
+    repository.files.map((file) => (
+      <>
+        <h1>{file.title}</h1>
+        <ul>
+          {file.list.map((item) => (
+            <a target="_blank" href={item.link}>
+              <i>
+                <IconPdf />
+              </i>
+              <div class="repository-name">
+                <p>{item.name}</p>
+                <small>{item.description}</small>
+              </div>
+              <button class="outline">Ver archivo</button>
+            </a>
+          ))}
+        </ul>
+      </>
+    ))
+  }
 </section>
 <style lang="scss">
   @import '../../assets/breakpoints.scss';
   .repository-list {
     display: flex;
     flex-direction: column;
-    gap: var(--card-gap-sm);
+    // gap: var(--card-gap-sm);
     font-size: var(--text-size);
     color: var(--text-color);
     background-color: white;
@@ -37,6 +42,16 @@ import { repository } from '@site';
     max-width: var(--container-max-width-md);
     margin: auto;
     margin-top: calc(var(--container-padding-y) / 2);
+    h1 {
+      font-weight: 500;
+      padding-bottom: 1rem;
+      padding-top: 2rem;
+      border-bottom: 1px solid var(--border-color-light);
+      font-size: var(--text-size);
+      &:first-of-type {
+        padding-top: 0;
+      }
+    }
     ul {
       display: flex;
       flex-direction: column;
@@ -48,9 +63,9 @@ import { repository } from '@site';
         border-bottom: 1px solid var(--border-color-light);
         text-decoration: none;
         color: var(--text-color);
-        &:first-child {
-          padding-top: 0;
-        }
+        // &:first-child {
+        //   padding-top: 0;
+        // }
         &:last-child {
           border-bottom: none;
           padding-bottom: 0;

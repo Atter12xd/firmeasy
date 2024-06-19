@@ -1,20 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Nav from '../components/shared/Nav.astro';
-import Footer from '../components/shared/Footer.astro';
 import Header from '../components/home/Header.astro';
 import Benefits from '../components/home/Benefits.astro';
 import Overwall from '../components/home/Overwall.astro';
 import Quotes from '../components/shared/Quotes.astro';
 import Princing from '../components/shared/Princing.astro';
+import Support from 'src/components/home/Support.astro';
 ---
 
-<Layout title="Firmeasy | Home">
+<Layout title="Firmeasy | Inicio">
   <Header />
   <Benefits />
   <Princing />
   <Overwall />
   <Quotes more={true} />
+  <Support />
 </Layout>
 
 <style></style>

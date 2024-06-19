@@ -1,8 +1,12 @@
 ---
 import BackgroundPattern from '../shared/BackgroundPattern.astro';
 import { header } from '@site';
+import ModalVideo from './ModalVideo.astro';
 ---
 
+<script>
+  import '@justinribeiro/lite-youtube';
+</script>
 <header>
   <BackgroundPattern />
   <div class="wrapper">
@@ -20,24 +24,7 @@ import { header } from '@site';
             </a>
           )
         }
-        {
-          header.button2.text && (
-            <a
-              href={header.button2.link}
-              class="button outline transition-up"
-            >
-              <i>
-                <svg width="32" height="32" viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="M9 17.192V6.808L17.154 12z"
-                  />
-                </svg>
-              </i>
-              {header.button2.text}
-            </a>
-          )
-        }
+        {header.button2.text && <ModalVideo />}
       </div>
     </div>
     <div class="image">

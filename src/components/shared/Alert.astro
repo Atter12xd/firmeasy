@@ -1,0 +1,48 @@
+---
+import { alert } from '@site';
+---
+{alert.visible && (
+  <div class="alert">
+    <div class="wrapper">
+      <p>{alert.title}</p>
+      <div class="links">
+        {alert.links.map((link) => (
+          <a href={link.link}>{link.name}</a>
+        ))}
+      </div>
+    </div>
+  </div>
+)}
+<style>
+  .alert {
+    width: 100%;
+    background-color: var(--text-color);
+    .wrapper {
+      max-width: var(--container-max-width);
+      width: 100%;
+      height: 100%;
+      padding: 0.75rem var(--container-padding);
+      box-sizing: border-box;
+      margin: 0 auto;
+      position: relative;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem 1rem;
+      font-size: var(--text-size);
+      flex-wrap: wrap;
+      p {
+        line-height: var(--text-line-height);
+      }
+      .links {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        a {
+          color: white;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+</style>

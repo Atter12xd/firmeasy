@@ -1,0 +1,77 @@
+---
+import IconClose from '../icons/IconClose.astro';
+import IconPlay from '../icons/IconPlay.astro';
+import { header } from '@site';
+---
+
+<style lang="scss">
+  dialog {
+    background-color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: var(--card-padding);
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: calc(
+      var(--container-max-width) - var(--container-padding) * 2
+    );
+    lite-youtube {
+      border-radius: var(--border-radius-sm);
+    }
+    form {
+      position: absolute;
+      right: 0.5rem;
+      top: 0.5rem;
+      button {
+        border: none;
+        padding: 0;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        i {
+          transform: scale(0.95);
+        }
+      }
+    }
+    &::backdrop {
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background: rgba(0, 0, 0, 0.25);
+    }
+  }
+</style>
+
+<button
+  :visible
+  class="button outline transition-up"
+  onclick={`window.modalVideo.showModal()`}
+>
+  <i>
+    <IconPlay />
+  </i>
+  Ver Video
+</button>
+
+<dialog id="modalVideo">
+  <main>
+    <lite-youtube videoid={header.button2.youtubeVideoId}
+    ></lite-youtube>
+  </main>
+  <form method="dialog">
+    <button>
+      <i>
+        <IconClose />
+      </i>
+    </button>
+  </form>
+</dialog>
