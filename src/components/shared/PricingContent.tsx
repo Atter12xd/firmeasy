@@ -1,7 +1,7 @@
-import { useState } from "react";
+import Plan from "./Plan";
 import SwitchPlanPeriod from "./SwitchPlanPeriod";
 import SwitchPlanType from "./SwitchPlanType";
-import Plan from "./Plan";
+import { useState } from "react";
 
 export default function PricingContent() {
   const [period, setPeriod] = useState<'monthly' | 'yearly'>('monthly')

@@ -48,7 +48,7 @@
       "text": "Ver video",
       "youtubeVideoId": "BnxEXRJDZ3o"
     },
-    "image": "/public/images/screen.png"
+    "image": "/images/screen.png"
   },
   "benefits": {
     "title": "¿Por qué elegir Firmeasy?",
@@ -346,37 +346,37 @@
         "quote": "Ahora podemos seguir las etapas de atención al cliente [...] En pocos minutos, toda la información está disponible para nosotros, lo que representa un gran avance en nuestros procesos internos.",
         "author": "Metropolitano",
         "position": "Juan Perez Palacios - Gerente",
-        "image": "/public/images/quotes/1.png"
+        "image": "/images/quotes/1.png"
       },
       {
         "quote": "Ahora podemos seguir las etapas de atención al cliente [...] En pocos minutos, toda la información está disponible para nosotros, lo que representa un gran avance en nuestros procesos internos.",
         "author": "Metropolitano",
         "position": "Juan Perez Palacios - Gerente",
-        "image": "/public/images/quotes/1.png"
+        "image": "/images/quotes/1.png"
       },
       {
         "quote": "Ahora podemos seguir las etapas de atención al cliente [...] En pocos minutos, toda la información está disponible para nosotros, lo que representa un gran avance en nuestros procesos internos.",
         "author": "Metropolitano",
         "position": "Juan Perez Palacios - Gerente",
-        "image": "/public/images/quotes/1.png"
+        "image": "/images/quotes/1.png"
       },
       {
         "quote": "Ahora podemos seguir las etapas de atención al cliente [...] En pocos minutos, toda la información está disponible para nosotros, lo que representa un gran avance en nuestros procesos internos.",
         "author": "Metropolitano",
         "position": "Juan Perez Palacios - Gerente",
-        "image": "/public/images/quotes/1.png"
+        "image": "/images/quotes/1.png"
       },
       {
         "quote": "Ahora podemos seguir las etapas de atención al cliente [...] En pocos minutos, toda la información está disponible para nosotros, lo que representa un gran avance en nuestros procesos internos.",
         "author": "Metropolitano",
         "position": "Juan Perez Palacios - Gerente",
-        "image": "/public/images/quotes/1.png"
+        "image": "/images/quotes/1.png"
       },
       {
         "quote": "Ahora podemos seguir las etapas de atención al cliente [...] En pocos minutos, toda la información está disponible para nosotros, lo que representa un gran avance en nuestros procesos internos.",
         "author": "Metropolitano",
         "position": "Juan Perez Palacios - Gerente",
-        "image": "/public/images/quotes/1.png"
+        "image": "/images/quotes/1.png"
       }
     ]
   },
@@ -393,7 +393,7 @@
         "title": "Plataforma que permite cumplimiento Legal de acuerdos y prevenciones de fraude de identidad para Pymes",
         "description": "Simplifica los procesos de firma de tu empresa.",
         "link": "/oferta",
-        "image": "/public/images/screen.png",
+        "image": "/images/screen.png",
         "buttonText": "Saber más"
       }
     }
