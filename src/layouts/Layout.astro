@@ -6,9 +6,10 @@ import { head } from '@site';
 
 interface Props {
   title: string;
+  keywords?: string;
 }
 
-const { title } = Astro.props;
+const { title, keywords } = Astro.props;
 ---
 
 <!doctype html>
@@ -21,7 +22,7 @@ const { title } = Astro.props;
     <link rel="canonical" href="https://firmeasy.legal" />
     <meta property="og:title" content="Firmeasy Legal" />
     <meta property="og:description" content={head.description} />
-    <meta name="keywords" content={head.keywords} />
+    <meta name="keywords" content={keywords || head.keywords} />
     <meta property="og:url" content="https://firmeasy.legal" />
     <meta property="og:site_name" content="Firmeasy Legal" />
     <meta property="og:locale" content="es" />
