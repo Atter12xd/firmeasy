@@ -1,7 +1,8 @@
 ---
-title: 'Diferentes tipos de firma eletronica.'
+title: 'Diferentes tipos de firma eletronica'
 date: '22 octubre 2023'
 resume: 'La mejor tecnología está transformando la forma en que las empresas en Latinoamérica operan y gestionan sus documentos. La adopción de soluciones tecnológicas se ha vuelto esencial para mejorar la rentabilidad.'
+keywords: 'keywords de prueba'
 ---
 
 <!-- guia de sintaxis: https://www.markdownguide.org/basic-syntax/ -->
