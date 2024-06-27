@@ -1,5 +1,6 @@
 {
   "head": {
+    "domain": "https://firmeasy.legal",
     "description": "Firma Digital Certificada y Firma Electrónica Avanzada",
     "keywords": "firma digital, firma electronica, firma electronica digital, firmeasy legal, firmeasy legal legal, firmeasy legal legal legal"
   },
@@ -480,6 +481,9 @@
       }
     ]
   },
+  "support": {
+    "title": "Soporte y Asociaciones"
+  },
   "footer": {
     "menu": [
       {
@@ -503,8 +507,5 @@
         "link": "/validez-juridica"
       }
     ]
-  },
-  "support": {
-    "title": "Soporte y Asociaciones"
   }
 }

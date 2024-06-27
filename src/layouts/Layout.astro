@@ -19,16 +19,16 @@ const { title, keywords } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={head.description} />
     <meta name="robots" content="index, nofollow, nocache" />
-    <link rel="canonical" href="https://firmeasy.legal" />
+    <link rel="canonical" href={head.domain} />
     <meta property="og:title" content="Firmeasy Legal" />
     <meta property="og:description" content={head.description} />
     <meta name="keywords" content={keywords || head.keywords} />
-    <meta property="og:url" content="https://firmeasy.legal" />
+    <meta property="og:url" content={head.domain} />
     <meta property="og:site_name" content="Firmeasy Legal" />
     <meta property="og:locale" content="es" />
     <meta
       property="og:image"
-      content="https://firmeasy.legal/preview.png"
+      content=`${head.domain}/preview.png`
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -40,7 +40,7 @@ const { title, keywords } = Astro.props;
     <meta name="twitter:description" content={head.description} />
     <meta
       name="twitter:image"
-      content="https://firmeasy.legal/preview.png"
+      content=`${head.domain}/preview.png`
     />
     <meta name="twitter:image:width" content="1200" />
     <meta name="twitter:image:height" content="630" />
@@ -261,6 +261,7 @@ const { title, keywords } = Astro.props;
     p {
       font-size: var(--text-size-sm);
       background: var(--bg-gradient);
+      font-weight: 500;
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
