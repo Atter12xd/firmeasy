@@ -91,7 +91,7 @@ import IconClose from '../icons/IconClose.astro';
             gap: 1rem;
           }
           @include screen('md') {
-            position: fixed;
+            position: absolute;
             top: var(--nav-height);
             left: 0;
             width: 100%;
@@ -103,6 +103,7 @@ import IconClose from '../icons/IconClose.astro';
             flex-wrap: wrap;
             box-shadow: var(--shadow);
             display: none;
+            box-sizing: border-box;
           }
           li {
             a {

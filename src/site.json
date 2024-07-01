@@ -1,5 +1,6 @@
 {
   "head": {
+    "domain": "https://firmeasy.legal",
     "description": "Firma Digital Certificada y Firma Electrónica Avanzada",
     "keywords": "firma digital, firma electronica, firma electronica digital, firmeasy legal, firmeasy legal legal, firmeasy legal legal legal"
   },
@@ -68,12 +69,12 @@
     "discount": "10%",
     "web": {
       "coin": "S/",
-      "buttonText": "Solicitar Plan",
       "plan1": {
         "recommended": false,
         "info": {
           "name": "Personal",
           "documents": {
+            "name": "Documentos",
             "monthly": 10,
             "yearly": 100
           },
@@ -86,18 +87,19 @@
           "5 Firmantes por documento",
           "Envío automático y recordatorios por correo",
           "Validar firmante con reconocimiento facial",
-          "Envío automático y recordatorios WhatsApp",
-          "Verificación correo con código único (OTP)",
-          "Solicitar al firmante selfie o foto del documento",
-          "Orden de firmas",
-          "Firma en lote"
-        ]
+          "Envío automático y recordatorios WhatsApp"
+        ],
+        "button":{
+          "text": "Solicitar Plan",
+          "link": "/contact-plan-1"
+        }
       },
       "plan2": {
         "recommended": true,
         "info": {
           "name": "Profesional",
           "documents": {
+            "name": "Firmas",
             "monthly": 20,
             "yearly": 200
           },
@@ -115,13 +117,18 @@
           "Solicitar al firmante selfie o foto del documento",
           "Orden de firmas",
           "Firma en lote"
-        ]
+        ],
+        "button":{
+          "text": "Solicitar Plan",
+          "link": "/contact-plan-2"
+        }
       },
       "plan3": {
         "recommended": false,
         "info": {
           "name": "Empresarial",
           "documents": {
+            "name": "Firmas",
             "monthly": 40,
             "yearly": 400
           },
@@ -139,7 +146,11 @@
           "Solicitar al firmante selfie o foto del documento",
           "Orden de firmas",
           "Firma en lote"
-        ]
+        ],
+        "button":{
+          "text": "Solicitar Plan",
+          "link": "/contact-plan-3"
+        }
       }
     },
     "api": {
@@ -150,6 +161,7 @@
         "info": {
           "name": "Api Despegar",
           "documents": {
+            "name": "Firmas",
             "monthly": 10,
             "yearly": 100
           },
@@ -167,13 +179,18 @@
           "Solicitar al firmante selfie o foto del documento",
           "Orden de firmas",
           "Firma en lote"
-        ]
+        ],
+        "button":{
+          "text": "Solicitar Plan",
+          "link": "/contact"
+        }
       },
       "plan2": {
         "recommended": true,
         "info": {
           "name": "Api Crecer",
           "documents": {
+            "name": "Firmas",
             "monthly": 20,
             "yearly": 200
           },
@@ -191,13 +208,18 @@
           "Solicitar al firmante selfie o foto del documento",
           "Orden de firmas",
           "Firma en lote"
-        ]
+        ],
+        "button":{
+          "text": "Solicitar Plan",
+          "link": "/contact"
+        }
       },
       "plan3": {
         "recommended": false,
         "info": {
           "name": "Api Escalar",
           "documents": {
+            "name": "Firmas",
             "monthly": 40,
             "yearly": 400
           },
@@ -215,7 +237,11 @@
           "Solicitar al firmante selfie o foto del documento",
           "Orden de firmas",
           "Firma en lote"
-        ]
+        ],
+        "button":{
+          "text": "Solicitar Plan",
+          "link": "/contact"
+        }
       }
     },
     "compare": {
@@ -223,33 +249,45 @@
       "head": [
         {
           "name": "Emprende",
-          "link": "/precios",
-          "buttonText": "Prueba Gratis"
+          "button":{
+            "text": "Solicitar Plan",
+            "link": "/contact"
+          }
         },
         {
           "name": "Escencial",
-          "link": "/precios",
-          "buttonText": "Prueba gratis"
+          "button":{
+            "text": "Solicitar Plan",
+            "link": "/contact"
+          }
         },
         {
           "name": "Crece",
-          "link": "/precios",
-          "buttonText": "Prueba gratis"
+          "button":{
+            "text": "Solicitar Plan",
+            "link": "/contact"
+          }
         },
         {
           "name": "Scala",
-          "link": "/precios",
-          "buttonText": "Prueba gratis"
+          "button":{
+            "text": "Solicitar Plan",
+            "link": "/contact"
+          }
         },
         {
           "name": "Api",
-          "link": "/precios",
-          "buttonText": "Prueba gratis"
+          "button":{
+            "text": "Solicitar Plan",
+            "link": "/contact"
+          }
         },
         {
           "name": "Firmador",
-          "link": "/precios",
-          "buttonText": "Hablar con ventas"
+          "button":{
+            "text": "Contactar Ventas",
+            "link": "/contact"
+          }
         }
       ],
       "body": [
@@ -480,7 +518,16 @@
       }
     ]
   },
+  "support": {
+    "title": "Soporte y Asociaciones"
+  },
   "footer": {
+    "socials": {
+      "facebook": "https://www.facebook.com/andape",
+      "instagram":  "https://www.instagram.com/andape",
+      "youtube": "https://youtube.com/andape",
+      "linkedin": "https://www.linkedin.com/company/andape"
+    },
     "menu": [
       {
         "name": "Precios",
@@ -503,8 +550,5 @@
         "link": "/validez-juridica"
       }
     ]
-  },
-  "support": {
-    "title": "Soporte y Asociaciones"
   }
 }

@@ -29,7 +29,7 @@ import { overwall } from '@site';
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: var(--grid-gap);
-    @include screen('sm') {
+    @include screen('md') {
       grid-template-columns: repeat(2, 1fr);
     }
     article {
@@ -45,7 +45,7 @@ import { overwall } from '@site';
       &:last-child {
         align-items: flex-end;
       }
-      @include screen('sm') {
+      @include screen('md') {
         &:first-child,
         &:last-child {
           align-items: center;

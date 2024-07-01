@@ -22,8 +22,8 @@ import IconChevron from '../icons/IconChevron.astro';
           pricing.compare.head.map((head) => (
             <div class="col-head">
               {head.name}
-              <a href={head.link} class="tiny button gradient">
-                {head.buttonText}
+              <a href={head.button.link} class="tiny button gradient">
+                {head.button.text}
               </a>
             </div>
           ))
@@ -96,18 +96,29 @@ import IconChevron from '../icons/IconChevron.astro';
       padding: var(--plan-padding);
       box-sizing: border-box;
       /* gap: 0.5rem; */
-      overflow-x: auto;
+      @media screen and (max-width: 1024px) {
+        overflow-x: auto;
+      }
       .pricing-table-wrapper {
         display: flex;
         flex-direction: column;
-        min-width: calc(
-          var(--container-max-width) - 2 * var(--container-padding) -
-            2 * 2.5rem
-        );
+        @media screen and (max-width: 1024px) {
+          min-width: calc(
+            var(--container-max-width) - 2 * var(--container-padding) -
+              2 * 2.56rem
+          );
+        }
       }
       .head {
         display: flex;
-        border-bottom: 1px solid var(--border-color);
+        /* border-bottom: 1px solid var(--border-color); */
+        position: sticky;
+        top: calc(var(--nav-height) + 1rem);
+        z-index: 2;
+        margin-bottom: -1rem;
+        @media screen and (max-width: 1024px) {
+          top: inherit
+        }
         .col-head {
           flex: 1;
           font-weight: 500;
@@ -121,6 +132,9 @@ import IconChevron from '../icons/IconChevron.astro';
           padding-top: 1rem;
           margin-top: -1rem;
           background-color: white;
+          &:first-child {
+            background-color: transparent;
+          }
         }
       }
       .title {
@@ -129,7 +143,12 @@ import IconChevron from '../icons/IconChevron.astro';
         font-size: var(--text-size-lg);
         font-weight: 500;
         position: sticky;
-        top: var(--nav-height);
+        top: calc(var(--nav-height));
+        background-color: white;
+        z-index: 1;
+        /* &:first-of-type {
+          padding-top: 0;
+        } */
       }
       .body {
         display: flex;

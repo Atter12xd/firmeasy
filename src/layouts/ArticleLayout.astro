@@ -13,13 +13,18 @@ export interface Props {
     title: string;
     date: string;
     url: string;
+    resume: string;
+    keywords: string;
   };
 }
 
 const { frontmatter } = Astro.props;
 ---
 
-<Layout title={`Firmeasy | Blog | ${frontmatter.title}`}>
+<Layout
+  title={`Firmeasy | Blog | ${frontmatter.title}`}
+  keywords={frontmatter.keywords}
+>
   <Fullpage>
     <Section>
       <BackgroundPattern slot="bg" />
