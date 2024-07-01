@@ -74,6 +74,7 @@
         "info": {
           "name": "Personal",
           "documents": {
+            "name": "Documentos",
             "monthly": 10,
             "yearly": 100
           },
@@ -98,6 +99,7 @@
         "info": {
           "name": "Profesional",
           "documents": {
+            "name": "Firmas",
             "monthly": 20,
             "yearly": 200
           },
@@ -126,6 +128,7 @@
         "info": {
           "name": "Empresarial",
           "documents": {
+            "name": "Firmas",
             "monthly": 40,
             "yearly": 400
           },
@@ -158,6 +161,7 @@
         "info": {
           "name": "Api Despegar",
           "documents": {
+            "name": "Firmas",
             "monthly": 10,
             "yearly": 100
           },
@@ -186,6 +190,7 @@
         "info": {
           "name": "Api Crecer",
           "documents": {
+            "name": "Firmas",
             "monthly": 20,
             "yearly": 200
           },
@@ -214,6 +219,7 @@
         "info": {
           "name": "Api Escalar",
           "documents": {
+            "name": "Firmas",
             "monthly": 40,
             "yearly": 400
           },
@@ -516,6 +522,12 @@
     "title": "Soporte y Asociaciones"
   },
   "footer": {
+    "socials": {
+      "facebook": "https://www.facebook.com/andape",
+      "instagram":  "https://www.instagram.com/andape",
+      "youtube": "https://youtube.com/andape",
+      "linkedin": "https://www.linkedin.com/company/andape"
+    },
     "menu": [
       {
         "name": "Precios",
