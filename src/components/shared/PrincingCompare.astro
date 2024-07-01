@@ -22,8 +22,8 @@ import IconChevron from '../icons/IconChevron.astro';
           pricing.compare.head.map((head) => (
             <div class="col-head">
               {head.name}
-              <a href={head.link} class="tiny button gradient">
-                {head.buttonText}
+              <a href={head.button.link} class="tiny button gradient">
+                {head.button.text}
               </a>
             </div>
           ))
