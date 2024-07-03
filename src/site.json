@@ -57,7 +57,7 @@
       "text": "Ver video",
       "youtubeVideoId": "cD2-ru_G8OA"
     },
-    "image": "/public/images/screen.png"
+    "image": "/images/screen.png"
   },
   "benefits": {
     "title": "¿Por qué elegir FirmEasy Legal?",
@@ -536,19 +536,19 @@
         "quote": "Estamos integrados en Firmeasy con nuestra plataforma de proceso de firma de documentos, y nos facilita en la gestion documental y firma rapida",
         "author": "Transvial",
         "position": "Jhonatan Ventocilla - Jefe Sistemas",
-        "image": "/public/images/quotes/1.png"
+        "image": "/images/quotes/1.png"
       },
       {
         "quote": "Nosotros teniamos la dificultad de gestionar mas de 50 documentos, y ninguna plataforma se ajustaba a nuestros requerimiento, hasta que encontramos Firmeasy Legal, que nos permitio gestionar nuestros documentos de forma rapida y segura.",
         "author": "Incubadora Scale",
         "position": "Clarisa Victorio - Gerente",
-        "image": "/public/images/quotes/2.jpg"
+        "image": "/images/quotes/2.jpg"
       },
       {
         "quote": "Nos facilito nuestro proceso de contratos con nuestros clientes y la Gestion facil de mis contratos por vencer",
         "author": "Cementos Yunga",
         "position": "Carlos Atachagua - Gerente",
-        "image": "/public/images/quotes/3.png"
+        "image": "/images/quotes/3.png"
       }
      
     ]
@@ -566,7 +566,7 @@
         "title": "Plataforma que permite cumplimiento Legal de acuerdos y Validacion De Identidad para Pymes",
         "description": "Simplifica los procesos de firma de tu empresa.",
         "link": "https://wa.link/qjiq5o",
-        "image": "/public/images/screen.png",
+        "image": "/images/screen.png",
         "buttonText": "Contactar"
       }
     }
