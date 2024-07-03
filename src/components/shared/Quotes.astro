@@ -29,9 +29,9 @@ const { more } = Astro.props;
         .map((item) => {
           return (
             <article>
-              <p>{item.quote}</p>
+              <p>"{item.quote}"</p>
               <span>
-                <img src={item.image} alt="metropolitano" />
+                <img src={item.image} alt="casos-exito" />
                 <div class="person">
                   <p>{item.author}</p>
                   <small>{item.position}</small>
@@ -85,22 +85,28 @@ const { more } = Astro.props;
       border-radius: var(--border-radius);
       box-shadow: var(--shadow);
       padding: var(--card-padding);
-      p {
+      & > p {
         font-weight: 400;
         line-height: var(--text-line-height);
+        margin-bottom: 0.5rem;
+        font-style: italic;
       }
       span {
         display: flex;
         align-items: center;
-        margin-top: 0.5rem;
         gap: 1rem;
+        margin-top: auto;
+
         img {
           width: 36px;
           height: 36px;
+          object-fit: contain;
+          border-radius: 50%;
         }
         .person {
           p {
             font-weight: 500;
+            line-height: var(--text-line-height);
           }
           small {
             font-weight: 400;
