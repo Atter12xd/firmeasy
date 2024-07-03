@@ -1,31 +1,32 @@
 ---
-title: 'Ventajas de la firma digital'
-date: '23 octubre 2023'
-resume: 'La tecnología está transformando la forma en que las empresas en Latinoamérica operan y gestionan sus documentos.'
+title: 'Descubre la revolución digital en Perú con la Firma Digital'
+date: '02 Julio 2024'
+resume: 'La Ley de firmas y certificados digitales Nº 27269 es un gran paso hacia la modernización y la eficiencia. Al permitir a las personas y empresas firmar electrónicamente documentos y comprobantes de pago, se reduce la necesidad de papel y se acelera el proceso de tramitación.'
 ---
 
-<!-- guia de sintaxis: https://www.markdownguide.org/basic-syntax/ -->
+**La Ley de firmas y certificados digitales Nº 27269** es un gran paso hacia la modernización y la eficiencia. Al permitir a las personas y empresas firmar electrónicamente documentos y comprobantes de pago, se reduce la necesidad de papel y se acelera el proceso de tramitación.
 
+### Antes de la pandemia:
 
-La tecnología está transformando la forma en que las empresas en Latinoamérica operan y gestionan sus documentos. La adopción de soluciones tecnológicas se ha vuelto esencial para mejorar la rentabilidad, el crecimiento y la experiencia del usuario. Uno de los elementos clave en este proceso es la firma electrónica, una herramienta que a menudo se confunde con la firma digital. Es fundamental entender la diferencia entre ambas para aprovechar al máximo sus beneficios. En este artículo, exploraremos en detalle qué es una firma electrónica y una firma digital, sus diferencias, y cuándo es recomendable utilizar cada una.
+**2000:** Se implementa la Ley de firmas y certificados digitales Nº 27269 por el Ministerio de Justicia y Derechos Humanos (MINJUSDH) para simplificar, abaratar y proteger procesos y trámites de los ciudadanos con el gobierno.
 
-En la era digital, la transformación empresarial se ha acelerado, con un crecimiento significativo en la adopción de tecnologías avanzadas. Según estudios recientes, el 85% de las empresas en Latinoamérica ha incrementado su inversión en soluciones tecnológicas. La digitalización de procesos es esencial para mantenerse competitivo en un entorno empresarial en constante evolución. En este contexto, la firma electrónica juega un papel crucial al simplificar y agilizar la gestión de documentos, reduciendo costos y mejorando la eficiencia operativa.
+**2008**: La ley es finalmente reglamentada.
 
-No obstante, es común que se confunda la firma electrónica con la firma digital. Para aprovechar plenamente estas herramientas, es esencial comprender sus diferencias y aplicaciones específicas.
+**2012**: Se emite el primer certificado digital a una persona jurídica.
 
-### ¿Qué es una firma electrónica?
-La firma electrónica es un método legalmente aceptado para firmar documentos de manera electrónica en lugar de hacerlo en papel. Para que una firma electrónica sea válida, debe cumplir con ciertas condiciones, como garantizar la integridad del documento, contar con el consentimiento informado del firmante y permitir la asociación de la identidad del firmante con la firma electrónica. Las empresas especializadas en firma electrónica desempeñan un papel crucial en garantizar que estos requisitos se cumplan adecuadamente.
+### Durante la pandemia:
+Perú está progresando en su transformación digital. El gobierno ha aprobado tres formas de firma electrónica que facilitan la suscripción de documentos y contratos de manera remota, rápida y segura. La Ley de Firmas y Certificados Digitales, Ley 27269, fue actualizada en febrero de 2021 por el Decreto Supremo N° 029-2021-PCM. Este decreto aprobó el reglamento de la Ley de Gobierno Digital y realizó modificaciones a la Ley mencionada.
 
->¿Cómo se puede identificar al firmante con una firma electrónica? La identificación puede variar según el nivel de seguridad requerido, pero por lo general, se pueden obtener datos por medio de la tecnología como IP, geolocalización, dispositivo, fecha y hora de firma. Además, se puede tener un seguimiento del documento cómo a que correo fue enviado, la hora que se visualizo y se firmo. Sin embargo, es importante destacar que la simple captura de una imagen de una firma escrita a mano no cumple con el requisito de integridad del documento.
+Se consideran 3 tipos de Firmas
 
-### Diferentes tipos de firma electrónica
-En Latinoamérica, existen principalmente dos tipos de firmas electrónicas: la firma electrónica simple y la firma electrónica avanzada o digital. Ambas tienen validez jurídica, pero se diferencian en cuanto a su nivel de seguridad y atributos. Para conocer más sobre la regulación de cada país te invitamos a leer la Guía de Legalidad de la Firma Electrónica
+Según la normativa actualizada, en Perú se establecen tres tipos de firma electrónica:
 
-#### Firma electrónica simple
-La firma electrónica simple es una opción básica, ideal para procesos de bajo o medio riesgo, donde se busca facilitar el proceso de firma. Ejemplos de su aplicación incluyen la autorización de tratamiento de datos personales o la aceptación de propuestas comerciales. Esta firma se verifica mediante los datos electrónicos capturados en el momento de la firma.
+>**Firma electrónica simple:** Esta es un dato en formato electrónico que se adjunta o asocia lógicamente a otros datos, y que un firmante utiliza para firmar.
 
-#### ¿Cuándo se recomienda usarla?
-La firma electrónica simple es adecuada para procesos de bajo o medio riesgo, donde la fricción entre los firmantes debe ser mínima. Para aumentar la seguridad, se pueden agregar métodos de autenticación, como el envío de un código de verificación al correo electrónico o al celular del firmante. Si la empresa busca cerrar clientes más rápidamente y eliminar el obstáculo de reunirse presencialmente para firmar el contrato, la firma electrónica simple es ideal. 
+>**Firma electrónica avanzada:** Esta es una firma electrónica que está exclusivamente vinculada al firmante y permite verificar su identidad. Se implementa utilizando datos de creación de firmas que el firmante puede usar bajo su control, y está vinculada a los datos firmados de tal manera que cualquier modificación posterior es detectable.
 
-#### En caso de que sea necesario recurrir a un juez
-para validar un documento firmado con una firma electrónica simple, la responsabilidad recae en el creador del documento. Deben proporcionar todos los datos electrónicos para demostrar la veracidad de la firma. Algunas empresas ofrecen métodos adicionales, como el envío de un código de verificación al correo electrónico o al celular del firmante, para aumentar la seguridad de la firma. Uno de los diferenciales de ZapSign son los múltiples métodos de identificar al firmante que se pueden activar. Por ejemplo: verificar correo, verificar celular, reconocimiento facial, foto del rostro, entre otros.
+>**Firma electrónica cualificada:** También conocida como firma digital, esta firma electrónica utiliza una técnica de criptografía asimétrica para identificar al firmante. Se basa en el uso de un par de claves único, compuesto por una clave privada y una clave pública relacionadas matemáticamente entre sí, de tal manera que las personas que conocen la clave pública no pueden derivar de ella la clave privada.
+Esta firma tiene la misma validez y eficacia jurídica que una firma manuscrita. Puede garantizar el no repudio y servir como medio probatorio, siempre y cuando haya sido generada por un proveedor de servicios de certificación digital acreditado dentro de la Infraestructura Oficial de Firma Electrónica (IOFE). 
+
+### Entidad Acreditadas en Perú 
+Firmeasy Legal está incluido en el directorio de Entidades de Regiistro acreditadas en Perú. Podemos emitir certificado digitales acreditados, totalmente seguros y legales si estás realizando operaciones en este país.
