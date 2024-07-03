@@ -117,13 +117,13 @@ import IconClose from '../icons/IconClose.astro';
           align-items: center;
           gap: 1rem;
           @include screen('sm') {
-            & > a:first-child {
+            & > a:last-child {
               display: none;
             }
           }
           @media screen and (max-width: 375px) {
             & > a:last-child {
-              display: none;
+              // display: none;
             }
           }
         }
