@@ -23,7 +23,7 @@ function IconSpark() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_180_176)">
+      <g clipPath="url(#clip0_180_176)">
         <path
           d="M5.28125 13.5L3.95129 9.95496L0.40625 8.625L3.95129 7.29504L5.28125 3.75L6.61121 7.29504L10.1562 8.625L6.61121 9.95496L5.28125 13.5ZM2.23438 4.96875L1.63592 3.33283L0 2.73438L1.63592 2.13592L2.23438 0.5L2.83283 2.13592L4.46875 2.73438L2.83283 3.33283L2.23438 4.96875ZM10.1562 7L9.36635 4.94615L7.3125 4.15625L9.36635 3.36635L10.1562 1.3125L10.9462 3.36635L13 4.15625L10.9462 4.94615L10.1562 7Z"
           fill="url(#paint0_linear_180_176)"></path>
@@ -37,10 +37,10 @@ function IconSpark() {
           y2="7"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00A280"></stop>
-          <stop offset="0.297071" stop-color="#01A182"></stop>
-          <stop offset="0.825" stop-color="#4646A7"></stop>
-          <stop offset="1" stop-color="#5C27B3"></stop>
+          <stop stopColor="#00A280"></stop>
+          <stop offset="0.297071" stopColor="#01A182"></stop>
+          <stop offset="0.825" stopColor="#4646A7"></stop>
+          <stop offset="1" stopColor="#5C27B3"></stop>
         </linearGradient>
         <clipPath id="clip0_180_176">
           <rect
@@ -72,7 +72,7 @@ export default function Plan({ plan, period, type }: { plan: 'plan1' | 'plan2' |
           {pricing[type][plan].info.name}
           {pricing[type][plan].recommended && <>&nbsp;&nbsp;<ChipRecommended /></>}
         </h1>
-        <p>{pricing[type][plan].info.documents[period]} documentos / {period === 'monthly' ? 'Mes' : 'Año'}</p>
+        <p>{pricing[type][plan].info.documents[period]} {pricing[type][plan].info.documents.name} / {period === 'monthly' ? 'Mes' : 'Año'}</p>
         <h2>
           {pricing[type].coin}
           {pricing[type][plan].info.amount[period]}
@@ -87,7 +87,7 @@ export default function Plan({ plan, period, type }: { plan: 'plan1' | 'plan2' |
           </li>
         ))}
       </ul>
-      <button className={`${pricing[type][plan].recommended ? 'gradient' : 'outline'} transition-up`}>{pricing[type].buttonText}</button>
+      <a href={pricing[type][plan].button.link} className={`button ${pricing[type][plan].recommended ? 'gradient' : 'outline'} transition-up`}>{pricing[type][plan].button.text}</a>
     </article>
   )
 }
