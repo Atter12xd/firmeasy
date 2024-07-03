@@ -1,6 +1,6 @@
 ---
 title: 'Descubre la revolución digital en Perú con la Firma Digital'
-date: '02 Julio 2023'
+date: '02 Julio 2024'
 resume: 'La Ley de firmas y certificados digitales Nº 27269 es un gran paso hacia la modernización y la eficiencia. Al permitir a las personas y empresas firmar electrónicamente documentos y comprobantes de pago, se reduce la necesidad de papel y se acelera el proceso de tramitación.'
 ---
 
