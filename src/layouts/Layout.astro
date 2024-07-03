@@ -2,6 +2,7 @@
 import Alert from 'src/components/shared/Alert.astro';
 import Footer from '../components/shared/Footer.astro';
 import Nav from '../components/shared/Nav.astro';
+import { ViewTransitions } from "astro:transitions";
 import { head } from '@site';
 
 interface Props {
@@ -60,6 +61,7 @@ const { title, keywords } = Astro.props;
     />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <ViewTransitions />
   </head>
   <body>
     <Alert />
