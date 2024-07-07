@@ -73,7 +73,7 @@ export default function Plan({ plan, period, type }: { plan: 'plan1' | 'plan2' |
           {pricing[type][plan].info.name}
           {pricing[type][plan].recommended && <>&nbsp;&nbsp;<ChipRecommended /></>}
         </h1>
-        <p>{pricing[type][plan].info.documents[period]} documentos / {period === 'monthly' ? 'Mes' : 'Año'}</p>
+        <p>{pricing[type][plan].info.documents[period]} {pricing[type][plan].info.documents.name} / {period === 'monthly' ? 'Mes' : 'Año'}</p>
         <h2>
           {pricing[type].coin}
           {pricing[type][plan].info.amount[period]}
@@ -88,7 +88,7 @@ export default function Plan({ plan, period, type }: { plan: 'plan1' | 'plan2' |
           </li>
         ))}
       </ul>
-      <button className={`${pricing[type][plan].recommended ? 'gradient' : 'outline'} transition-up`}>{pricing[type].buttonText}</button>
+      <a href={pricing[type][plan].button.link} className={`button ${pricing[type][plan].recommended ? 'gradient' : 'outline'} transition-up`}>{pricing[type][plan].button.text}</a>
     </article>
   )
 }

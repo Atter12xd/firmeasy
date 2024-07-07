@@ -5,7 +5,7 @@
   -webkit-text-size-adjust: 100%;
   margin: 0;
   color: var(--text-color);
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   font-size: 16px;
   line-height: 1.6;
   word-wrap: break-word;

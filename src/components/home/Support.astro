@@ -1,14 +1,19 @@
 ---
 import Section from '../shared/Section.astro';
 import { support } from '@site';
+import Title from '../shared/Title.astro';
 ---
 
 <Section color="var(--bg-color)">
   <div class="support">
-    <h2>{support.title}</h2>
+    <Title text={support.title} />
     <div class="grid">
       <article>
+<<<<<<< HEAD
         <img src="/images/support/1.png" alt="despega unach" />
+=======
+        <img src="/images/support/1.png" alt="Udep" />
+>>>>>>> 25a7f01a5ad3e3a96a99785fe49399c737c14fb0
       </article>
       <article>
         <img src="/images/support/2.png" alt="startup peru" />
@@ -23,10 +28,23 @@ import { support } from '@site';
         <img src="/images/support/5.png" alt="incuba unach" />
       </article>
       <article>
+<<<<<<< HEAD
         <img
           src="/images/support/6.png"
           alt="unheval venture"
         />
+=======
+        <img src="/images/support/6.png" alt="unheval venture" />
+      </article>
+      <article>
+        <img src="/images/support/7.png" alt="Incubadora Scale" />
+      </article>
+      <article>
+        <img src="/images/support/8.png" alt="EmpreLatam" />
+      </article>
+      <article>
+        <img src="/images/support/9.png" alt="Cofide" />
+>>>>>>> 25a7f01a5ad3e3a96a99785fe49399c737c14fb0
       </article>
     </div>
   </div>
@@ -35,13 +53,6 @@ import { support } from '@site';
 <style lang="scss">
   @import '../../assets/breakpoints.scss';
   .support {
-    h2 {
-      font-size: var(--text-size-lg);
-      line-height: var(--title-line-height);
-      font-weight: 300;
-      text-align: center;
-      margin-bottom: calc(var(--container-padding-y) / 2);
-    }
     .grid {
       max-width: var(--container-max-width);
       width: 100%;
@@ -50,9 +61,14 @@ import { support } from '@site';
       margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(6, 1fr);
-      gap: var(--grid-gap);
-      @include screen('sm') {
+      gap: var(--grid-gap-sm);
+      margin-top: 1rem;
+
+      @include screen('md') {
         grid-template-columns: repeat(3, 1fr);
+      }
+      @include screen('sm') {
+        grid-template-columns: repeat(2, 1fr);
       }
 
       article {
@@ -61,6 +77,9 @@ import { support } from '@site';
         align-items: center;
         text-align: left;
         color: var(--text-color);
+        background-color: white;
+        padding: 1rem;
+        border-radius: var(--border-radius);
         img {
           width: 100%;
           height: 36px;

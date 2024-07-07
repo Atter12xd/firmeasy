@@ -1,0 +1,21 @@
+---
+import Section from './Section.astro';
+import Title from './Title.astro';
+---
+
+<Section>
+  <div style="margin-top: 20vh;"></div>
+  <Title
+    text="Página no encontrada"
+    body="La página que estas buscando no existe o fue removida."
+  />
+  <a class="button outline back-home" href="/">Volver al inicio</a>
+</Section>
+
+<style>
+  .back-home {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+</style>

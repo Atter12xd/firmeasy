@@ -1,15 +1,20 @@
 {
   "head": {
+    "domain": "https://firmeasy.legal",
     "description": "Firma Digital Certificada y Firma Electrónica Avanzada",
-    "keywords": "firma digital, firma electronica, firma electronica digital, firmeasy legal, firmeasy legal legal, firmeasy legal legal legal"
+    "keywords": "firma digital, firma electronica, firma electronica digital, firmeasy legal, firmeasy legal legal, firmeasy legal legal legal, Certificado Digital, CDT, Identidad Digital, VideoFirma, Validacion de identidad, KYC"
   },
   "alert": {
     "visible": true,
-    "title": "Verifica la prueba de existencia del documento que se certificó en Firmeasy",
+    "title": "Somos PSC, Entidad de Registro y Validacion de Identidad Acreditados",
     "links": [
       {
-        "name": "Portal de Auditoria",
-        "link": "/auditoria"
+       "name": "Portal De Auditoria",
+        "link": "https://app.firmeasy.legal/validador"
+      },
+      {
+        "name": "Comprar Certificados Digitales",
+        "link": "https://girasol.pe/"
       }
     ]
   },
@@ -26,230 +31,252 @@
       {
         "name": "Blog",
         "link": "/blog"
+      },
+      {
+        "name": "Validez Jurídica",
+        "link": "/validez-juridica"
       }
     ],
     "button1": {
-      "text": "Probar Demo",
-      "link": "/"
+      "text": "Prueba Gratis",
+      "link": "https://app.firmeasy.legal/registro"
     },
      "button2": {
       "text": "Contactar Ventas",
-      "link": "/"
+      "link": "https://wa.link/qjiq5o"
     }
   },
   "header": {
-    "title": "La firma electrónica más fácil de usar",
-    "description": "Simplifica los procesos de firma de tu empresa. Crea, envía, firma y almacena documentos de forma segura con validez legal.",
+    "title": "Cumplimiento Legal de Acuerdos",
+    "description": "Firma Electronica Avanzada y Firma Digital Certificada de forma rapida, facil, segura, y con validez juridica; Flujo de Firma Dinamicos, Prueba de vidad y Firma con Identidad, Y Firma Con Whatsapp",
     "button1": {
       "text": "Contactar Ventas",
       "link": "/contact"
     },
     "button2": {
       "text": "Ver video",
-      "youtubeVideoId": "BnxEXRJDZ3o"
+      "youtubeVideoId": "cD2-ru_G8OA"
     },
     "image": "/images/screen.png"
   },
   "benefits": {
-    "title": "¿Por qué elegir Firmeasy?",
-    "description": "Sencilla, flexible y confiable.",
+    "title": "¿Por qué elegir FirmEasy Legal?",
+    "description": "Facil, Seguro y Legal.",
     "items": [
-      "Alta Validez Juridica en la firma (Longeva)",
-      "Validez de identidad facial IA",
-      "Analisis de contrado con IA",
-      "Firma con Whatsapp",
-      "Expedientes Digitales con sellos de tiempo",
-      "Autoridad Certificadora"
+      "Firma En Un Minuto desde la comidad de tu Hogar",
+      "Firma Con Selfie y/o Documento De Identidad",
+      "Proveedor de Servicios de Certificacion Autorizado (PSC)",
+      "Validez Juridica a Nivel Nacional",
+      "Firma Certificada",
+      "Verificacion por Whatsapp, Correo o Celular"
     ]
   },
   "pricing": {
     "title": "Precios y Planes",
-    "description": "Puedes cancelar tu plan en cualquier momento.",
-    "discount": "10%",
+    "description": "Firma En Segundos Desde Cualquier Lugar Con Una Plataforma De Confianza.",
+    "discount": "34%",
     "web": {
       "coin": "S/",
-      "buttonText": "Solicitar Plan",
       "plan1": {
         "recommended": false,
         "info": {
-          "name": "Personal",
+          "name": "Emprende",
           "documents": {
-            "monthly": 10,
-            "yearly": 100
+            "name": "Firmas",
+            "monthly": 70,
+            "yearly": 700
           },
           "amount": {
-            "monthly": 10,
-            "yearly": 120
+            "monthly": 45,
+            "yearly": 356
           }
         },
         "items": [
-          "5 Firmantes por documento",
-          "Envío automático y recordatorios por correo",
-          "Validar firmante con reconocimiento facial",
-          "Envío automático y recordatorios WhatsApp",
-          "Verificación correo con código único (OTP)",
-          "Solicitar al firmante selfie o foto del documento",
-          "Orden de firmas",
-          "Firma en lote"
-        ]
+          "Evidencia Certificada",
+          "2 Usuarios",
+          "Firma Dibujada, OTP, Firma Digital, selfie o foto del documento",
+          "Verificacion por Whatsapp, Correo o Celular",
+          "Reportes En Tiempos Real"
+        ],
+        "button":{
+          "text": "Solicitar Plan",
+          "link": "/contact-plan-1"
+        }
       },
       "plan2": {
         "recommended": true,
         "info": {
-          "name": "Profesional",
+          "name": "Estandar",
           "documents": {
-            "monthly": 20,
-            "yearly": 200
+            "name": "Firmas",
+            "monthly": 250,
+            "yearly": 3000
           },
           "amount": {
-            "monthly": 20,
-            "yearly": 240
+            "monthly": 99,
+            "yearly": 784
           }
         },
         "items": [
-          "10 Firmantes por documento",
-          "Envío automático y recordatorios por correo",
-          "Validar firmante con reconocimiento facial",
-          "Envío automático y recordatorios WhatsApp",
-          "Verificación correo con código único (OTP)",
-          "Solicitar al firmante selfie o foto del documento",
-          "Orden de firmas",
-          "Firma en lote"
-        ]
+          "Incluye Plan Emprende",
+          "7 Usuarios",
+          "Incluye 1 Certificado Digital (Solo Peru)",
+          "Personalizacion de Marca"
+        ],
+        "button":{
+          "text": "Solicitar Plan",
+          "link": "/contact-plan-2"
+        }
       },
       "plan3": {
         "recommended": false,
         "info": {
-          "name": "Empresarial",
+          "name": "Business",
           "documents": {
-            "monthly": 40,
-            "yearly": 400
+            "name": "Firmas",
+            "monthly": 700,
+            "yearly": 8400
           },
           "amount": {
-            "monthly": 40,
-            "yearly": 480
+            "monthly": 150,
+            "yearly": 1188
           }
         },
         "items": [
-          "20 Firmantes por documento",
-          "Envío automático y recordatorios por correo",
-          "Validar firmante con reconocimiento facial",
-          "Envío automático y recordatorios WhatsApp",
-          "Verificación correo con código único (OTP)",
-          "Solicitar al firmante selfie o foto del documento",
-          "Orden de firmas",
-          "Firma en lote"
-        ]
+          "Incluye Plan Estandar",
+          "14 Usuarios",
+          "Incluye 1 Certificado Digital (Solo Peru)",
+          "Envio Masivo"
+        ],
+        "button":{
+          "text": "Solicitar Plan",
+          "link": "/contact-plan-3"
+        }
       }
     },
     "api": {
       "coin": "S/",
-      "buttonText": "Solicitar Plan",
+      "buttonText": "Contactar Con Ventas",
       "plan1": {
         "recommended": false,
         "info": {
-          "name": "Api Despegar",
+          "name": "API Start",
           "documents": {
-            "monthly": 10,
-            "yearly": 100
+            "name": "Firmas",
+            "monthly": 700,
+            "yearly": 8400
           },
           "amount": {
-            "monthly": 8,
-            "yearly": 108
+            "monthly": 118,
+            "yearly": 935
           }
         },
         "items": [
-          "5 Firmantes por documento",
-          "Envío automático y recordatorios por correo",
-          "Validar firmante con reconocimiento facial",
-          "Envío automático y recordatorios WhatsApp",
-          "Verificación correo con código único (OTP)",
-          "Solicitar al firmante selfie o foto del documento",
-          "Orden de firmas",
-          "Firma en lote"
-        ]
+          "700 Firmas Por Mes",
+          "7 Usuarios",
+          "$0.20 USD Por Firma Adicional",
+          "API REST (Documentación, Capacitacón y Soporte)"
+        ],
+        "button":{
+          "text": "Solicitar Plan",
+          "link": "/contact"
+        }
       },
       "plan2": {
         "recommended": true,
         "info": {
-          "name": "Api Crecer",
+          "name": "API Business",
           "documents": {
-            "monthly": 20,
-            "yearly": 200
+            "name": "Firmas",
+            "monthly": 2000,
+            "yearly": 24000
           },
           "amount": {
-            "monthly": 16,
-            "yearly": 216
+            "monthly": 250,
+            "yearly": 1980
           }
         },
         "items": [
-          "10 Firmantes por documento",
-          "Envío automático y recordatorios por correo",
-          "Validar firmante con reconocimiento facial",
-          "Envío automático y recordatorios WhatsApp",
-          "Verificación correo con código único (OTP)",
-          "Solicitar al firmante selfie o foto del documento",
-          "Orden de firmas",
-          "Firma en lote"
-        ]
+          "2000 Firmas por mes",
+          "7 Usuarios",
+          "$0.18 USD Por Firma Adicional",
+          "API REST (Documentación, Capacitacón y Soporte)"
+        ],
+        "button":{
+          "text": "Solicitar Plan",
+          "link": "/contact"
+        }
       },
       "plan3": {
         "recommended": false,
         "info": {
-          "name": "Api Escalar",
+          "name": "Api Scale",
           "documents": {
-            "monthly": 40,
-            "yearly": 400
+            "name": "Firmas",
+            "monthly": 4500,
+            "yearly": 54000
           },
           "amount": {
-            "monthly": 24,
-            "yearly": 224
+            "monthly": 590,
+            "yearly": 4673
           }
         },
         "items": [
-          "20 Firmantes por documento",
-          "Envío automático y recordatorios por correo",
-          "Validar firmante con reconocimiento facial",
-          "Envío automático y recordatorios WhatsApp",
-          "Verificación correo con código único (OTP)",
-          "Solicitar al firmante selfie o foto del documento",
-          "Orden de firmas",
-          "Firma en lote"
-        ]
+          "4500 Firmas Por Mes",
+          "7 Usuarios",
+          "$0.15 USD Por Firma Adicional",
+          "API REST (Documentación, Capacitacón y Soporte)"
+        ],
+        "button":{
+          "text": "Solicitar Plan",
+          "link": "/contact"
+        }
       }
     },
     "compare": {
-      "buttonText": "Comparar Planes",
+      "buttonText": "Mostrar Todas Las Caracteristicas",
       "head": [
         {
           "name": "Emprende",
-          "link": "/precios",
-          "buttonText": "Prueba Gratis"
+          "button":{
+            "text": "Prueba Gratis",
+            "link": "https://app.firmeasy.legal/registro"
+          }
         },
         {
-          "name": "Escencial",
-          "link": "/precios",
-          "buttonText": "Prueba gratis"
+          "name": "Estandar",
+          "button":{
+            "text": "Prueba Gratis",
+            "link": "https://app.firmeasy.legal/registro"
+          }
         },
         {
-          "name": "Crece",
-          "link": "/precios",
-          "buttonText": "Prueba gratis"
+          "name": "Business",
+          "button":{
+            "text": "Prueba Gratis",
+            "link": "https://app.firmeasy.legal/registro"
+          }
         },
         {
-          "name": "Scala",
-          "link": "/precios",
-          "buttonText": "Prueba gratis"
+          "name": "Enterprise",
+          "button":{
+            "text": "Contactar Con Ventas",
+            "link": "https://wa.link/qjiq5o"
+          }
         },
         {
-          "name": "Api",
-          "link": "/precios",
-          "buttonText": "Prueba gratis"
+          "name": "API",
+          "button":{
+            "text": "Contactar Con Ventas",
+            "link": "https://wa.link/qjiq5o"
+          }
         },
         {
           "name": "Firmador",
-          "link": "/precios",
-          "buttonText": "Hablar con ventas"
+          "button":{
+            "text": "Contactar Con Ventas",
+            "link": "https://wa.link/qjiq5o"
+          }
         }
       ],
       "body": [
@@ -257,21 +284,21 @@
           "title": "Uso",
           "items": [
             [
-              "Documentos creados",
-              "40/mes",
-              "40/mes",
-              "40/mes",
-              "40/mes",
-              "Segun Plan",
+              "Firmas/mes",
+              "70/mes",
+              "250/mes",
+              "700/mes",
+              "A Medida",
+              "Segun Plan Contratado",
               "Ilimitado"
             ],
             [
               "Cantidad Usuario",
-              "1",
-              "10",
-              "20",
-              "20",
-              "10",
+              "2",
+              "7",
+              "14",
+              "Ilimitado",
+              "7",
               "Ilimitado"
             ],
             [
@@ -279,7 +306,7 @@
               "false",
               "false",
               "false",
-              "false",
+              "true",
               "true",
               "true"
             ]
@@ -289,12 +316,12 @@
           "title": "Firmantes",
           "items": [
             [
-              "Documentos creados",
-              "40/mes",
-              "40/mes",
-              "40/mes",
-              "40/mes",
-              "Segun Plan",
+              "Firmantes Por Documento",
+              "7",
+              "14",
+              "Ilimitado",
+              "Ilimitado",
+              "Ilimitado",
               "Ilimitado"
             ],
             [
@@ -307,26 +334,189 @@
               "Ilimitado"
             ],
             [
-              "Integraciones",
-              "false",
-              "false",
-              "false",
-              "false",
+              "Verificación correo con código único (OTP)",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true",
+              "false"
+            ],
+            [
+              "Solicitar al Firmante Selfie o Foto Del Documento",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true",
+              "false"
+            ],
+            [
+              "Verificacion Por Celular con codigo por whatsapp",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true",
+              "false"
+            ],
+            [
+              "Firma En Lote",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true"
+            ],
+            [
+              "Firma Con Certificado Digtal - Testigo Digital",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true"
+            ],
+            [
+              "Firma Electronica Cualificada - Con Certificado Propio",
+              "true",
+              "true",
+              "true",
+              "true",
               "true",
               "true"
             ]
           ]
-        }
+        },
+        {
+          "title": "Documentos Simplificados",
+          "items": [
+            [
+              "Posicionar Firmas",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true"
+            ],
+            [
+              "Organizacion En Carpetas",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true"
+            ],
+            [
+              "Permisos Por Carpeta",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true",
+              "false"
+            ],
+            [
+              "Almacenamiento De 5 Años",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true",
+              "false"
+            ],
+            [
+              "Almacenamiento mayor de 5 años",
+              "false",
+              "false",
+              "false",
+              "true",
+              "false",
+              "false"
+            ],
+            [
+              "Hojas Ilimitadas por Documento",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true"
+            ]
+          ]
+        },
+        {
+          "title": "Confianza y Gestion",
+          "items": [
+            [
+              "Perzonalización de Marca",
+              "false",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true"
+            ],
+            [
+              "Sello de Sustentabilidad",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true"
+            ],
+            [
+              "Informe De Documentos y Usuarios",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true",
+              "false"
+            ],
+            [
+              "Soporte Por Whatsapp y Correo Electronico",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true"
+            ],
+            [
+              "Entidad de registro y Verificacion",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true"
+            ],
+            [
+              "PSC Acreditado",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true",
+              "true"
+            ]
+          ]
+        } 
       ]
     }
   },
   "overwall": [
     {
-      "amount": "70 Mil",
+      "amount": "250 Mil",
       "description": "Documentos firmados"
     },
     {
-      "amount": "2 Paises",
+      "amount": "25 Ciudades",
       "description": "Usan Firmeasy"
     },
     {
@@ -335,7 +525,7 @@
     },
     {
       "amount": "+ 1 Mil",
-      "description": "Clientes satisfechos"
+      "description": "Empresas satisfechas"
     }
   ],
   "quotes": {
@@ -343,6 +533,7 @@
     "description": "Historias de exito de nuestros clientes.",
     "items": [
       {
+<<<<<<< HEAD
         "quote": "Ahora podemos seguir las etapas de atención al cliente [...] En pocos minutos, toda la información está disponible para nosotros, lo que representa un gran avance en nuestros procesos internos.",
         "author": "Metropolitano",
         "position": "Juan Perez Palacios - Gerente",
@@ -377,110 +568,169 @@
         "author": "Metropolitano",
         "position": "Juan Perez Palacios - Gerente",
         "image": "/images/quotes/1.png"
+=======
+        "quote": "Estamos integrados en Firmeasy con nuestra plataforma de proceso de firma de documentos, y nos facilita en la gestion documental y firma rapida",
+        "author": "Transvial",
+        "position": "Jhonatan Ventocilla - Jefe Sistemas",
+        "image": "/images/quotes/1.png"
+      },
+      {
+        "quote": "Nosotros teniamos la dificultad de gestionar mas de 50 documentos, y ninguna plataforma se ajustaba a nuestros requerimiento, hasta que encontramos Firmeasy Legal, que nos permitio gestionar nuestros documentos de forma rapida y segura.",
+        "author": "Incubadora Scale",
+        "position": "Clarisa Victorio - Gerente",
+        "image": "/images/quotes/2.jpg"
+      },
+      {
+        "quote": "Nos facilito nuestro proceso de contratos con nuestros clientes y la Gestion facil de mis contratos por vencer",
+        "author": "Cementos Yunga",
+        "position": "Carlos Atachagua - Gerente",
+        "image": "/images/quotes/3.png"
+>>>>>>> 25a7f01a5ad3e3a96a99785fe49399c737c14fb0
       }
+     
     ]
   },
   "blog": {
     "title": "Blog",
     "description": "Artículos y novedades.",
     "ad": {
-      "title": "Plataforma que permite cumplimiento Legal de acuerdos y prevenciones de fraude de identidad para Pymes",
+      "title": "Plataforma que permite cumplimiento Legal de acuerdos y Validacion De Identidad para Pymes",
       "description": "Simplifica los procesos de firma de tu empresa.",
-      "link": "/oferta"
+      "link": "https://app.firmeasy.legal/registro"
     },
     "article": {
       "ad": {
-        "title": "Plataforma que permite cumplimiento Legal de acuerdos y prevenciones de fraude de identidad para Pymes",
+        "title": "Plataforma que permite cumplimiento Legal de acuerdos y Validacion De Identidad para Pymes",
         "description": "Simplifica los procesos de firma de tu empresa.",
+<<<<<<< HEAD
         "link": "/oferta",
         "image": "/images/screen.png",
         "buttonText": "Saber más"
+=======
+        "link": "https://wa.link/qjiq5o",
+        "image": "/images/screen.png",
+        "buttonText": "Contactar"
+>>>>>>> 25a7f01a5ad3e3a96a99785fe49399c737c14fb0
       }
     }
   },
   "repository": {
     "title": "Repositorio",
-    "description": "Documentos , políticas y guías.",
+    "description": "Documentos , Políticas y Guías.",
     "files": [
       {
-        "title": "Entidad de Registro",
+       "title": "GIRASOL.PE ENTIDAD DE REGISTRO",
         "list": [
           {
             "name": "Declaraciones de prácticas",
-            "description": "Documentos y normas para la firma de la información.",
-            "link": "/docs/declaraciones-de-practicas"
+            "description": "Politica de Practicas",
+            "link": "https://drive.google.com/file/d/1JWRId0P9YOw25J_IBjrnqb0iWVdLXgt2/view"
           },
           {
-            "name": "Políticas de privacidad",
-            "description": "Documentos y normas para la firma de la información.",
-            "link": "/docs/declaraciones-de-practicas"
+            "name": "Politica de Registro",
+            "description": "Politica de Registro",
+            "link": "https://drive.google.com/file/d/1JWRId0P9YOw25J_IBjrnqb0iWVdLXgt2/view"
           },
           {
-            "name": "Políticas de registro",
-            "description": "Documentos y normas para la firma de la información.",
-            "link": "/docs/declaraciones-de-practicas"
+            "name": "Políticas de Privacidad",
+            "description": "Privacidad",
+            "link": "https://drive.google.com/file/d/1MdLWi6l0Y7735Az-aMgeW0Jhc-So_HPo/view"
           },
           {
-            "name": "Políticas de seguridad",
-            "description": "Documentos y normas para la firma de la información.",
-            "link": "/docs/declaraciones-de-practicas"
+            "name": "Plan de Privacidad",
+            "description": "Plan de Privacidad.",
+            "link": "https://drive.google.com/file/d/1z_GfjRTVMxaLAz1imReyDYST2ns5dgXr/view"
+          },
+          {
+            "name": "Política de Seguridad",
+            "description": "Politica de Seguridad.",
+            "link": "https://drive.google.com/file/d/1BI8sjVJWIm3crhRujYoj-7LSkkmyi9wZ/view"
+          },
+          {
+            "name": "Acreditacion Como Entidad De Registro",
+            "description": "Entidad De Registro",
+            "link": "https://drive.google.com/file/d/1ZIGdAYOl71Qc88mjflL4W0tKgJ46iXSm/view"
           }
         ]
       },
       {
-        "title": "Sello de Tiempo",
+        "title": "FIRMEASY (Firmeasy.legal)",
         "list": [
           {
-            "name": "Plan de privacidad",
-            "description": "Documentos y normas para la firma de la información.",
-            "link": "/docs/declaraciones-de-practicas"
+            "name": "Acreditacion de Libreria de Firma Digital Firmeasy",
+            "description": "Resolucion",
+            "link": "https://drive.google.com/file/d/1k3rP7oH1pCnRbDwIV8pmPXgBQbrOtuIZ/view?usp=sharing"
           },
           {
-            "name": "Vinculación entre ER y EC",
-            "description": "Documentos y normas para la firma de la información.",
-            "link": "/docs/declaraciones-de-practicas"
+            "name": "Autorizados Por MVNET Para GIRASOL PE SCRL",
+            "description": "Venta Superintendencia Del Mercado De Valores.",
+            "link": "https://mvnet.smv.gob.pe/mvnet/Documentacion/certificados_digitales1.htm"
           }
         ]
       }
     ]
   },
   "validations": {
-    "title": "Validez Jurídica",
-    "description": "Marco legal de las firmas electrónicas.",
+    "title": "Validez Jurídica De Firmeasy Legal",
+    "description": "La Firma Electronica y Firma Digital son legalmente validas y se consideran al mismo nivel que la firma manuscrita, aunque su regulacion varia segun el país. A continuación, te mostramos la validez jurídica en diferentes países:",
     "items": [
       {
-        "name": "Argentina",
-        "description": "Firma electrónica simple",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, consequatur blanditiis. Eveniet eos, a esse inventore blanditiis omnis mollitia possimus exercitationem explicabo ullam quibusdam recusandae, nostrum, molestias cupiditate voluptatem minima!"  
+        "name": "Perú",
+        "description": "Firma Electrónica Cualificada (Firma Digital), Firma Electronica Avanzada",
+        "content": "En Perú, se identifican tres tipos de firmas electrónicas: la simple, la avanzada y la cualificada segun el Decreto Supremo N.° 029-2021-PCM que modifico el reglamento de Ley N° 27269, Ley de firmas y Certificados Digitales. Se reconocen las siguientes tres (03) modalidades de firma electrónica: \n \n a) Firma Electrónica Simple. Es un dato en formato electrónico anexo a otros datos electrónicos o asociado de manera lógica con ellos, que utiliza un firmante para firmar. \n \n b) Firma Electrónica Avanzada. Es aquella firma electrónica simple que cumple con las siguientes características: (i) está vinculada al firmante de manera única, (ii) permite la identificación del firmante, (iii) ha sido creada utilizando datos de creación de firmas que el firmante puede utilizar bajo su control, y (iv) está vinculada con los datos firmados de modo tal que cualquier modificación posterior de los mismos es detectable. \n \n c) Firma Electrónica Cualificada. La firma electrónica cualificada o firma digital es aquella firma electrónica avanzada que cumple con lo establecido en el capítulo II del presente Reglamento. "  
       },
       {
-        "name": "Bolivia",
-        "description": "Firma electrónica simple",
-        "content": "..."
-      },
-      {
-        "name": "Brasil",
-        "description": "Firma electrónica simple",
-        "content": "..."
+        "name": "Chile",
+        "description": "Firma Electrónica Simple",
+        "content": "La Ley N° 19.799 de Chile regula los documentos electrónicos, la firma electrónica y los servicios de certificación de dicha firma. \n \n Esta ley establece la equivalencia del soporte electrónico al soporte de papel; Según la Ley N° 19.799, se reconocen dos tipos de firmas electrónicas: \n \n la Firma Electrónica Simple, que tiene el valor probatorio de un documento privado. \n \n Firma Electrónica Avanzada:que es un identificador virtual que acredita la identidad de una persona y la integridad del documento. \n \n Esta última tiene el valor probatorio de un documento público y es con un certificado digital emitido por un Prestador Acreditado."
       },
       {
         "name": "Colombia",
         "description": "Firma electrónica simple",
-        "content": "..."
+        "content": "La firma electrónica, según la Ley 527 de 1999 y el Decreto 2364 de 2012, se basa en el principio de neutralidad tecnológica. \n \n Este principio asegura que no se excluya, limite o invalide ningún método, procedimiento, dispositivo o tecnología que se utilice para crear una firma electrónica que cumpla con los requisitos establecidos. \n \n El Decreto 2364 de 2012 define una firma electrónica como cualquier mecanismo, ya sean códigos, contraseñas, datos biométricos o contraseñas criptográficas, que permita identificar a una persona en relación con un mensaje de datos o documento electrónico.  \n \n Este mecanismo debe ser confiable y adecuado para los propósitos para los que se utiliza la firma."
       },
       {
-        "name": "Chile",
-        "description": "Firma electrónica y digital",
-        "content": "..."
+        "name": "Mexico",
+        "description": "Firma electrónica simple (NOM151)",
+        "content": "De acuerdo con la legislación mexicana, existen dos categorías de firma electrónica: la firma electrónica simple y la firma electrónica avanzada o segura.  \n \n La firma electrónica simple se basa en el intercambio de claves y contraseñas entre las partes involucradas. Esta tiene validez legal y puede ser utilizada como evidencia en un juicio.  \n \n La Firma Electrónica Avanzada o segura utiliza un certificado de firma irrefutable emitido por un proveedor de servicios de certificación de firma electrónica avanzada (FIEL), emitido por el Instituto Nacional Electoral (INE) o una autoridad emisora autorizada por el gobierno mexicano.  \n \n Esta firma identifica personalmente al firmante y garantiza la integridad del documento. Tiene el mismo valor probatorio que una firma manuscrita.  \n \n En cuanto a las leyes y códigos que rigen la firma electrónica en México, existen varias leyes y normas, incluyendo el Código Civil Federal, el Código de Comercio, la Ley de Firma Electrónica Avanzada, y normas oficiales como la NOM-151-SCFI-201634 sobre conservación de mensajes de datos y digitalización de documentos.  \n \n Estas leyes y normas han sido publicadas en el Diario Oficial de la Federación y han sido modificadas en diferentes fechas."
       },
       {
-        "name": "Perú",
-        "description": "Firma electrónica avanzada",
-        "content": "..."
+        "name": "Brasil",
+        "description": "Firma electrónica",
+        "content": "En Brasil, existen dos tipos de firmas electrónicas: la firma electrónica y la firma digital; a firma electrónica es un método sencillo y fácil de usar.  \n \n Su validez jurídica está respaldada por las tecnologías de autenticación presentes en los sistemas de los proveedores de este tipo de firma. Esta firma es segura, protegida con tecnología avanzada y puede ser validada por diferentes métodos, como la autenticación en dos pasos, la biometría, las claves privadas, los certificados de autoridad privada, los códigos hash, entre otros;  la firma digital depende de un certificado digital para ser efectiva.  \n \n Este tipo de firma utiliza cifrado para proteger y validar documentos firmados electrónicamente. A través de un certificado, autentifica y garantiza el valor legal de la firma digital.  El Certificado Digital ICP-Brasil funciona con claves públicas que deben estar registradas en un CPF o CNPJ ante una Autoridad de Certificación; En relación a la validez de la firma electrónica en documentos privados, existen varias leyes y regulaciones en Brasil que la respaldan. Estas incluyen el Código Civil brasileño (artículos 104, 107 y 225), el Código de Processo Civil (artículos 369, 411, 440 y 441), la Medida Provisional 2.200-2 /2001 y la Ley 14.063 de 2020.    "
+      },
+      {
+        "name": "Bolivia",
+        "description": "Firma Electrónica Simple",
+        "content": "LA FIRMA ELECTRONICA EN BOLVIA ESTA REGULADO POR LA LEY Nº 164 LEY DE 8 DE AGOSTO DE 2011 - LEY GENERAL DE TELECOMUNICACIONES, TECNOLOGÍAS DE INFORMACIÓN Y COMUNICACIÓN;  \n \n En Bolivia, la legislación sobre la firma electrónica distingue dos categorías de firmas, que se requieren según el tipo de documentos a firmar, su valor probatorio y la seguridad empleada en su creación y uso:  \n \n Firma Electrónica Simple (FES): Esta es una firma que permite al receptor de un documento electrónico identificar, al menos formalmente, a su autor. Se puede utilizar en la emisión de varios documentos, como contratos consensuales, acuerdos o poderes simples. Principalmente, se utiliza en documentos que no se consideran “instrumentos públicos”;  \n \n Firma Electrónica Avanzada (FEA): Esta es una firma electrónica certificada por un proveedor acreditado, que asegura la integridad del documento electrónico firmado y la identidad del firmante. Requisitos para la firma electronica; La identidad del firmante. Su consentimiento al documento, Que asocie su consentimiento a un texto específico, Una evidencia de que el firmante ha participado voluntariamente.  "
+      },
+      {
+        "name": "Estados Unidos",
+        "description": "Firma Electrónica",
+        "content": "En Estados Unidos, La Firma Electronica empezo a ser legal del año 2000 a través de dos leyes principales: la Ley de Firma Electrónica ESIGN (Electronic Signatures in Global and National Commerce Act) y la Ley Uniforme de Transacciones Electrónicas (UETA). El sistema de firma electrónica empleado para registrar cualquier transacción debe mantener un registro asociado que refleje el proceso por el cual se creó la firma. "
+      },
+      {
+        "name": "Argentina",
+        "description": "Firma Electrónica Simple",
+        "content": "En Argentina, la regulación de la firma electrónica en 2023 se fundamenta principalmente en la Ley N° 25.506 de Firma Digital. Esta ley, promulgada en 2005 y modificada por varias normas posteriores, reconoce y establece las condiciones para el uso de la firma electrónica y la firma digital, así como su eficacia jurídica"
+      },
+      {
+        "name": "Uruguay",
+        "description": "Firma Electrónica Simple",
+        "content": "Uruguay se distingue por ser el primer país en Sudamérica en adoptar la firma digital, lo cual ocurrió en 1998; La regulación de la firma electrónica en Uruguay se basa en la Ley 18.600, promulgada el 21 de septiembre de 2009.  \n \n Esta ley reconoce la admisibilidad, validez y eficacia jurídicas de la firma electrónica. Es importante destacar que la firma electrónica en Uruguay se considera un “indicio probatorio”, lo que significa que debe estar respaldada por otras pruebas para ser válida en un tribunal. Por lo tanto, se recomienda que la implementación de la firma electrónica incluya información adicional que demuestre la identidad del firmante, su consentimiento al documento, la asociación de su consentimiento con un texto específico y cualquier otra evidencia que demuestre que el firmante ha participado voluntariamente en la transacción."
       }
     ]
   },
+  "support": {
+    "title": "Soporte y Asociaciones"
+  },
   "footer": {
+    "socials": {
+      "facebook": "https://www.facebook.com/Firmeasy.legal",
+      "instagram":  "https://www.instagram.com/firmeasy",
+      "youtube": "https://www.youtube.com/@firmeasy_legal",
+      "linkedin": "https://www.linkedin.com/company/firmeasy"
+    },
     "menu": [
       {
         "name": "Precios",
@@ -503,8 +753,5 @@
         "link": "/validez-juridica"
       }
     ]
-  },
-  "support": {
-    "title": "Soporte y Asociaciones"
   }
 }
