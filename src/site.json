@@ -533,42 +533,6 @@
     "description": "Historias de exito de nuestros clientes.",
     "items": [
       {
-<<<<<<< HEAD
-        "quote": "Ahora podemos seguir las etapas de atención al cliente [...] En pocos minutos, toda la información está disponible para nosotros, lo que representa un gran avance en nuestros procesos internos.",
-        "author": "Metropolitano",
-        "position": "Juan Perez Palacios - Gerente",
-        "image": "/images/quotes/1.png"
-      },
-      {
-        "quote": "Ahora podemos seguir las etapas de atención al cliente [...] En pocos minutos, toda la información está disponible para nosotros, lo que representa un gran avance en nuestros procesos internos.",
-        "author": "Metropolitano",
-        "position": "Juan Perez Palacios - Gerente",
-        "image": "/images/quotes/1.png"
-      },
-      {
-        "quote": "Ahora podemos seguir las etapas de atención al cliente [...] En pocos minutos, toda la información está disponible para nosotros, lo que representa un gran avance en nuestros procesos internos.",
-        "author": "Metropolitano",
-        "position": "Juan Perez Palacios - Gerente",
-        "image": "/images/quotes/1.png"
-      },
-      {
-        "quote": "Ahora podemos seguir las etapas de atención al cliente [...] En pocos minutos, toda la información está disponible para nosotros, lo que representa un gran avance en nuestros procesos internos.",
-        "author": "Metropolitano",
-        "position": "Juan Perez Palacios - Gerente",
-        "image": "/images/quotes/1.png"
-      },
-      {
-        "quote": "Ahora podemos seguir las etapas de atención al cliente [...] En pocos minutos, toda la información está disponible para nosotros, lo que representa un gran avance en nuestros procesos internos.",
-        "author": "Metropolitano",
-        "position": "Juan Perez Palacios - Gerente",
-        "image": "/images/quotes/1.png"
-      },
-      {
-        "quote": "Ahora podemos seguir las etapas de atención al cliente [...] En pocos minutos, toda la información está disponible para nosotros, lo que representa un gran avance en nuestros procesos internos.",
-        "author": "Metropolitano",
-        "position": "Juan Perez Palacios - Gerente",
-        "image": "/images/quotes/1.png"
-=======
         "quote": "Estamos integrados en Firmeasy con nuestra plataforma de proceso de firma de documentos, y nos facilita en la gestion documental y firma rapida",
         "author": "Transvial",
         "position": "Jhonatan Ventocilla - Jefe Sistemas",
@@ -585,9 +549,7 @@
         "author": "Cementos Yunga",
         "position": "Carlos Atachagua - Gerente",
         "image": "/images/quotes/3.png"
->>>>>>> 25a7f01a5ad3e3a96a99785fe49399c737c14fb0
       }
-     
     ]
   },
   "blog": {
@@ -602,15 +564,9 @@
       "ad": {
         "title": "Plataforma que permite cumplimiento Legal de acuerdos y Validacion De Identidad para Pymes",
         "description": "Simplifica los procesos de firma de tu empresa.",
-<<<<<<< HEAD
         "link": "/oferta",
         "image": "/images/screen.png",
         "buttonText": "Saber más"
-=======
-        "link": "https://wa.link/qjiq5o",
-        "image": "/images/screen.png",
-        "buttonText": "Contactar"
->>>>>>> 25a7f01a5ad3e3a96a99785fe49399c737c14fb0
       }
     }
   },
