@@ -48,19 +48,19 @@ import Title from '../shared/Title.astro';
       height: 100%;
       box-sizing: border-box;
       margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: var(--grid-gap-sm);
-      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      // grid-template-columns: repeat(6, 1fr);
+      gap: max(1rem, var(--grid-gap-sm));
+      margin-top: calc(var(--container-padding-y) / 2);
 
       @include screen('md') {
-        grid-template-columns: repeat(3, 1fr);
-      }
-      @include screen('sm') {
-        grid-template-columns: repeat(2, 1fr);
+        gap: max(1rem, var(--grid-gap-sm) / 2);
       }
 
       article {
+        min-width: 150px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -69,6 +69,14 @@ import Title from '../shared/Title.astro';
         background-color: white;
         padding: 1rem;
         border-radius: var(--border-radius);
+        @include screen('sm') {
+          min-width: 100px;
+          max-width: 120px;
+        }
+        @include screen('xsm') {
+          min-width: 80px;
+          max-width: 100px;
+        }
         img {
           width: 100%;
           height: 36px;

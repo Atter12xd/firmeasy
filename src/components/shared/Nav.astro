@@ -90,7 +90,7 @@ import IconClose from '../icons/IconClose.astro';
           @include screen('sm') {
             gap: 1rem;
           }
-          @include screen('md') {
+          @include screen('lg') {
             position: absolute;
             top: var(--nav-height);
             left: 0;
@@ -136,7 +136,7 @@ import IconClose from '../icons/IconClose.astro';
               height: 24px;
             }
           }
-          @include screen('md') {
+          @include screen('lg') {
             display: block;
             i {
               &:first-child {
@@ -151,7 +151,7 @@ import IconClose from '../icons/IconClose.astro';
       }
       #menu {
         display: none;
-        @include screen('md') {
+        @include screen('lg') {
           &:checked ~ .menu {
             ul {
               display: flex;
