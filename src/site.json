@@ -44,6 +44,10 @@
      "button2": {
       "text": "Contactar Ventas",
       "link": "https://wa.link/qjiq5o"
+    },
+     "button3": {
+      "text": "Iniciar Sesión",
+      "link": "https://app.firmeasy.legal/login"
     }
   },
   "header": {
