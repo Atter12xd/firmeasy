@@ -138,13 +138,14 @@ import IconClose from '../icons/IconClose.astro';
           display: flex;
           align-items: center;
           gap: 1rem;
+          flex-wrap: nowrap;
           @include screen('sm') {
-            & > a:last-child {
+            & > a:nth-last-child(-n+2) {
               display: none;
             }
           }
           @media screen and (max-width: 375px) {
-            & > a:last-child {
+            & > a:nth-last-child(-n+2) {
               // display: none;
             }
           }
