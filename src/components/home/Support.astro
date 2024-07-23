@@ -51,7 +51,6 @@ import Title from '../shared/Title.astro';
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      // grid-template-columns: repeat(6, 1fr);
       gap: max(1rem, var(--grid-gap-sm));
       margin-top: calc(var(--container-padding-y) / 2);
 
@@ -61,6 +60,7 @@ import Title from '../shared/Title.astro';
 
       article {
         min-width: 150px;
+        max-width: 200px;
         display: flex;
         flex-direction: column;
         align-items: center;
