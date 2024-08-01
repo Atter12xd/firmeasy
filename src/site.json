@@ -37,17 +37,13 @@
         "link": "/validez-juridica"
       }
     ],
-    "button1": {
-      "text": "Prueba Gratis",
-      "link": "https://app.firmeasy.legal/registro"
-    },
-     "button2": {
-      "text": "Contactar Ventas",
-      "link": "https://wa.link/qjiq5o"
-    },
-     "button3": {
+     "button1": {
       "text": "Iniciar Sesión",
       "link": "https://app.firmeasy.legal/login"
+    },
+    "button2": {
+      "text": "Prueba Gratis",
+      "link": "https://app.firmeasy.legal/registro"
     }
   },
   "header": {
@@ -264,21 +260,21 @@
         {
           "name": "Enterprise",
           "button":{
-            "text": "Contactar Con Ventas",
+            "text": "Contactar Ventas",
             "link": "https://wa.link/qjiq5o"
           }
         },
         {
           "name": "API",
           "button":{
-            "text": "Contactar Con Ventas",
+            "text": "Contactar Ventas",
             "link": "https://wa.link/qjiq5o"
           }
         },
         {
           "name": "Firmador",
           "button":{
-            "text": "Contactar Con Ventas",
+            "text": "Contactar Ventas",
             "link": "https://wa.link/qjiq5o"
           }
         }

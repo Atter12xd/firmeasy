@@ -11,7 +11,10 @@ import IconClose from '../icons/IconClose.astro';
         <img src="/images/logo.png" alt="logo firmeasy" />
       </a>
       <a href="/verificacion" class="verified">
-        <img src="/images/verifiedSunat.svg" alt="verificado firmeasy" />
+        <img
+          src="/images/verifiedSunat.svg"
+          alt="verificado firmeasy"
+        />
       </a>
     </div>
     <input type="checkbox" id="menu" class="menu-button" />
@@ -27,15 +30,9 @@ import IconClose from '../icons/IconClose.astro';
       </ul>
       <div class="actions">
         <a
-          href={nav.button3.link}
-          class="button outline transition-up">{nav.button3.text}</a
-        >
-        
-        <a
           href={nav.button1.link}
           class="button outline transition-up">{nav.button1.text}</a
         >
-        
         <a
           href={nav.button2.link}
           class="button gradient transition-up">{nav.button2.text}</a
@@ -75,19 +72,42 @@ import IconClose from '../icons/IconClose.astro';
       .logo {
         display: flex;
         align-items: center;
-        gap: .25rem;
-        & > a > img {
-          height: 36px;
-          @include screen('sm') {
-            height: 28px;
+        gap: 0.25rem;
+        @include screen('xsm') {
+          align-items: flex-end;
+          flex-direction: column;
+          gap: 0;
+        }
+        & > a {
+          padding-right: 0.25rem;
+          & > img {
+            height: 36px;
+            @include screen('sm') {
+              height: 28px;
+            }
+          }
+          &:last-child {
+            @include screen('xsm') {
+              padding-right: .3rem;
+            }
           }
         }
         .verified {
-          padding-top: .3rem;
+          // padding-top: 0.3rem;
+          padding-left: 0.5rem;
+          border-left: 1px solid var(--border-color);
+          @include screen('xsm') {
+            border-left: 0;
+            padding-left: 0;
+            margin-top: -0.4rem;
+          }
           img {
-            height: 6rem;
+            height: 1.5rem;
             @include screen('sm') {
-              height: 5rem;
+              height: 1.2rem;
+            }
+            @include screen('xsm') {
+              height: 0.75rem;
             }
           }
         }
@@ -96,19 +116,19 @@ import IconClose from '../icons/IconClose.astro';
       .menu {
         display: flex;
         align-items: center;
-        gap: 1.5rem;
+        gap: 1.2rem;
         height: 100%;
         font-size: var(--text-size);
         font-weight: 500;
         @include screen('sm') {
-          gap: 1rem;
+          gap: 0.75rem;
         }
         ul {
           list-style: none;
           display: flex;
           align-items: center;
           height: 100%;
-          gap: 1.5rem;
+          gap: 1.2rem;
           @include screen('sm') {
             gap: 1rem;
           }
@@ -137,18 +157,18 @@ import IconClose from '../icons/IconClose.astro';
         .actions {
           display: flex;
           align-items: center;
-          gap: 1rem;
+          gap: 0.8rem;
           flex-wrap: nowrap;
           @include screen('sm') {
-            & > a:nth-last-child(-n+2) {
+            & > a:nth-last-child(2) {
               display: none;
             }
           }
-          @media screen and (max-width: 375px) {
-            & > a:nth-last-child(-n+2) {
-              // display: none;
-            }
-          }
+          // @media screen and (max-width: 375px) {
+          //   & > a:nth-last-child(-n + 2) {
+          //     // display: none;
+          //   }
+          // }
         }
         .menu-button {
           display: none;
