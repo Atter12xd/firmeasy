@@ -16,7 +16,6 @@ import { repository } from '@site';
               </i>
               <div class="repository-name">
                 <p>{item.name}</p>
-                <small>{item.description}</small>
               </div>
               <button class="outline">Ver archivo</button>
             </a>
@@ -47,6 +46,7 @@ import { repository } from '@site';
       padding-bottom: 1rem;
       padding-top: 2rem;
       border-bottom: 1px solid var(--border-color-light);
+      text-transform: uppercase;
       font-size: var(--text-size);
       &:first-of-type {
         padding-top: 0;
@@ -59,10 +59,13 @@ import { repository } from '@site';
         display: flex;
         align-items: center;
         gap: 1rem;
-        padding: var(--card-padding) 0;
+        padding: calc(var(--card-padding) / 2) 0;
         border-bottom: 1px solid var(--border-color-light);
         text-decoration: none;
         color: var(--text-color);
+        &:focus, &:focus {
+          outline: none;
+        }
         // &:first-child {
         //   padding-top: 0;
         // }
@@ -84,7 +87,7 @@ import { repository } from '@site';
           flex: 1;
           text-align: left;
           font-size: var(--text-size);
-          font-weight: 500;
+          font-weight: 400;
           display: flex;
           flex-direction: column;
           gap: 0.25rem;

@@ -7,7 +7,7 @@ import { validations } from '@site';
   <ul>
     {
       validations.items.map((validation) => (
-        <details>
+        <details name="validation">
           <summary>
             <i>
               <IconDocCheck />
@@ -48,7 +48,7 @@ import { validations } from '@site';
       details {
         display: flex;
         align-items: center;
-        padding: var(--card-padding) 0;
+        padding: calc(var(--card-padding) / 2) 0;
         border-bottom: 1px solid var(--border-color-light);
         &:first-child {
           padding-top: 0;
@@ -61,6 +61,7 @@ import { validations } from '@site';
           display: flex;
           align-items: center;
           gap: 1rem;
+          cursor: pointer;
 
           i {
             background: white;
@@ -94,7 +95,7 @@ import { validations } from '@site';
         & > p {
           font-size: var(--text-size);
           line-height: var(--text-line-height);
-          padding-top: 1rem;
+          padding-top: 1.25rem;
           padding-left: 3.4rem;
           white-space: pre-line;
         }
