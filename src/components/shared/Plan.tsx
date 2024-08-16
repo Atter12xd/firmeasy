@@ -88,7 +88,7 @@ export default function Plan({ plan, period, type }: { plan: 'plan1' | 'plan2' |
           </li>
         ))}
       </ul>
-      <a href={pricing[type][plan].button.link} className={`button ${pricing[type][plan].recommended ? 'gradient' : 'outline'} transition-up`}>{pricing[type][plan].button.text}</a>
+      <a target="_blank" href={pricing[type][plan].button.link} className={`button ${pricing[type][plan].recommended ? 'gradient' : 'outline'} transition-up`}>{pricing[type][plan].button.text}</a>
     </article>
   )
 }
