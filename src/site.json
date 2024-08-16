@@ -51,7 +51,7 @@
     "description": "Firma Electronica Avanzada y Firma Digital Certificada de forma rapida, facil, segura, y con validez juridica; Flujo de Firma Dinamicos, Prueba de vidad y Firma con Identidad, Y Firma Con Whatsapp",
     "button1": {
       "text": "Contactar Ventas",
-      "link": "/contact"
+      "link": "http://wa.link/gwmohm"
     },
     "button2": {
       "text": "Ver video",
@@ -66,7 +66,7 @@
       "Firma En Un Minuto desde la comidad de tu Hogar",
       "Firma Con Selfie y/o Documento De Identidad",
       "Proveedor de Servicios de Certificacion Autorizado (PSC)",
-      "Validez Juridica a Nivel Nacional",
+      "Validez Juridica",
       "Firma Certificada",
       "Verificacion por Whatsapp, Correo o Celular"
     ]
@@ -96,11 +96,12 @@
           "2 Usuarios",
           "Firma Dibujada, OTP, Firma Digital, selfie o foto del documento",
           "Verificacion por Whatsapp, Correo o Celular",
-          "Reportes En Tiempos Real"
+          "Reportes En Tiempos Real",
+          "Firma por Whatsapp"
         ],
         "button":{
           "text": "Solicitar Plan",
-          "link": "/contact-plan-1"
+          "link": "http://wa.link/gwmohm"
         }
       },
       "plan2": {
@@ -121,11 +122,13 @@
           "Incluye Plan Emprende",
           "7 Usuarios",
           "Incluye 1 Certificado Digital (Solo Peru)",
-          "Personalizacion de Marca"
+          "Personalizacion de Marca",
+          "Firma por formulario",
+          "Video Firma"
         ],
         "button":{
           "text": "Solicitar Plan",
-          "link": "/contact-plan-2"
+          "link": "http://wa.link/gwmohm"
         }
       },
       "plan3": {
@@ -150,7 +153,7 @@
         ],
         "button":{
           "text": "Solicitar Plan",
-          "link": "/contact-plan-3"
+          "link": "http://wa.link/gwmohm"
         }
       }
     },
@@ -179,7 +182,7 @@
         ],
         "button":{
           "text": "Solicitar Plan",
-          "link": "/contact"
+          "link": "http://wa.link/gwmohm"
         }
       },
       "plan2": {
@@ -204,7 +207,7 @@
         ],
         "button":{
           "text": "Solicitar Plan",
-          "link": "/contact"
+          "link": "http://wa.link/gwmohm"
         }
       },
       "plan3": {
@@ -229,7 +232,7 @@
         ],
         "button":{
           "text": "Solicitar Plan",
-          "link": "/contact"
+          "link": "http://wa.link/gwmohm"
         }
       }
     },
