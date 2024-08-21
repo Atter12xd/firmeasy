@@ -8,9 +8,10 @@ import { head } from '@site';
 interface Props {
   title: string;
   keywords?: string;
+  main: boolean;
 }
 
-const { title, keywords } = Astro.props;
+const { title, keywords, main = true } = Astro.props;
 ---
 
 <!doctype html>
@@ -58,8 +59,12 @@ const { title, keywords } = Astro.props;
     <ViewTransitions  />
   </head>
   <body>
-    <Alert />
-    <Nav />
+    { main &&
+      (
+        <Alert />
+        <Nav />
+      )
+    }
     <slot />
     <Footer />
   </body>
@@ -176,6 +181,9 @@ const { title, keywords } = Astro.props;
     align-items: center;
     text-decoration: none;
     position: relative;
+    border: none;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 
     @media screen and (max-width: 640px) {
       padding: 0 0.75rem;

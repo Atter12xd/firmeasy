@@ -1,0 +1,80 @@
+---
+import { product } from '@site';
+import IconWhatsapp from '../icons/IconWhatsapp.astro';
+---
+
+{
+  (
+    <div class="nav-alert">
+      <div class="wrapper">
+        <div class="logo">
+          <a href="/">
+            <img src="/images/logo_dark.png" alt="logo firmeasy" />
+          </a>
+        </div>
+        <div class="content">
+          <p>{product.alert.title}</p>
+          <a
+            class="button gradient transition-up"
+            href={product.alert.button.link}
+          >
+            {product.alert.button.text}
+            <i>
+              <IconWhatsapp />
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+  )
+}
+<style>
+  .nav-alert {
+    width: 100%;
+    background-color: var(--text-color);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    .wrapper {
+      max-width: var(--container-max-width);
+      width: 100%;
+      height: 100%;
+      padding: 1rem var(--container-padding);
+      box-sizing: border-box;
+      margin: 0 auto;
+      position: relative;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem 1rem;
+      font-size: var(--text-size);
+      flex-wrap: wrap;
+      @media screen and (max-width: 768px) {
+        justify-content: center;
+      }
+      .logo {
+        a > img {
+          height: 36px;
+          @include screen('sm') {
+            height: 28px;
+          }
+        }
+      }
+      .content {
+        display: flex;
+        gap: 0.5rem 1rem;
+        align-items: center;
+        flex-wrap: wrap;
+        @media screen and (max-width: 768px) {
+          justify-content: center;
+        }
+        p {
+          line-height: var(--text-line-height);
+          opacity: 0.85;
+          text-align: center;
+        }
+      }
+    }
+  }
+</style>

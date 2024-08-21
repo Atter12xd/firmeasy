@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Features from '../components/product/Features.astro';
+import Overwall from '../components/product/Overwall.astro';
+import NavAlert from 'src/components/product/NavAlert.astro';
+import Clients from 'src/components/product/Clients.astro';
+import CTALinks from 'src/components/product/CTALinks.astro';
+import Header from 'src/components/product/Header.astro';
+import Quotes from 'src/components/shared/Quotes.astro';
+---
+
+<Layout title="Firmeasy | Firma Electrónica" main={false}>
+  <NavAlert />
+  <Header />
+  <Clients />
+  <Features />
+  <Overwall />
+  <CTALinks />
+  <Quotes background={false} />
+</Layout>
+
+<style></style>

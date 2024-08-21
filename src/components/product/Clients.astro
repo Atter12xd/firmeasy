@@ -1,27 +1,25 @@
 ---
 import Section from '../shared/Section.astro';
-import { support } from '@site';
+import { product } from '@site';
 import Title from '../shared/Title.astro';
 ---
 
 <Section color="var(--bg-color)">
-  <div class="support">
-    <Title text={support.title} />
+  <div class="clients">
+    <Title text={product.clients.title} />
     <div class="grid">
-      {
-        support.images.map((item) => (
-          <article>
-            <img src={item.src} alt={item.alt} />
-          </article>
-        ))
-      }
+      { product.clients.images.map((item) => (
+        <article>
+          <img src={item.src} alt={item.alt} />
+        </article>
+      ))}
     </div>
   </div>
 </Section>
 
 <style lang="scss">
   @import '../../assets/breakpoints.scss';
-  .support {
+  .clients {
     .grid {
       max-width: var(--container-max-width);
       width: 100%;

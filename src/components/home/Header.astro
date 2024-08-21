@@ -24,7 +24,11 @@ import ModalVideo from './ModalVideo.astro';
             </a>
           )
         }
-        {header.button2.text && <ModalVideo />}
+        {
+          header.button2.text && (
+            <ModalVideo videoId={header.button2.youtubeVideoId} />
+          )
+        }
       </div>
     </div>
     <div class="image">

@@ -2,6 +2,12 @@
 import IconClose from '../icons/IconClose.astro';
 import IconPlay from '../icons/IconPlay.astro';
 import { header } from '@site';
+
+export interface Props {
+  videoId: string;
+}
+
+const { videoId } =  Astro.props ;
 ---
 
 <style lang="scss">
@@ -64,8 +70,7 @@ import { header } from '@site';
 
 <dialog id="modalVideo">
   <main>
-    <lite-youtube videoid={header.button2.youtubeVideoId}
-    ></lite-youtube>
+    <lite-youtube videoid={videoId}></lite-youtube>
   </main>
   <form method="dialog">
     <button>

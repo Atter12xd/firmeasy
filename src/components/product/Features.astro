@@ -1,0 +1,153 @@
+---
+import Title from '../shared/Title.astro';
+import Section from '../shared/Section.astro';
+import IconCheck from '../icons/IconCheck.astro';
+import { product } from '@site';
+import BackgroundPattern from '../shared/BackgroundPattern.astro';
+import ModalVideo from '../home/ModalVideo.astro';
+---
+
+<Section>
+  <BackgroundPattern slot="bg" />
+  <div class="features">
+    <Title text={product.features.title} />
+    <div class="image image-video">
+      <div class="image image-wrapper">
+        <div class="play">
+          <ModalVideo videoId={product.features.youtubeVideoId} />
+        </div>
+        <img src={product.features.image} alt="firmeasy" />
+      </div>
+    </div>
+    <div class="content">
+      {
+        product.features.items.map((item) => (
+          <article>
+            <i>
+              <IconCheck />
+            </i>
+            <div class="detail">
+              <b>{item.title}</b>
+              <p>{item.description}</p>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</Section>
+<style>
+  .features {
+    max-width: var(--container-max-width);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    .image-video {
+      margin-top: calc(var(--container-padding-y) / 2);
+      .image-wrapper {
+        position: relative;
+        .play {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          background: rgba(0, 0, 0, 0.05);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    .image {
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      padding: 1rem;
+      background-color: white;
+
+      .image-wrapper {
+        box-shadow: none;
+        padding: 0;
+        border-radius: var(--border-radius-sm);
+      }
+      img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 3 / 1;
+        object-fit: cover;
+        @media screen and (max-width: 768px) {
+          aspect-ratio: 2 / 1;
+        }
+      }
+    }
+    .content {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: var(--grid-gap);
+      margin-top: calc(var(--container-padding-y) / 2);
+      @media screen and (max-width: 375px) {
+        grid-template-columns: 1fr;
+      }
+      article {
+        display: flex;
+        align-items: flex-start;
+        gap: var(--card-gap);
+        font-size: var(--text-size);
+        font-weight: 500;
+        color: var(--text-color);
+        background-color: white;
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow);
+        padding: var(--card-padding);
+        .detail {
+          display: flex;
+          flex-direction: column;
+          gap: 0.25rem;
+          b {
+            background: var(--bg-gradient-text);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: var(--title-line-height-xl);
+            user-select: none;
+          }
+          p {
+            line-height: var(--title-line-height-xl);
+            font-weight: 400;
+            font-size: var(--text-size);
+          }
+        }
+        i {
+          background: var(--bg-gradient);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          svg {
+            width: 20px;
+            height: 20px;
+            path {
+              fill: white;
+            }
+          }
+          @media screen and (max-width: 576px) {
+            min-width: 28px;
+            height: 28px;
+            min-height: 28px;
+            svg {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+</style>

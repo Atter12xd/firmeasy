@@ -1,12 +1,12 @@
 ---
 import Section from '../shared/Section.astro';
-import { overwall } from '@site';
+import { product } from '@site';
 ---
 
 <Section color="var(--bg-color)">
   <div class="overwall">
     {
-      overwall.map((item) => (
+      product.overwall.map((item) => (
         <article>
           <span>
             <h1>{item.amount}</h1>
@@ -44,6 +44,7 @@ import { overwall } from '@site';
       border-radius: var(--border-radius);
       border: 1px solid var(--border-color);
       box-shadow: var(--shadow);
+      
       span {
         display: flex;
         flex-direction: column;

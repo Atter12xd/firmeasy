@@ -6,17 +6,18 @@ import { quotes } from '@site';
 
 interface Props {
   more?: boolean;
+  background?: boolean;
 }
 
-const { more } = Astro.props;
+const { more, background = true } = Astro.props;
 ---
 
-<Section>
-  <BackgroundPattern slot="bg" />
+<Section color={!background ? 'var(--bg-color)' : ''}>
+  {background && <BackgroundPattern slot="bg" />}
   <Title text={quotes.title} body={quotes.description} />
   <div class="quotes">
     {
-      more && (
+      (more && background) && (
         <div class="see-more">
           <a href="/casos-de-exito" class="outline button">
             Ver más
