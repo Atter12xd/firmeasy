@@ -7,9 +7,10 @@ import Clients from 'src/components/product/Clients.astro';
 import CTALinks from 'src/components/product/CTALinks.astro';
 import Header from 'src/components/product/Header.astro';
 import Quotes from 'src/components/shared/Quotes.astro';
+import { product } from '@site';
 ---
 
-<Layout title="Firmeasy | Firma Electrónica" main={false}>
+<Layout title="Firmeasy | Firma Electrónica" main={false} keywords={product.head.keywords}>
   <NavAlert />
   <Header />
   <Clients />

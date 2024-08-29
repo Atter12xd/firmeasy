@@ -752,7 +752,11 @@
     ]
   },
   "product": {
-   "sales_phone": "971755982",
+    "sales_phone": "971755982",
+    "head": {
+      "keywords": "Firma electronica",
+      "description": "Firma Electrónica Avanzada"
+    },
     "alert": {
       "title": "¿Necesitas asesoría? Contacta con nuestros especialistas",
       "button": {

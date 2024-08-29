@@ -8,7 +8,7 @@ import { head } from '@site';
 interface Props {
   title: string;
   keywords?: string;
-  main: boolean;
+  main?: boolean;
 }
 
 const { title, keywords, main = true } = Astro.props;
