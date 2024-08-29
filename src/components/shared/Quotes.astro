@@ -17,7 +17,7 @@ const { more, background = true } = Astro.props;
   <Title text={quotes.title} body={quotes.description} />
   <div class="quotes">
     {
-      (more && background) && (
+      more && background && (
         <div class="see-more">
           <a href="/casos-de-exito" class="outline button">
             Ver más
@@ -86,6 +86,7 @@ const { more, background = true } = Astro.props;
       border-radius: var(--border-radius);
       box-shadow: var(--shadow);
       padding: var(--card-padding);
+      min-height: 150px;
       & > p {
         font-weight: 400;
         line-height: var(--text-line-height);
