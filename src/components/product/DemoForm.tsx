@@ -49,7 +49,7 @@ export default function DemoForm() {
         <input required type="text" placeholder="Empresa" value={form.company} onChange={(e) => setForm({ ...form, company: e.target.value })} />
         <button type="submit" className="button gradient transition-up"> {site.product.header.form.buttonSendText} </button>
         <strong>o</strong>
-        <a href="/" className="button transition-up">{site.product.header.form.buttonRegisterText}</a>
+        <a href="https://app.firmeasy.legal/registro" className="button transition-up">{site.product.header.form.buttonRegisterText}</a>
       </form>
     </section>
   )
