@@ -849,15 +849,15 @@
           "description": " Sube tus documentos en lote, fija la posición de firma y listo."
         },
         {
-          "title": "Firma electronica desde donde estés",
+          "title": "Firma electrónica desde donde estés",
           "description": " Desde tu hogar, oficina, u otros en segundo."
         },
         {
-          "title": "Firma electronica por WhatsApp",
+          "title": "Firma electrónica por WhatsApp",
           "description": " Envía documentos a través de WhatsApp, correo electrónico o cualquier canal."
         },
         {
-          "title": "Firma electronica por formulario",
+          "title": "Firma electrónica por formulario",
           "description": "Envía un formulario a 1 o más firmantes para recopilar firmas"
         }
       ]
