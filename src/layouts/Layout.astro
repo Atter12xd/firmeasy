@@ -12,6 +12,7 @@ interface Props {
 }
 
 const { title, keywords, main = true } = Astro.props;
+const currentUrl = Astro.url; // Obtener la URL actual
 ---
 
 <!doctype html>
@@ -20,8 +21,8 @@ const { title, keywords, main = true } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={head.description} />
-    <meta name="robots" content="index, nofollow, nocache" />
-    <link rel="canonical" href={head.domain} />
+    <meta name="robots" content="index, follow, nocache" />
+    <link rel="canonical" href={currentUrl} />
     <meta property="og:title" content="Firmeasy Legal" />
     <meta property="og:description" content={head.description} />
     <meta name="keywords" content={keywords || head.keywords} />
