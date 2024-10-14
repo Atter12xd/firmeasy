@@ -48,7 +48,7 @@
   },
   "header": {
     "title": "Cumplimiento Legal de Acuerdos",
-    "description": "Firma Electronica Avanzada y Firma Digital Certificada de forma rapida, facil, segura, y con validez juridica; Flujo de Firma Dinamicos, Prueba de vidad y Firma con Identidad, Y Firma Con Whatsapp",
+    "description": "Firma Electrónica Avanzada y Firma Digital Certificada de forma rápida, fácil, segura y con validez jurídica; flujo de firmas dinámico, prueba de vida y firma con identidad, y firma con WhatsApp.",
     "button1": {
       "text": "Contactar Ventas",
       "link": "http://wa.link/gwmohm"
@@ -61,19 +61,19 @@
   },
   "benefits": {
     "title": "¿Por qué elegir FirmEasy Legal?",
-    "description": "Facil, Seguro y Legal.",
+    "description": "Fácil, seguro y legal.",
     "items": [
-      "Firma En Un minuto desde la comunidad de tu Hogar",
+      "Firma en un minuto desde la comodidad de tu hogar",
       "Firma Con Selfie y/o Documento De Identidad",
       "Proveedor de Servicios de Certificacion Autorizado (PSC)",
-      "Validez Juridica",
+      "Validez Jurídica",
       "Firma Certificada",
-      "Verificacion por Whatsapp, Correo o Celular"
+      "Verificación por WhatsApp, correo o celular"
     ]
   },
   "pricing": {
     "title": "Precios y Planes",
-    "description": "Firma En Segundos Desde Cualquier Lugar Con Una Plataforma De Confianza.",
+    "description": "Firma en segundos desde cualquier lugar con una plataforma de confianza.",
     "discount": "34%",
     "web": {
       "coin": "S/",
@@ -92,12 +92,12 @@
           }
         },
         "items": [
-          "Evidencia Certificada",
-          "2 Usuarios",
-          "Firma Dibujada, OTP, Firma Digital, selfie o foto del documento",
-          "Verificacion por Whatsapp, Correo o Celular",
-          "Reportes En Tiempos Real",
-          "Firma por Whatsapp"
+          "Evidencia certificada",
+          "2 usuarios",
+          "Firma dibujada, OTP, firma digital, selfie o foto del documento",
+          "Verificación por WhatsApp, correo o celular",
+          "Reportes en tiempo real",
+          "Firma por WhatsApp"
         ],
         "button":{
           "text": "Solicitar Plan",
@@ -120,11 +120,11 @@
         },
         "items": [
           "Incluye Plan Emprende",
-          "7 Usuarios",
-          "Incluye 1 Certificado Digital (Solo Peru)",
-          "Personalizacion de Marca",
-          "Firma por formulario",
-          "Video Firma"
+  "7 usuarios",
+  "Incluye 1 certificado digital (solo Perú)",
+  "Personalización de marca",
+  "Firma por formulario",
+  "Video firma"
         ],
         "button":{
           "text": "Solicitar Plan",
@@ -146,10 +146,10 @@
           }
         },
         "items": [
-          "Incluye Plan Estandar",
-          "14 Usuarios",
-          "Incluye 1 Certificado Digital (Solo Peru)",
-          "Envio Masivo"
+          "Incluye Plan Estándar",
+          "14 usuarios",
+          "Incluye 1 certificado digital (solo Perú)",
+          "Envío masivo"
         ],
         "button":{
           "text": "Solicitar Plan",
@@ -178,7 +178,7 @@
           "700 Firmas Por Mes",
           "7 Usuarios",
           "$0.20 USD Por Firma Adicional",
-          "API REST (Documentación, Capacitacón y Soporte)"
+          "API REST (Documentación, Capacitación y Soporte)"
         ],
         "button":{
           "text": "Solicitar Plan",
@@ -203,7 +203,7 @@
           "2000 Firmas por mes",
           "7 Usuarios",
           "$0.18 USD Por Firma Adicional",
-          "API REST (Documentación, Capacitacón y Soporte)"
+          "API REST (Documentación, Capacitación y Soporte)"
         ],
         "button":{
           "text": "Solicitar Plan",
@@ -228,7 +228,7 @@
           "4500 Firmas Por Mes",
           "7 Usuarios",
           "$0.15 USD Por Firma Adicional",
-          "API REST (Documentación, Capacitacón y Soporte)"
+          "API REST (Documentación, Capacitación y Soporte)"
         ],
         "button":{
           "text": "Solicitar Plan",
@@ -635,12 +635,12 @@
     "items": [
       {
         "name": "Perú",
-        "description": "Firma Electrónica Cualificada (Firma Digital), Firma Electronica Avanzada",
+        "description": "Firma electrónica cualificada (Firma Digital), Firma electronica avanzada",
         "content": "En Perú, se identifican tres tipos de firmas electrónicas: la simple, la avanzada y la cualificada segun el Decreto Supremo N.° 029-2021-PCM que modifico el reglamento de Ley N° 27269, Ley de firmas y Certificados Digitales. Se reconocen las siguientes tres (03) modalidades de firma electrónica: \n \n a) Firma Electrónica Simple. Es un dato en formato electrónico anexo a otros datos electrónicos o asociado de manera lógica con ellos, que utiliza un firmante para firmar. \n \n b) Firma Electrónica Avanzada. Es aquella firma electrónica simple que cumple con las siguientes características: (i) está vinculada al firmante de manera única, (ii) permite la identificación del firmante, (iii) ha sido creada utilizando datos de creación de firmas que el firmante puede utilizar bajo su control, y (iv) está vinculada con los datos firmados de modo tal que cualquier modificación posterior de los mismos es detectable. \n \n c) Firma Electrónica Cualificada. La firma electrónica cualificada o firma digital es aquella firma electrónica avanzada que cumple con lo establecido en el capítulo II del presente Reglamento. "  
       },
       {
         "name": "Chile",
-        "description": "Firma Electrónica Simple",
+        "description": "Firma electrónica simple",
         "content": "La Ley N° 19.799 de Chile regula los documentos electrónicos, la firma electrónica y los servicios de certificación de dicha firma. \n \n Esta ley establece la equivalencia del soporte electrónico al soporte de papel; Según la Ley N° 19.799, se reconocen dos tipos de firmas electrónicas: \n \n la Firma Electrónica Simple, que tiene el valor probatorio de un documento privado. \n \n Firma Electrónica Avanzada:que es un identificador virtual que acredita la identidad de una persona y la integridad del documento. \n \n Esta última tiene el valor probatorio de un documento público y es con un certificado digital emitido por un Prestador Acreditado."
       },
       {
@@ -649,7 +649,7 @@
         "content": "La firma electrónica, según la Ley 527 de 1999 y el Decreto 2364 de 2012, se basa en el principio de neutralidad tecnológica. \n \n Este principio asegura que no se excluya, limite o invalide ningún método, procedimiento, dispositivo o tecnología que se utilice para crear una firma electrónica que cumpla con los requisitos establecidos. \n \n El Decreto 2364 de 2012 define una firma electrónica como cualquier mecanismo, ya sean códigos, contraseñas, datos biométricos o contraseñas criptográficas, que permita identificar a una persona en relación con un mensaje de datos o documento electrónico.  \n \n Este mecanismo debe ser confiable y adecuado para los propósitos para los que se utiliza la firma."
       },
       {
-        "name": "Mexico",
+        "name": "México",
         "description": "Firma electrónica simple (NOM151)",
         "content": "De acuerdo con la legislación mexicana, existen dos categorías de firma electrónica: la firma electrónica simple y la firma electrónica avanzada o segura.  \n \n La firma electrónica simple se basa en el intercambio de claves y contraseñas entre las partes involucradas. Esta tiene validez legal y puede ser utilizada como evidencia en un juicio.  \n \n La Firma Electrónica Avanzada o segura utiliza un certificado de firma irrefutable emitido por un proveedor de servicios de certificación de firma electrónica avanzada (FIEL), emitido por el Instituto Nacional Electoral (INE) o una autoridad emisora autorizada por el gobierno mexicano.  \n \n Esta firma identifica personalmente al firmante y garantiza la integridad del documento. Tiene el mismo valor probatorio que una firma manuscrita.  \n \n En cuanto a las leyes y códigos que rigen la firma electrónica en México, existen varias leyes y normas, incluyendo el Código Civil Federal, el Código de Comercio, la Ley de Firma Electrónica Avanzada, y normas oficiales como la NOM-151-SCFI-201634 sobre conservación de mensajes de datos y digitalización de documentos.  \n \n Estas leyes y normas han sido publicadas en el Diario Oficial de la Federación y han sido modificadas en diferentes fechas."
       },
@@ -660,22 +660,22 @@
       },
       {
         "name": "Bolivia",
-        "description": "Firma Electrónica Simple",
+        "description": "Firma electrónica simple",
         "content": "LA FIRMA ELECTRONICA EN BOLVIA ESTA REGULADO POR LA LEY Nº 164 LEY DE 8 DE AGOSTO DE 2011 - LEY GENERAL DE TELECOMUNICACIONES, TECNOLOGÍAS DE INFORMACIÓN Y COMUNICACIÓN;  \n \n En Bolivia, la legislación sobre la firma electrónica distingue dos categorías de firmas, que se requieren según el tipo de documentos a firmar, su valor probatorio y la seguridad empleada en su creación y uso:  \n \n Firma Electrónica Simple (FES): Esta es una firma que permite al receptor de un documento electrónico identificar, al menos formalmente, a su autor. Se puede utilizar en la emisión de varios documentos, como contratos consensuales, acuerdos o poderes simples. Principalmente, se utiliza en documentos que no se consideran “instrumentos públicos”;  \n \n Firma Electrónica Avanzada (FEA): Esta es una firma electrónica certificada por un proveedor acreditado, que asegura la integridad del documento electrónico firmado y la identidad del firmante. Requisitos para la firma electronica; La identidad del firmante. Su consentimiento al documento, Que asocie su consentimiento a un texto específico, Una evidencia de que el firmante ha participado voluntariamente.  "
       },
       {
         "name": "Estados Unidos",
-        "description": "Firma Electrónica",
+        "description": "Firma electrónica",
         "content": "En Estados Unidos, La Firma Electronica empezo a ser legal del año 2000 a través de dos leyes principales: la Ley de Firma Electrónica ESIGN (Electronic Signatures in Global and National Commerce Act) y la Ley Uniforme de Transacciones Electrónicas (UETA). El sistema de firma electrónica empleado para registrar cualquier transacción debe mantener un registro asociado que refleje el proceso por el cual se creó la firma. "
       },
       {
         "name": "Argentina",
-        "description": "Firma Electrónica Simple",
+        "description": "Firma electrónica simple",
         "content": "En Argentina, la regulación de la firma electrónica en 2023 se fundamenta principalmente en la Ley N° 25.506 de Firma Digital. Esta ley, promulgada en 2005 y modificada por varias normas posteriores, reconoce y establece las condiciones para el uso de la firma electrónica y la firma digital, así como su eficacia jurídica"
       },
       {
         "name": "Uruguay",
-        "description": "Firma Electrónica Simple",
+        "description": "Firma electrónica simple",
         "content": "Uruguay se distingue por ser el primer país en Sudamérica en adoptar la firma digital, lo cual ocurrió en 1998; La regulación de la firma electrónica en Uruguay se basa en la Ley 18.600, promulgada el 21 de septiembre de 2009.  \n \n Esta ley reconoce la admisibilidad, validez y eficacia jurídicas de la firma electrónica. Es importante destacar que la firma electrónica en Uruguay se considera un “indicio probatorio”, lo que significa que debe estar respaldada por otras pruebas para ser válida en un tribunal. Por lo tanto, se recomienda que la implementación de la firma electrónica incluya información adicional que demuestre la identidad del firmante, su consentimiento al documento, la asociación de su consentimiento con un texto específico y cualquier otra evidencia que demuestre que el firmante ha participado voluntariamente en la transacción."
       }
     ]
