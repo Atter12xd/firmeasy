@@ -48,7 +48,7 @@
   },
   "header": {
     "title": "Firma Digital y Electrónica Avanzada para Cumplimiento Legal de Acuerdos", 
-    "description": "Utiliza nuestra plataforma de firma electrónica avanzada y firma digital certificada para asegurar el cumplimiento legal de tus documentos. Nuestro servicio garantiza rapidez, seguridad y validez jurídica, con verificación por prueba de vida, identidad y firma con WhatsApp.",
+    "description": "Utiliza nuestra software integral de firma electrónica avanzada y firma digital certificada para asegurar el cumplimiento legal de tus documentos. Nuestro servicio garantiza rapidez, seguridad y validez jurídica, con verificación por prueba de vida, identidad y firma con WhatsApp.",
     "button1": {
       "text": "Inicia tu Firma Electrónica Ahora",
       "link": "http://wa.link/gwmohm"
@@ -64,7 +64,7 @@
     "description": "Fácil, seguro y legal.",
     "items": [
       "Firma electrónica en un minuto desde la comodidad de tu hogar",
-      "Firma digital con selfie y/o documento de identidad",
+      "Firma electrónica con selfie y/o documento de identidad",
       "Proveedor de Servicios de Certificacion Autorizado (PSC)",
       "Validez Jurídica",
       "Firma digital certificada legalmente",
@@ -97,7 +97,7 @@
           "Firma Digital a través de métodos seguros: Dibujada, OTP, Selfie, Documento de Identidad",
           "Verificación de Identidad Segura por WhatsApp, Correo o Celular",
           "Reportes en tiempo real",
-          "Firma Digital Rápida a través de WhatsApp"
+          "Firma Electrónica Rápida a través de WhatsApp"
         ],
         "button":{
           "text": "Solicita tu Plan de Firma Digital",
@@ -516,19 +516,19 @@
   "overwall": [
     {
       "amount": "250 Mil",
-      "description": "Documentos firmados con Firma Digital Certificada"
+      "description": "Documentos firmados"
     },
     {
       "amount": "25 Ciudades",
-      "description": "Usan Firmeasy para Firmas Digitales"
+      "description": "Usan Firmeasy"
     },
     {
       "amount": "+ 5 Mil",
-      "description": "Usuarios activos utilizando Firma Electrónica"
+      "description": "Usuarios activos"
     },
     {
       "amount": "+ 1 Mil",
-      "description": "Empresas satisfechas con Firma Digital en Perú"
+      "description": "Empresas satisfechas"
     }
   ],
   "quotes": {
@@ -567,7 +567,7 @@
       "ad": {
         "title": "Plataforma que permite cumplimiento Legal de acuerdos y Validacion De Identidad para Pymes",
         "description": "Simplifica los procesos de firma de tu empresa.",
-        "link": "/oferta",
+        "link": "/firma-electronica",
         "image": "/images/screen.png",
         "buttonText": "Saber más"
       }
@@ -766,7 +766,7 @@
     },
     "header": {
       "caption": "Software integral de firma",
-      "title": "¿Aún firmas documentos en papel o por correo? Descubre la Firma Electrónica Legal y Segura",
+      "title": "Empieza a usar la firma electrónica segura y legal",
       "image": "/images/screen.png",
       "benefits": [
         "Firma electrónica en tiempo real, con plena validez legal",
