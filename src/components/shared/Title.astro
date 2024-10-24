@@ -11,7 +11,7 @@ const { text, body, level = 'h1' } = Astro.props; // Asigna 'h1' como valor por 
 
 <div class="title">
   {level === 'h1' ? <h1>{text}</h1> : level === 'h2' ? <h2>{text}</h2> : <h3>{text}</h3>} <!-- Renderiza según el nivel -->
-  <p>{body}</p>
+  <p>{body}</p> 
 </div>
 
 <style>

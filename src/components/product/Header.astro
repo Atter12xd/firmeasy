@@ -14,8 +14,8 @@ import DemoForm from './DemoForm';
     <BackgroundPattern slot="bg" />
     <div class="header-wrapper">
       <div class="text">
-        <h2>{product.header.caption}</h2>
-        <h1>{product.header.title}</h1>
+        <h3>{product.header.caption}</h3>
+        <h2>{product.header.title}</h2>
         <ul>
           {
             product.header.benefits.map((item) => (
@@ -70,19 +70,30 @@ import DemoForm from './DemoForm';
           align-items: center;
         }
         h1 {
-          font-size: var(--title-size-xl);
+          font-size: 1.2rem; /* Tamaño más pequeño para subtítulo */
           font-weight: 600;
           text-wrap: balance;
           max-width: 500px;
           line-height: var(--title-line-height-xl);
         }
         h2 {
-          font-size: var(--title-size);
-          line-height: var(--title-line-height);
-          text-wrap: pretty;
-          max-width: 520px;
-          font-weight: 300;
-        }
+  font-size: 2.5rem; /* Tamaño más pequeño para subtítulo */
+  font-weight: 500; /* Menos peso para un subtítulo más suave */
+  color: var(--text-color-secondary); /* Usa un color secundario, si lo tienes */
+  margin-top: 0.0rem; /* Añade espacio encima */
+  margin-bottom: 0.0rem; /* Añade espacio debajo */
+  text-align: left; /* Puedes cambiar a center si prefieres subtítulos centrados */
+  line-height: 1,0; /* Ajusta la altura de línea para mayor legibilidad */
+}
+h3 {
+  font-size: 1.3rem; /* Tamaño más pequeño para subtítulo */
+  font-weight: 400; /* Menos peso para un subtítulo más suave */
+  color: var(--text-color-secondary); /* Usa un color secundario, si lo tienes */
+  margin-top: 0.75rem; /* Añade espacio encima */
+  margin-bottom: 0.75rem; /* Añade espacio debajo */
+  text-align: left; /* Puedes cambiar a center si prefieres subtítulos centrados */
+  line-height: 1.4; /* Ajusta la altura de línea para mayor legibilidad */
+}
         .image {
           border: 1px solid var(--border-color);
           border-radius: var(--border-radius);

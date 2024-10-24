@@ -1,15 +1,15 @@
 ---
 import Section from '../shared/Section.astro';
-import { product } from '@site';
+import { overwall } from '@site';
 ---
 
 <Section color="var(--bg-color)">
   <div class="overwall">
     {
-      product.overwall.map((item) => (
+      overwall.map((item) => (
         <article>
           <span>
-            <h1>{item.amount}</h1>
+            <h2>{item.amount}</h2> <!-- Cambiado a h2 -->
             <p>{item.description}</p>
           </span>
         </article>
