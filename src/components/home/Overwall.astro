@@ -9,7 +9,7 @@ import { overwall } from '@site';
       overwall.map((item) => (
         <article>
           <span>
-            <h1>{item.amount}</h1>
+            <h2>{item.amount}</h2> <!-- Cambiado a h2 -->
             <p>{item.description}</p>
           </span>
         </article>
@@ -36,7 +36,6 @@ import { overwall } from '@site';
       display: flex;
       flex-direction: column;
       justify-content: center;
-      // align-items: center;
       text-align: left;
       color: var(--text-color);
       background-color: white;
@@ -47,15 +46,14 @@ import { overwall } from '@site';
       span {
         display: flex;
         flex-direction: column;
-        // align-items: center;
         gap: 0.25rem;
-        h1 {
-          font-size: var(--title-size-lg);
+        h2 { // Cambiado de h1 a h2
+          font-size: var(--title-size-lg); /* Mantén el tamaño grande */
           font-weight: 600;
           text-wrap: balance;
           max-width: 500px;
           line-height: var(--title-line-height-xl);
-          background: var(--bg-gradient-text);
+          background: var(--bg-gradient-text); /* Mismo efecto de gradiente */
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -66,7 +64,6 @@ import { overwall } from '@site';
           font-size: var(--text-size);
           font-weight: 500;
           color: var(--text-color);
-          // text-align: center;
         }
       }
     }

@@ -10,8 +10,8 @@ import PrincingCompare from './PrincingCompare.astro';
 <Section>
   <BackgroundPattern slot="bg" />
   <div class="pricing">
-    <Title text={pricing.title} body={pricing.description} />
-    <PricingContent client:visible />
+    <Title text={pricing.title} body={pricing.description} level="h2" /> <!-- Cambiado a h2 -->
+    <PricingContent client:visible /> 
     <PrincingCompare />
   </div>
 </Section>
