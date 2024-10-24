@@ -564,14 +564,14 @@
       "link": "https://app.firmeasy.legal/registro"
     },
     "article": {
-      "ad": {
-        "title": "Plataforma que permite cumplimiento Legal de acuerdos y Validacion De Identidad para Pymes",
-        "description": "Simplifica los procesos de firma de tu empresa.",
-        "link": "/firma-electronica",
-        "image": "/images/screen.png",
-        "buttonText": "Saber más"
-      }
-    }
+    "ad": {
+    "title": "Canjea 5 firmas gratis aqui",
+    "description": "Simplifica los procesos de firma de tu empresa.",
+    "image": "/images/screen.png",
+    "link": "https://app.firmeasy.legal/registro", 
+    "buttonText": "Crea cuenta gratis"
+  }
+  }
   },
   "repository": {
     "title": "Repositorio",
@@ -832,7 +832,7 @@
       ]
     },
     "features": {
-      "title": "Nuestra Plataforma de Firma Electrónica te Permite Firmar Documentos de Forma Rápida y Legal",
+      "title": "Mira la forma de Firmar Documentos de Forma Rápida y Legal",
       "image": "/images/support/banner.png",
       "youtubeVideoId": "cD2-ru_G8OA",
       "items": [

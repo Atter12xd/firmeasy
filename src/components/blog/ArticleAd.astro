@@ -8,11 +8,13 @@ export interface Props {
   title: string;
   description: string;
 }
+
 const { buttonText, image, link, title, description } = Astro.props;
 ---
 
-<article class=`article-ad ${!buttonText ? 'transition-up' : ''}`>
+<article class={`article-ad ${!buttonText ? 'transition-up' : ''}`}>
   {!buttonText && link && <a href={link} class="overlay-link" />}
+  
   {
     image && (
       <div class="image">
@@ -20,14 +22,18 @@ const { buttonText, image, link, title, description } = Astro.props;
       </div>
     )
   }
+
   <div class="article-ad-content">
     <ChipRecommended />
-    <h1>{title}</h1>
+    <h2>{title}</h2> <!-- Cambié h1 por h2 aquí -->
     <p>{description}</p>
+    
     {
       buttonText && (
         <a
           href={link || '/'}
+          target="_blank"                
+          rel="noopener noreferrer"      
           class="button gradient ad-link transition-up"
         >
           {buttonText}
@@ -53,6 +59,7 @@ const { buttonText, image, link, title, description } = Astro.props;
     text-decoration: none;
     position: relative;
     overflow: hidden;
+    
     .overlay-link {
       position: absolute;
       top: 0;
@@ -62,6 +69,7 @@ const { buttonText, image, link, title, description } = Astro.props;
       z-index: 1;
       background-color: transparent;
     }
+    
     .image {
       border: 1px solid var(--border-color);
       border-radius: var(--border-radius-sm);
@@ -69,26 +77,30 @@ const { buttonText, image, link, title, description } = Astro.props;
       box-shadow: var(--shadow-light);
       margin-bottom: 0.5rem;
       max-width: 350px;
+      
       img {
         width: 100%;
         border-radius: var(--border-radius-sm);
         aspect-ratio: 300/183;
       }
     }
+    
     .article-ad-content {
       display: flex;
       flex-direction: column;
       gap: var(--card-gap-sm);
 
-      h1 {
+      h2 {  /* Cambié h1 por h2 en los estilos también */
         font-size: var(--text-size-lg);
         line-height: var(--text-line-height);
         font-weight: 500;
       }
+
       p {
         font-size: var(--text-size);
         line-height: var(--text-line-height);
       }
+
       a.ad-link {
         width: 100%;
         max-width: 120px;
@@ -97,3 +109,4 @@ const { buttonText, image, link, title, description } = Astro.props;
     }
   }
 </style>
+

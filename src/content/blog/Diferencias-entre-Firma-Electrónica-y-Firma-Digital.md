@@ -6,6 +6,7 @@ resume: 'Entender las diferencias entre firma electrónica y firma digital es es
 
 La **firma electrónica** y la **firma digital** son términos que a menudo se utilizan indistintamente, pero tienen significados distintos y aplicaciones específicas. Comprender las diferencias entre ambas es crucial para seleccionar la opción más adecuada para tus necesidades en el ámbito empresarial y legal en Perú.
 
+
 ### 1. **Definición**
 
 - **Firma Electrónica:** Es un conjunto de datos en formato electrónico que se asocia a un documento y que permite identificar a la persona que lo firma. No necesariamente utiliza un método de autenticación avanzado. Puede incluir simplemente una imagen escaneada de una firma manuscrita o un nombre escrito en un campo de texto.
@@ -23,6 +24,16 @@ La **firma electrónica** y la **firma digital** son términos que a menudo se u
 - **Firma Electrónica:** Aunque tiene validez legal, su reconocimiento puede variar dependiendo del contexto y las circunstancias en las que se utilice. En Perú, la Ley N° 27269 establece que las firmas electrónicas tienen validez, pero su aceptación puede depender de la naturaleza del documento y el acuerdo entre las partes.
 
 - **Firma Digital:** Tiene un reconocimiento legal más robusto. Según la misma ley, las firmas digitales tienen la misma validez y fuerza probatoria que una firma manuscrita, siempre que sean generadas por un proveedor de servicios de certificación acreditado. Esto las convierte en la opción preferida para documentos críticos y transacciones importantes.
+<div class="video-container">
+  <iframe
+    width="700"
+    height="420"
+    src="https://www.youtube.com/embed/22dcKOfuKU8"
+    frameborder="0"
+    allowfullscreen
+    title="Diferencias entre Firma Electrónica y Firma Digital"
+  ></iframe>
+</div>
 
 ### 4. **Uso y Aplicaciones**
 
