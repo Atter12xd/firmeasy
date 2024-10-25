@@ -14,7 +14,7 @@ const { more, background = true } = Astro.props;
 
 <Section color={!background ? 'var(--bg-color)' : ''}>
   {background && <BackgroundPattern slot="bg" />}
-  <Title text={quotes.title} body={quotes.description} level="h2" /> <!-- Cambiado a h2 -->
+  <Title text={quotes.title} body={quotes.description} level="h2" /> 
   <div class="quotes">
     {
       more && background && (

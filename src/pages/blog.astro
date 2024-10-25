@@ -7,13 +7,13 @@ import BackgroundPattern from '../components/shared/BackgroundPattern.astro';
 import Fullpage from '../components/shared/Fullpage.astro';
 import { blog } from '@site';
 ---
-
 <Layout title="Firmeasy | Blog">
   <Fullpage>
     <Section>
       <BackgroundPattern slot="bg" />
-      <Title text={blog.title} body={blog.description} />
+      <Title text={blog.title} body={blog.description} level="h1" /> <!-- Aseguramos que el título del blog sea h1 -->
       <Articles />
     </Section>
   </Fullpage>
 </Layout>
+
