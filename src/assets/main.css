@@ -1,0 +1,92 @@
+:root {
+    --color-fondo-principal: #f9f9f9;   /* Fondo más suave y claro */
+    --color-principal: #2a9d8f;         /* Verde esmeralda sobrio */
+    --color-texto: #333333;             /* Color gris oscuro para el texto */
+    --color-secundario: #e7e7eb;        /* Azul grisáceo para botones y detalles */
+    --color-blanco: #ffffff;            /* Blanco para contraste */
+    --color-encabezado: #3e434b;        /* Azul oscuro para encabezados */
+}
+
+body {
+    background-color: var(--color-fondo-principal);
+    color: var(--color-texto);
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    text-align: left; /* Alinear el cuerpo a la izquierda */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-encabezado);
+    text-align: left; /* Alinear encabezados a la izquierda */
+}
+
+.btn-primario {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Alinear botones a la izquierda */
+}
+
+.btn-primario:hover {
+    background-color: var(--color-secundario);
+}
+
+a {
+    color: var(--color-principal);
+    text-decoration: none;
+    text-align: left; /* Alinear enlaces a la izquierda */
+}
+
+a:hover {
+    color: var(--color-secundario);
+}
+
+/* Estilo para tarjetas (como los testimonios) */
+.card {
+    background-color: var(--color-blanco);
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left; /* Alinear tarjetas a la izquierda */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes a las secciones principales para destacar mejor */
+section {
+    padding: 40px 20px;
+    text-align: left; /* Alinear secciones a la izquierda */
+}
+
+header {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: 20px;
+    text-align: left; /* Alinear encabezado a la izquierda */
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: 20px;
+    text-align: left; /* Alinear pie de página a la izquierda */
+    font-size: 0.9em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    text-align: left; /* Alinear contenedor a la izquierda */
+}
