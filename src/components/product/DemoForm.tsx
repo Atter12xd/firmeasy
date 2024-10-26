@@ -39,7 +39,7 @@ export default function DemoForm() {
   return (
     <section className={styles.form}>
       <div className={styles.title}>
-        <h1>{site.product.header.form.title}</h1>
+        <h2>{site.product.header.form.title}</h2>
         <p>{site.product.header.form.caption}</p>
       </div>
       <form onSubmit={(e) => { e.preventDefault(); validate(send) }} className={styles.wrapper}>

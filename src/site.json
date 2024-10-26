@@ -58,6 +58,7 @@
       "youtubeVideoId": "cD2-ru_G8OA"
     },
     "image": "/images/screen.webp"
+    
   },
   "benefits": {
     "title": "¿Por qué elegir FirmEasy Legal?",
@@ -535,26 +536,39 @@
     "title": "Historias de Éxito",
     "description": "Clientes que Confían en Firmeasy",
     "items": [
-      {
-        "quote": "Antes de usar Firmeasy, Transvial enfrentaba largos tiempos de espera y errores frecuentes en la gestión de documentos. Desde que se integraron a nuestra plataforma de firma digital, han reducido significativamente el tiempo de firma de documentos y mejorado la eficiencia.",
-        "author": "Transvial",
-        "position": "Jhonatan Ventocilla - Jefe Sistemas",
-        "image": "/images/quotes/1.png"
-      },
-      {
-        "quote": "Con más de 50 documentos para gestionar semanalmente, Incubadora Scale luchaba por encontrar una plataforma que se ajustara a sus necesidades. Con Firmeasy, ahora pueden firmar electrónicamente de manera segura y sin complicaciones.",
-        "author": "Incubadora Scale",
-        "position": "Clarisa Victorio - Gerente",
-        "image": "/images/quotes/2.jpg"
-      },
-      {
-        "quote": "Los procesos de contratos eran lentos y complicados para Cementos Yunga. Con Firmeasy, han acelerado sus gestiones y optimizado la firma de contratos con sus clientes.",
-        "author": "Cementos Yunga",
-        "position": "Carlos Atachagua - Gerente",
-        "image": "/images/quotes/3.webp"
-      }
+        {
+            "quote": "Antes de usar Firmeasy, Transvial enfrentaba largos tiempos de espera y errores frecuentes en la gestión de documentos. Desde que se integraron a nuestra plataforma de firma digital, han reducido significativamente el tiempo de firma de documentos y mejorado la eficiencia.",
+            "author": "Transvial",
+            "position": "Jhonatan Ventocilla - Jefe Sistemas",
+            "image": {
+                "src": "/images/quotes/1.png",
+                "width": 36,
+                "height": 36
+            }
+        },
+        {
+            "quote": "Con más de 50 documentos para gestionar semanalmente, Incubadora Scale luchaba por encontrar una plataforma que se ajustara a sus necesidades. Con Firmeasy, ahora pueden firmar electrónicamente de manera segura y sin complicaciones.",
+            "author": "Incubadora Scale",
+            "position": "Clarisa Victorio - Gerente",
+            "image": {
+                "src": "/images/quotes/2.jpg",
+                "width": 36,
+                "height": 36
+            }
+        },
+        {
+            "quote": "Los procesos de contratos eran lentos y complicados para Cementos Yunga. Con Firmeasy, han acelerado sus gestiones y optimizado la firma de contratos con sus clientes.",
+            "author": "Cementos Yunga",
+            "position": "Carlos Atachagua - Gerente",
+            "image": {
+                "src": "/images/quotes/3.webp",
+                "width": 36,
+                "height": 36
+            }
+        }
     ]
-  },
+},
+
   "blog": {
     "title": "Blog",
     "description": "Artículos y novedades.",
@@ -567,7 +581,11 @@
     "ad": {
     "title": "Canjea 5 firmas gratis aqui",
     "description": "Simplifica los procesos de firma de tu empresa.",
-    "image": "/images/screen.webp",
+    "image": {
+      "src": "/images/screen.webp",
+      "width": 520,
+      "height": 315
+  },          
     "link": "https://app.firmeasy.legal/registro", 
     "buttonText": "Crea cuenta gratis"
   }
@@ -685,39 +703,57 @@
     "images": [
       {
         "src": "/images/support/1.webp",
-        "alt": "Logo de HUB UDEP - Soporte para innovación"
+        "alt": "Logo de HUB UDEP - Soporte para innovación",
+        "width": 150,
+        "height": 36
       },
       {
         "src": "/images/support/2.webp",
-        "alt": "startup peru"
+        "alt": "startup peru",
+        "width": 150,
+        "height": 36
       },
       {
         "src": "/images/support/3.webp",
-        "alt": "ccl"
+        "alt": "ccl",
+        "width": 150,
+        "height": 36
       },
       {
         "src": "/images/support/4.png",
-        "alt": "inovate"
+        "alt": "inovate",
+        "width": 150,
+        "height": 36
       },
       {
         "src": "/images/support/5.webp",
-        "alt": "incuba unach"
+        "alt": "incuba unach",
+        "width": 150,
+        "height": 36
       },
       {
         "src": "/images/support/6.webp",
-        "alt": "Unheval venture"
+        "alt": "Unheval venture",
+        "width": 150,
+        "height": 36
       },
       {
         "src": "/images/support/7.png",
-        "alt": "Incubadora Scale"
+        "alt": "Incubadora Scale",
+        "width": 150,
+        "height": 36
       },
       {
         "src": "/images/support/8.png",
-        "alt": "EmpreLatam"
+        "alt": "EmpreLatam",
+        "width": 150,
+        "height": 36
       },
-      {
+      { 
         "src": "/images/support/9.webp",
-        "alt": "Logo de COFIDE - Respaldo para firmas digitales en Perú"
+        "alt": "Logo de COFIDE - Respaldo para firmas digitales en Perú",
+        "width": 150,
+        "height": 36
       }
     ]
   },
@@ -767,7 +803,11 @@
     "header": {
       "caption": "Software integral de firma",
       "title": "Empieza a usar la firma electrónica segura y legal",
-      "image": "/images/screen.webp",
+      "image": {
+        "src": "/images/screen.webp",
+        "width": 515,
+        "height": 315
+    },          
       "benefits": [
         "Firma electrónica en tiempo real, con plena validez legal",
         "Verificación de identidad con selfie o documento de identidad",
@@ -785,49 +825,71 @@
       "images": [
          {
           "src": "/images/support/1.webp",
-          "alt": "Udep"
+          "alt": "Udep",
+          "width": 110,
+          "height": 36
          },
          {
           "src": "/images/support/2.webp",
-          "alt": "startup peru"
+          "alt": "startup peru",
+          "width": 110,
+          "height": 36
          },
          {
           "src": "/images/support/3.webp",
-          "alt": "ccl"
+          "alt": "ccl",
+          "width": 110,
+          "height": 36
          },
          {
           "src": "/images/support/4.png",
-          "alt": "inovate"
+          "alt": "inovate",
+          "width": 110,
+          "height": 36
          },
          {
           "src": "/images/support/5.webp",
-          "alt": "incuba unach"
+          "alt": "incuba unach",
+          "width": 106,
+          "height": 36
          },
          {
           "src": "/images/support/6.webp",
-          "alt": "Unheval venture"
+          "alt": "Unheval venture",
+          "width": 75,
+          "height": 36
          },
          {
           "src": "/images/support/7.png",
-          "alt": "Incubadora Scale"
+          "alt": "Incubadora Scale",
+          "width": 93,
+          "height": 36
          },
          {
           "src": "/images/support/8.png",
-          "alt": "EmpreLatam"
+          "alt": "EmpreLatam",
+          "width": 110,
+          "height": 36
          },
          {
           "src": "/images/support/9.webp",
-          "alt": "Cofide"
+          "alt": "Cofide",
+          "width": 110,
+          "height": 36
          },
 
          {
           "src": "/images/support/10.png",
-          "alt": "Alvisoft"
+          "alt": "Alvisoft",
+          "width": 110,
+          "height": 36
          },
 
          {
           "src": "/images/support/11.png",
-          "alt": "Metropolitano"
+          "alt": "Metropolitano",
+          "width": 110,
+          "height": 36
          }
       ]
     },

@@ -32,7 +32,14 @@ const { more, background = true } = Astro.props;
             <article>
               <p>"{item.quote}"</p>
               <span>
-                <img src={item.image} alt="casos-exito" />
+                <!-- Modificación para usar width, height y src desde item.image -->
+                <img 
+                  src={item.image.src} 
+                  alt="casos-exito" 
+                  width={item.image.width} 
+                  height={item.image.height} 
+                  loading="lazy"
+                />
                 <div class="person">
                   <p>{item.author}</p>
                   <small>{item.position}</small>
@@ -45,7 +52,6 @@ const { more, background = true } = Astro.props;
     }
   </div>
 </Section>
-
 
 <style>
   .quotes {

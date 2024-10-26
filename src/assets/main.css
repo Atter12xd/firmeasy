@@ -2,7 +2,7 @@
     --color-fondo-principal: #f9f9f9;   /* Fondo más suave y claro */
     --color-principal: #2a9d8f;         /* Verde esmeralda sobrio */
     --color-texto: #333333;             /* Color gris oscuro para el texto */
-    --color-secundario: #e7e7eb;        /* Azul grisáceo para botones y detalles */
+    --color-secundario: #e0e0e6;        /* Azul grisáceo para botones y detalles */
     --color-blanco: #ffffff;            /* Blanco para contraste */
     --color-encabezado: #3e434b;        /* Azul oscuro para encabezados */
 }
