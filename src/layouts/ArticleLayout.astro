@@ -16,9 +16,10 @@ export interface Props {
     resume: string;
     keywords: string;
   };
+  Content: any; // Añadimos Content para renderizar el contenido del Markdown
 }
 
-const { frontmatter } = Astro.props;
+const { frontmatter, Content } = Astro.props;
 ---
 
 <Layout
@@ -36,12 +37,15 @@ const { frontmatter } = Astro.props;
       />
       <div class="article-content">
         <ArticleBody>
-          <slot />
+          <!-- Renderizamos el contenido del Markdown aquí -->
+          <Content />
         </ArticleBody>
         <ArticleAd {...blog.article.ad} />
       </div>
     </Section>
   </Fullpage>
+</Layout>
+
 
   <style>
     .article-content {

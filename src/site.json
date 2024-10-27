@@ -581,11 +581,7 @@
     "ad": {
     "title": "Canjea 5 firmas gratis aqui",
     "description": "Simplifica los procesos de firma de tu empresa.",
-    "image": {
-      "src": "/images/screen.webp",
-      "width": 520,
-      "height": 315
-  },          
+   "image": "/images/screen.webp",         
     "link": "https://app.firmeasy.legal/registro", 
     "buttonText": "Crea cuenta gratis"
   }
