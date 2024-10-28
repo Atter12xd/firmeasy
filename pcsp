@@ -1,0 +1,125 @@
+* [33maa477b2[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m ortografia revision
+* [33me5285cc[m Actualizar configuración de Astro para integración con Partytown y nueva URL del sitio
+* [33me80ca47[m Refactorizar configuración de Astro para agregar integración con Partytown y actualizar URL del sitio
+* [33mdecef3e[m Refactorizar configuración de Astro para agregar integración con Partytown y actualizar URL del sitio
+* [33m99b063b[m Refactorizar configuración de Astro para agregar integración con Partytown
+* [33mf449e68[m Modificación del archivo JSON y adición de nuevo banner
+*   [33m3144e2f[m Merge branch 'main' of gitlab.com:ventas3894321/webfirmeasyastros
+[32m|[m[33m\[m  
+[32m|[m * [33m2dec20d[m Refactorizar configuración de Astro para agregar integración con Partytown
+[32m|[m * [33m3e6264d[m Refactorizar configuración de Astro para agregar integración con Partytown
+* [33m|[m [33md3a3499[m tilde
+[33m|[m[33m/[m  
+* [33mdb7bf9a[m cambiando_numero
+* [33ma1f4625[m atter/10092024
+* [33m781f939[m 5092024
+* [33m9f78e71[m PONIENDO 2 IMAGENES DE LAS EMPRESAAS
+* [33mb685812[m odificando
+* [33mcc2e35f[m modificaciones
+* [33m052d6b9[m Changes: header
+* [33me404f56[m Changes: product keywords
+* [33m0456360[m Changes: compare pricing text align
+*   [33m3d2cc23[m Merge remote-tracking branch 'origin/main'
+[34m|[m[35m\[m  
+[34m|[m * [33m08aed44[m Change name from "Firmador" to "Incubadora" in site.json
+[34m|[m * [33mb3d731c[m Update site.json with new plan pricing and user limits
+[34m|[m * [33m42da203[m Remove redundant code in site.json
+[34m|[m * [33mee00983[m Change: Remove redundant code in site.json
+* [35m|[m [33m6ffe6dc[m Changes: images
+[35m|[m[35m/[m  
+* [33m6d0c3ae[m Changes: 404 redirect
+*   [33m08c501d[m Merge remote-tracking branch 'origin/main'
+[36m|[m[1;31m\[m  
+[36m|[m * [33mb50da9b[m Fix: Update Nav link to repository
+* [1;31m|[m [33mfbb58c6[m Changes: plan link blank
+[1;31m|[m[1;31m/[m  
+* [33m54b13a0[m Changes: adjut padding
+* [33mc5c86ce[m Changes: nav spacing improve
+* [33m31f9591[m Fix: support grid safari
+* [33ma7fb276[m Change: Fix Nav Style
+* [33m147a896[m Change: Fix nginx ssl
+* [33mf0821ba[m add change on header
+* [33m0cbe41a[m Change: On logo validated
+* [33ma4af8c3[m verified icon linked
+* [33mc2c4bbc[m verified icon
+* [33ma5ba981[m Changes: nav, support styles
+* [33md5d17d5[m Change: Add Docker Config
+* [33m0b59fe8[m Change: Readme modify
+* [33m022d180[m Remove dist/ from version control
+* [33m2ea85cd[m Change: Some Changes
+*   [33m50fa032[m Merge branch 'main' of gitlab.com:ventas3894321/webfirmeasyastros
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [33m25a7f01[m Change: Add Dockerfile
+[1;32m|[m * [33m32d6d68[m Change: Add build
+[1;32m|[m * [33m5ef310e[m changes: support
+[1;32m|[m * [33m324dd3c[m cambios
+[1;32m|[m * [33md8d5bd4[m Change: Add build
+[1;32m|[m * [33m3410b5c[m Change: Add build
+[1;32m|[m * [33m1068825[m Change: Add build
+[1;32m|[m * [33mb1ac769[m Change: Add Build
+[1;32m|[m *   [33mb77c34c[m Merge branch 'main' of gitlab.com:ventas3894321/webfirmeasyastros
+[1;32m|[m [1;34m|[m[1;35m\[m  
+[1;32m|[m [1;34m|[m * [33me65cdce[m add change
+[1;32m|[m [1;34m|[m * [33m3f900eb[m add change
+[1;32m|[m [1;34m|[m * [33m7f9453e[m Change: Delete dist/  in .gitignore
+[1;32m|[m * [1;35m|[m [33m597672a[m cambios
+[1;32m|[m * [1;35m|[m [33m898a759[m logo
+[1;32m|[m [1;35m|[m[1;35m/[m  
+[1;32m|[m *   [33m2c355be[m Merge branch 'main' of gitlab.com:ventas3894321/webfirmeasyastros
+[1;32m|[m [1;36m|[m[31m\[m  
+[1;32m|[m [1;36m|[m *   [33m963d24f[m Merge branch 'main' of gitlab.com:ventas3894321/webfirmeasyastros
+[1;32m|[m [1;36m|[m [32m|[m[33m\[m  
+[1;32m|[m [1;36m|[m [32m|[m *   [33m987e15e[m Merge branch 'main' of gitlab.com:ventas3894321/webfirmeasyastros
+[1;32m|[m [1;36m|[m [32m|[m [34m|[m[35m\[m  
+[1;32m|[m [1;36m|[m * [34m|[m [35m\[m   [33m229c046[m Merge branch 'main' of gitlab.com:ventas3894321/webfirmeasyastros
+[1;32m|[m [1;36m|[m [36m|[m[1;31m\[m [34m\[m [35m\[m  
+[1;32m|[m * [36m|[m [1;31m|[m [34m|[m [35m|[m [33mde13749[m informacion actualizada
+[1;32m|[m [35m|[m [36m|[m[35m_[m[1;31m|[m[35m_[m[34m|[m[35m/[m  
+[1;32m|[m [35m|[m[35m/[m[36m|[m [1;31m|[m [34m|[m   
+[1;32m|[m * [36m|[m [1;31m|[m [34m|[m [33mbe88c6f[m nav button
+[1;32m|[m * [36m|[m [1;31m|[m [34m|[m [33m006894a[m changes
+[1;32m|[m * [36m|[m [1;31m|[m [34m|[m [33me97dde0[m t Please enter the commit message for your changes. Lines starting
+[1;32m|[m [1;31m|[m [36m|[m[1;31m/[m [34m/[m  
+[1;32m|[m [1;31m|[m[1;31m/[m[36m|[m [34m|[m   
+[1;32m|[m * [36m|[m [34m|[m [33ma2c854d[m fix: compare head
+[1;32m|[m * [36m|[m [34m|[m [33ma4b73d4[m footer socials
+[1;32m|[m * [36m|[m [34m|[m [33m33a36f0[m pricing fix
+[1;32m|[m * [36m|[m [34m|[m [33m92f6eab[m Changes: not found page
+[1;32m|[m * [36m|[m [34m|[m [33m0966183[m fix
+* [1;31m|[m [36m|[m [34m|[m [33m9ada66c[m Merge branch 'main' of gitlab.com:ventas3894321/webfirmeasyastros
+[1;32m|[m[1;31m\[m[1;31m|[m [36m|[m [34m|[m 
+[1;32m|[m * [36m|[m [34m|[m [33mcd53a5e[m Changes: keywords by article
+* [1;33m|[m [36m|[m [34m|[m [33mc665fbd[m Change: Add Dist
+* [1;33m|[m [36m|[m [34m|[m [33m1dbe9d5[m fix warnings to build
+[34m|[m [1;33m|[m[34m_[m[36m|[m[34m/[m  
+[34m|[m[34m/[m[1;33m|[m [36m|[m   
+* [1;33m|[m [36m|[m [33m5e5e531[m Merge branch 'main' of gitlab.com:ventas3894321/webfirmeasyastros
+[36m|[m[1;33m\[m[1;33m|[m [36m|[m 
+[36m|[m [1;33m|[m[36m/[m  
+[36m|[m[36m/[m[1;33m|[m   
+[36m|[m * [33m55f8143[m Fix: build production
+* [1;35m|[m [33m77a6ec1[m[33m ([m[1;31morigin/1-sale-un-error-al-buildear-pnpm-build[m[33m)[m add change
+[1;35m|[m[1;35m/[m  
+* [33m1cc6ba0[m Changes: compare planes button text
+* [33mdb7d580[m Feature: pricing compare
+* [33m5210219[m Changes: seo tags
+* [33m36ae5b1[m Changes: readme
+* [33m2cc2aef[m Feature: video modal
+* [33ma6066bf[m Feature: responsive
+* [33m96ce210[m Feature: article social sharing
+* [33m9fe7202[m Feature: all landing setting from site.json file
+* [33m94f823c[m Changes: pricing from json data
+* [33m54d65f8[m Changes: pricing api switch
+* [33m84c37af[m Feature: blog with content collections dynamic
+* [33md1f3f6e[m Feature: valdiation, repository
+* [33m9d571ab[m Feature: princing, quotes, pages
+* [33m0788c07[m Changes: adjut colors in background pattern
+* [33m8f59c51[m Feature: background pattern
+* [33m73bdd4d[m Feature: article body
+* [33mca8eb3e[m Feature: article layout
+* [33m09892ad[m Feature: pricing and helper components
+* [33mff7e1dc[m Feature: home page basic
+* [33m7e286db[m Feature: Header
+* [33m0739215[m Changes: readme
+* [33m4cf2711[m Feature: footer and logo
+* [33m7d01b95[m Feature: nav, footer basic

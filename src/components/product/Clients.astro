@@ -6,7 +6,8 @@ import Title from '../shared/Title.astro';
 
 <Section color="var(--bg-color)">
   <div class="clients">
-    <Title text={product.clients.title} />
+    <!-- Usa el componente Title y pasa el nivel como "h2" -->
+    <Title text="Ellos ya confían en nosotros" level="h2" />
     <div class="grid">
       { product.clients.images.map((item) => (
         <article>

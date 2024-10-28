@@ -47,40 +47,41 @@
     }
   },
   "header": {
-    "title": "Cumplimiento Legal con Firma Digital y Electrónica Avanzada",
-    "description": "Firmeasy ofrece firma electrónica avanzada y firma digital certificada para que tus documentos cumplan con la ley 27269. Con un flujo de firmas dinámico, prueba de vida y forma con identidad, garantizamos seguridad y validez jurídica en todos tus acuerdos.",
+    "title": "Firma Digital y Electrónica Avanzada para Cumplimiento Legal de Acuerdos", 
+    "description": "Utiliza nuestra software integral de firma electrónica avanzada y firma digital certificada para asegurar el cumplimiento legal de tus documentos. Nuestro servicio garantiza rapidez, seguridad y validez jurídica, con verificación por prueba de vida, identidad y firma con WhatsApp.",
     "button1": {
-      "text": "Contactar Ventas",
+      "text": "Inicia tu Firma Electrónica Ahora",
       "link": "http://wa.link/gwmohm"
     },
     "button2": {
       "text": "Ver video",
       "youtubeVideoId": "cD2-ru_G8OA"
     },
-    "image": "/images/screen.png"
+    "image": "/images/screen.webp"
+    
   },
   "benefits": {
     "title": "¿Por qué elegir FirmEasy Legal?",
     "description": "Fácil, seguro y legal.",
     "items": [
-      "Firma en un minuto desde la comodidad de tu hogar",
-      "Firma Con Selfie y/o Documento De Identidad",
+      "Firma electrónica en un minuto desde la comodidad de tu hogar",
+      "Firma electrónica con selfie y/o documento de identidad",
       "Proveedor de Servicios de Certificacion Autorizado (PSC)",
       "Validez Jurídica",
-      "Firma Certificada",
-      "Verificación por WhatsApp, correo o celular"
+      "Firma digital certificada legalmente",
+      "Verificación segura de identidad por WhatsApp, correo o celular"
     ]
   },
   "pricing": {
     "title": "Precios y Planes",
-    "description": "Firma en segundos desde cualquier lugar con una plataforma de confianza.",
+    "description": "Nuestros planes de firma digital certificados te permiten firmar documentos de forma legal y segura en Perú. Elige entre opciones para emprendedores, empresas medianas o grandes organizaciones. Con soporte para OTP, firma por selfie, y verificación por WhatsApp",
     "discount": "34%",
     "web": {
       "coin": "S/",
       "plan1": {
         "recommended": false,
         "info": {
-          "name": "Emprende",
+          "name": "Plan Emprende - Firma Digital Básica",
           "documents": {
             "name": "Firmas",
             "monthly": 70,
@@ -92,22 +93,22 @@
           }
         },
         "items": [
-          "Evidencia certificada",
+          "Evidencia Certificada para Firma Digital Legal",
           "2 usuarios",
-          "Firma dibujada, OTP, firma digital, selfie o foto del documento",
-          "Verificación por WhatsApp, correo o celular",
+          "Firma Digital a través de métodos seguros: Dibujada, OTP, Selfie, Documento de Identidad",
+          "Verificación de Identidad Segura por WhatsApp, Correo o Celular",
           "Reportes en tiempo real",
-          "Firma por WhatsApp"
+          "Firma Electrónica Rápida a través de WhatsApp"
         ],
         "button":{
-          "text": "Solicitar Plan",
+          "text": "Solicita tu Plan de Firma Digital",
           "link": "http://wa.link/gwmohm"
         }
       },
       "plan2": {
         "recommended": true,
         "info": {
-          "name": "Estandar",
+          "name": "Plan Estándar - Firma Digital con Certificado",
           "documents": {
             "name": "Firmas",
             "monthly": 250,
@@ -127,14 +128,14 @@
   "Video firma"
         ],
         "button":{
-          "text": "Solicitar Plan",
+          "text": "Solicita tu Plan de Firma Digital",
           "link": "http://wa.link/gwmohm"
         }
       },
       "plan3": {
         "recommended": false,
         "info": {
-          "name": "Business",
+          "name": "Plan Business - Firma Digital Masiva",
           "documents": {
             "name": "Firmas",
             "monthly": 700,
@@ -152,7 +153,7 @@
           "Envío masivo"
         ],
         "button":{
-          "text": "Solicitar Plan",
+          "text": "Solicita tu Plan de Firma Digital",
           "link": "http://wa.link/gwmohm"
         }
       }
@@ -181,7 +182,7 @@
           "API REST (Documentación, Capacitación y Soporte)"
         ],
         "button":{
-          "text": "Solicitar Plan",
+          "text": "Solicita tu Plan de Firma Digital",
           "link": "http://wa.link/gwmohm"
         }
       },
@@ -532,29 +533,42 @@
     }
   ],
   "quotes": {
-    "title": "Casos de Éxito",
-    "description": "Historias de exito de nuestros clientes.",
+    "title": "Historias de Éxito",
+    "description": "Clientes que Confían en Firmeasy",
     "items": [
-      {
-        "quote": "Estamos integrados en Firmeasy con nuestra plataforma de proceso de firma de documentos, y nos facilita en la gestion documental y firma rapida",
-        "author": "Transvial",
-        "position": "Jhonatan Ventocilla - Jefe Sistemas",
-        "image": "/images/quotes/1.png"
-      },
-      {
-        "quote": "Nosotros teniamos la dificultad de gestionar mas de 50 documentos, y ninguna plataforma se ajustaba a nuestros requerimiento, hasta que encontramos Firmeasy Legal, que nos permitio gestionar nuestros documentos de forma rapida y segura.",
-        "author": "Incubadora Scale",
-        "position": "Clarisa Victorio - Gerente",
-        "image": "/images/quotes/2.jpg"
-      },
-      {
-        "quote": "Nos facilito nuestro proceso de contratos con nuestros clientes y la Gestion facil de mis contratos por vencer",
-        "author": "Cementos Yunga",
-        "position": "Carlos Atachagua - Gerente",
-        "image": "/images/quotes/3.png"
-      }
+        {
+            "quote": "Antes de usar Firmeasy, Transvial enfrentaba largos tiempos de espera y errores frecuentes en la gestión de documentos. Desde que se integraron a nuestra plataforma de firma digital, han reducido significativamente el tiempo de firma de documentos y mejorado la eficiencia.",
+            "author": "Transvial",
+            "position": "Jhonatan Ventocilla - Jefe Sistemas",
+            "image": {
+                "src": "/images/quotes/1.png",
+                "width": 36,
+                "height": 36
+            }
+        },
+        {
+            "quote": "Con más de 50 documentos para gestionar semanalmente, Incubadora Scale luchaba por encontrar una plataforma que se ajustara a sus necesidades. Con Firmeasy, ahora pueden firmar electrónicamente de manera segura y sin complicaciones.",
+            "author": "Incubadora Scale",
+            "position": "Clarisa Victorio - Gerente",
+            "image": {
+                "src": "/images/quotes/2.jpg",
+                "width": 36,
+                "height": 36
+            }
+        },
+        {
+            "quote": "Los procesos de contratos eran lentos y complicados para Cementos Yunga. Con Firmeasy, han acelerado sus gestiones y optimizado la firma de contratos con sus clientes.",
+            "author": "Cementos Yunga",
+            "position": "Carlos Atachagua - Gerente",
+            "image": {
+                "src": "/images/quotes/3.webp",
+                "width": 36,
+                "height": 36
+            }
+        }
     ]
-  },
+},
+
   "blog": {
     "title": "Blog",
     "description": "Artículos y novedades.",
@@ -564,14 +578,14 @@
       "link": "https://app.firmeasy.legal/registro"
     },
     "article": {
-      "ad": {
-        "title": "Plataforma que permite cumplimiento Legal de acuerdos y Validacion De Identidad para Pymes",
-        "description": "Simplifica los procesos de firma de tu empresa.",
-        "link": "/oferta",
-        "image": "/images/screen.png",
-        "buttonText": "Saber más"
-      }
-    }
+    "ad": {
+    "title": "Canjea 5 firmas gratis aqui",
+    "description": "Simplifica los procesos de firma de tu empresa.",
+   "image": "/images/screen.webp",         
+    "link": "https://app.firmeasy.legal/registro", 
+    "buttonText": "Crea cuenta gratis"
+  }
+  }
   },
   "repository": {
     "title": "Repositorio",
@@ -684,40 +698,58 @@
     "title": "Soporte y Asociaciones",
     "images": [
       {
-        "src": "/images/support/1.png",
-        "alt": "Udep"
+        "src": "/images/support/1.webp",
+        "alt": "Logo de HUB UDEP - Soporte para innovación",
+        "width": 150,
+        "height": 36
       },
       {
-        "src": "/images/support/2.png",
-        "alt": "startup peru"
+        "src": "/images/support/2.webp",
+        "alt": "startup peru",
+        "width": 150,
+        "height": 36
       },
       {
-        "src": "/images/support/3.png",
-        "alt": "ccl"
+        "src": "/images/support/3.webp",
+        "alt": "ccl",
+        "width": 150,
+        "height": 36
       },
       {
         "src": "/images/support/4.png",
-        "alt": "inovate"
+        "alt": "inovate",
+        "width": 150,
+        "height": 36
       },
       {
-        "src": "/images/support/5.png",
-        "alt": "incuba unach"
+        "src": "/images/support/5.webp",
+        "alt": "incuba unach",
+        "width": 150,
+        "height": 36
       },
       {
-        "src": "/images/support/6.png",
-        "alt": "Unheval venture"
+        "src": "/images/support/6.webp",
+        "alt": "Unheval venture",
+        "width": 150,
+        "height": 36
       },
       {
         "src": "/images/support/7.png",
-        "alt": "Incubadora Scale"
+        "alt": "Incubadora Scale",
+        "width": 150,
+        "height": 36
       },
       {
         "src": "/images/support/8.png",
-        "alt": "EmpreLatam"
+        "alt": "EmpreLatam",
+        "width": 150,
+        "height": 36
       },
-      {
-        "src": "/images/support/9.png",
-        "alt": "Cofide"
+      { 
+        "src": "/images/support/9.webp",
+        "alt": "Logo de COFIDE - Respaldo para firmas digitales en Perú",
+        "width": 150,
+        "height": 36
       }
     ]
   },
@@ -766,16 +798,20 @@
     },
     "header": {
       "caption": "Software integral de firma",
-      "title": "¿Sigues firmando tus documentos en papel o reenviando por correo?",
-      "image": "/images/screen.png",
+      "title": "Empieza a usar la firma electrónica segura y legal",
+      "image": {
+        "src": "/images/screen.webp",
+        "width": 515,
+        "height": 315
+    },          
       "benefits": [
-        "Firmas en tiempo real",
-        "Firmas con Selfie y/o Documento De Identidad",
-        "Solicita tu firma por whatsapp en minutos"
+        "Firma electrónica en tiempo real, con plena validez legal",
+        "Verificación de identidad con selfie o documento de identidad",
+        "Solicita y firma documentos fácilmente a través de WhatsApp"
       ],
       "form": {
-        "title": "Solicitar Demo",
-        "caption": "Conoce nuestra plataforma",
+        "title": "Solicita tu Demo",
+        "caption": "Descubre cómo simplificar tu gestión documental",
         "buttonSendText": "Solicitar Ahora",
         "buttonRegisterText": "Crea tu Cuenta Gratis"
       }
@@ -784,61 +820,83 @@
       "title": "Ellos ya confia en nosotros",
       "images": [
          {
-          "src": "/images/support/1.png",
-          "alt": "Udep"
+          "src": "/images/support/1.webp",
+          "alt": "Udep",
+          "width": 110,
+          "height": 36
          },
          {
-          "src": "/images/support/2.png",
-          "alt": "startup peru"
+          "src": "/images/support/2.webp",
+          "alt": "startup peru",
+          "width": 110,
+          "height": 36
          },
          {
-          "src": "/images/support/3.png",
-          "alt": "ccl"
+          "src": "/images/support/3.webp",
+          "alt": "ccl",
+          "width": 110,
+          "height": 36
          },
          {
           "src": "/images/support/4.png",
-          "alt": "inovate"
+          "alt": "inovate",
+          "width": 110,
+          "height": 36
          },
          {
-          "src": "/images/support/5.png",
-          "alt": "incuba unach"
+          "src": "/images/support/5.webp",
+          "alt": "incuba unach",
+          "width": 106,
+          "height": 36
          },
          {
-          "src": "/images/support/6.png",
-          "alt": "Unheval venture"
+          "src": "/images/support/6.webp",
+          "alt": "Unheval venture",
+          "width": 75,
+          "height": 36
          },
          {
           "src": "/images/support/7.png",
-          "alt": "Incubadora Scale"
+          "alt": "Incubadora Scale",
+          "width": 93,
+          "height": 36
          },
          {
           "src": "/images/support/8.png",
-          "alt": "EmpreLatam"
+          "alt": "EmpreLatam",
+          "width": 110,
+          "height": 36
          },
          {
-          "src": "/images/support/9.png",
-          "alt": "Cofide"
+          "src": "/images/support/9.webp",
+          "alt": "Cofide",
+          "width": 110,
+          "height": 36
          },
 
          {
           "src": "/images/support/10.png",
-          "alt": "Alvisoft"
+          "alt": "Alvisoft",
+          "width": 110,
+          "height": 36
          },
 
          {
           "src": "/images/support/11.png",
-          "alt": "Metropolitano"
+          "alt": "Metropolitano",
+          "width": 110,
+          "height": 36
          }
       ]
     },
     "features": {
-      "title": "Nuestra plataforma te permite",
+      "title": "Mira la forma de Firmar Documentos de Forma Rápida y Legal",
       "image": "/images/support/banner.png",
       "youtubeVideoId": "cD2-ru_G8OA",
       "items": [
         {
           "title": "Validez 100% legal",
-          "description": "Contamos con hasta 6 tipos de validación y sello de tiempo."
+          "description": "Nuestras firmas electrónicas cuentan con validez legal completa, con hasta 6 tipos de validación y sello de tiempo, cumpliendo con la normativa vigente."
         },
         {
           "title": "Gestión de documentos con agilidad",
@@ -846,7 +904,7 @@
         },
         {
           "title": "Firma varios documentos en segundos",
-          "description": " Sube tus documentos en lote, fija la posición de firma y listo."
+          "description": "Optimiza tus procesos firmando múltiples documentos electrónicos al mismo tiempo, de manera rápida y segura."
         },
         {
           "title": "Firma electrónica desde donde estés",
@@ -865,19 +923,19 @@
     "overwall": [
       {
         "amount": "250 Mil",
-        "description": "Documentos firmados"
+        "description": "Documentos firmados con Firma Digital Certificada"
       },
       {
         "amount": "25 Ciudades",
-        "description": "Usan Firmeasy"
+        "description": "Usan Firmeasy para Firmas Digitales"
       },
       {
         "amount": "+ 5 Mil",
-        "description": "Usuarios activos"
+        "description": "Usuarios activos utilizando Firma Electrónica"
       },
       {
         "amount": "+ 1 Mil",
-        "description": "Empresas satisfechas"
+        "description": "Empresas satisfechas con Firma Digital en Perú"
       }
     ],
     "CTALinks": [

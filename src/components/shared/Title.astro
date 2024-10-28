@@ -1,15 +1,17 @@
 ---
+// Title.astro
 interface Props {
   text: string;
   body?: string;
+  level?: 'h1' | 'h2' | 'h3'; // Añade la prop level
 }
 
-const { text, body } = Astro.props;
+const { text, body, level = 'h1' } = Astro.props; // Asigna 'h1' como valor por defecto
 ---
 
 <div class="title">
-  <h1>{text}</h1>
-  <p>{body}</p>
+  {level === 'h1' ? <h1>{text}</h1> : level === 'h2' ? <h2>{text}</h2> : <h3>{text}</h3>} <!-- Renderiza según el nivel -->
+  <p>{body}</p> 
 </div>
 
 <style>
@@ -22,6 +24,22 @@ const { text, body } = Astro.props;
     h1 {
       font-size: var(--title-size-lg);
       font-weight: 600;
+      text-wrap: balance;
+      max-width: 500px;
+      text-align: center;
+      line-height: var(--title-line-height-xl);
+    }
+    h2 {
+      font-size: 2.0rem; /* Ajusta el tamaño aquí */
+      font-weight: 500;
+      text-wrap: balance;
+      max-width: 500px;
+      text-align: center;
+      line-height: var(--title-line-height-xl);
+    }
+    h3 {
+      font-size: var(--title-size-lg); // Ajusta según necesites
+      font-weight: 400;
       text-wrap: balance;
       max-width: 500px;
       text-align: center;

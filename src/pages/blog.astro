@@ -6,14 +6,26 @@ import Layout from '../layouts/Layout.astro';
 import BackgroundPattern from '../components/shared/BackgroundPattern.astro';
 import Fullpage from '../components/shared/Fullpage.astro';
 import { blog } from '@site';
+
+// Cargar contenido Markdown
+const posts = Object.values(import.meta.glob('../../content/blog/*.md', { eager: true })) as any[];
+const post = posts.find((p) => p.url && p.url.includes('legaltech'));
 ---
 
 <Layout title="Firmeasy | Blog">
   <Fullpage>
     <Section>
       <BackgroundPattern slot="bg" />
-      <Title text={blog.title} body={blog.description} />
+      <Title text={blog.title} body={blog.description} level="h1" />
       <Articles />
+      <div>
+        <!-- Renderizar el contenido del archivo Markdown -->
+        {post ? (
+          <post.Content />
+        ) : (
+          <p></p>
+        )}
+      </div>
     </Section>
   </Fullpage>
 </Layout>

@@ -6,18 +6,27 @@ import Title from '../shared/Title.astro';
 
 <Section color="var(--bg-color)">
   <div class="support">
-    <Title text={support.title} />
+    <Title text={support.title} level="h2" />
     <div class="grid">
       {
         support.images.map((item) => (
           <article>
-            <img src={item.src} alt={item.alt} />
+            
+            <img 
+              src={item.src} 
+              alt={item.alt} 
+              width={item.width} 
+              height={item.height} 
+              loading="lazy"   
+            />
           </article>
         ))
       }
     </div>
   </div>
 </Section>
+
+
 
 <style lang="scss">
   @import '../../assets/breakpoints.scss';

@@ -1,15 +1,15 @@
 ---
 import Section from '../shared/Section.astro';
-import { product } from '@site';
+import { overwall } from '@site';
 ---
 
 <Section color="var(--bg-color)">
   <div class="overwall">
     {
-      product.overwall.map((item) => (
+      overwall.map((item) => (
         <article>
           <span>
-            <h1>{item.amount}</h1>
+            <h2>{item.amount}</h2> <!-- Cambiado a h2 -->
             <p>{item.description}</p>
           </span>
         </article>
@@ -50,11 +50,11 @@ import { product } from '@site';
         flex-direction: column;
         // align-items: center;
         gap: 0.25rem;
-        h1 {
+        h2 {
           font-size: var(--title-size-lg);
           font-weight: 600;
           text-wrap: balance;
-          max-width: 500px;
+          max-width: 250px;
           line-height: var(--title-line-height-xl);
           background: var(--bg-gradient-text);
           -webkit-background-clip: text;
