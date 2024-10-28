@@ -30,9 +30,8 @@ const { more, background = true } = Astro.props;
         .map((item) => {
           return (
             <article>
-              <p>"{item.quote}"</p>
+              <p class="quote-text">"{item.quote}"</p>
               <span>
-                <!-- Modificación para usar width, height y src desde item.image -->
                 <img 
                   src={item.image.src} 
                   alt="casos-exito" 
@@ -94,12 +93,15 @@ const { more, background = true } = Astro.props;
       box-shadow: var(--shadow);
       padding: var(--card-padding);
       min-height: 150px;
-      & > p {
+
+      .quote-text {
+        font-family: var(--font); /* Usa la fuente global */
         font-weight: 400;
         line-height: var(--text-line-height);
         margin-bottom: 0.5rem;
         font-style: italic;
       }
+
       span {
         display: flex;
         align-items: center;
@@ -112,13 +114,16 @@ const { more, background = true } = Astro.props;
           object-fit: contain;
           border-radius: 50%;
         }
+
         .person {
           p {
             font-weight: 500;
             line-height: var(--text-line-height);
+            font-family: var(--font); /* Usa la fuente global */
           }
           small {
             font-weight: 400;
+            font-family: var(--font); /* Usa la fuente global */
           }
         }
       }

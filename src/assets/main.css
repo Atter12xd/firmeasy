@@ -1,10 +1,11 @@
 :root {
+    --font: 'IBM Plex Sans', sans-serif;
     --color-fondo-principal: #f9f9f9;   /* Fondo más suave y claro */
     --color-principal: #2a9d8f;         /* Verde esmeralda sobrio */
     --color-texto: #333333;             /* Color gris oscuro para el texto */
-    --color-secundario: #e0e0e6;        /* Azul grisáceo para botones y detalles */
-    --color-blanco: #ffffff;            /* Blanco para contraste */
-    --color-encabezado: #3e434b;        /* Azul oscuro para encabezados */
+    --color-secundario: #fdfafa;        /* Azul grisáceo para botones y detalles */
+    --color-blanco: #0e0b0b;            /* Blanco para contraste */
+    --color-encabezado: #111214;        /* Azul oscuro para encabezados */
 }
 
 body {

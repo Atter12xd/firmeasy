@@ -74,7 +74,7 @@
   },
   "pricing": {
     "title": "Precios y Planes",
-    "description": "Nuestros planes de firma digital certificados te permiten firmar documentos de forma legal y segura en Perú. Elige entre opciones para emprendedores, empresas medianas o grandes organizaciones. Con soporte para OTP, firma por selfie, y verificación por WhatsApp",
+    "description": "",
     "discount": "34%",
     "web": {
       "coin": "S/",
@@ -890,7 +890,7 @@
       ]
     },
     "features": {
-      "title": "Mira la forma de Firmar Documentos de Forma Rápida y Legal",
+      "title": "Mira la forma de Firmar Documentos",
       "image": "/images/support/banner.png",
       "youtubeVideoId": "cD2-ru_G8OA",
       "items": [

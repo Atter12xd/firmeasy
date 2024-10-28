@@ -14,7 +14,7 @@ import DemoForm from './DemoForm';
     <BackgroundPattern slot="bg" />
     <div class="header-wrapper">
       <div class="text">
-        <h2>{product.header.caption}</h2>
+        <h3>{product.header.caption}</h3>
         <h1>{product.header.title}</h1>
         <ul>
           {
@@ -93,14 +93,14 @@ import DemoForm from './DemoForm';
   text-align: left; /* Puedes cambiar a center si prefieres subtítulos centrados */
   line-height: 1,0; /* Ajusta la altura de línea para mayor legibilidad */
 }
+
 h3 {
-  font-size: 1.3rem; /* Tamaño más pequeño para subtítulo */
-  font-weight: 400; /* Menos peso para un subtítulo más suave */
-  color: var(--text-color-secondary); /* Usa un color secundario, si lo tienes */
-  margin-top: 0.75rem; /* Añade espacio encima */
-  margin-bottom: 0.75rem; /* Añade espacio debajo */
-  text-align: left; /* Puedes cambiar a center si prefieres subtítulos centrados */
-  line-height: 1.4; /* Ajusta la altura de línea para mayor legibilidad */
+  font-size: 1.2rem; // Reduce el tamaño de fuente para hacerlo más pequeño
+  font-weight: 400; // Peso de fuente más ligero para un aspecto más suave
+  color: #080808; // Color gris suave para suavizar el impacto visual
+  margin-bottom: 1rem; // Espacio debajo para separación visual
+  text-align: left; // Alinear a la izquierda para un aspecto más limpio
+  line-height: 1.4; // Altura de línea adecuada para legibilidad
 }
         .image {
           border: 1px solid var(--border-color);
@@ -143,15 +143,18 @@ h3 {
               height: 24px;
               border-radius: 50%;
               background: var(--bg-gradient);
-              color: white;
+              color: rgb(7, 6, 6);
               span {
                 transform: scale(0.5);
               }
             }
             p {
-              line-height: var(--title-line-height-lg);
-              text-align: left;
-            }
+  font-size: 1rem; // Tamaño de fuente estándar para mejorar la legibilidad
+  font-weight: 400; // Un peso de fuente más ligero para un aspecto suave
+  color: #1b1a1a; // Color gris oscuro suave
+  line-height: 1.6; // Altura de línea que facilita la lectura en listas
+  margin: 0; // Sin margen adicional
+}
           }
         }
       }

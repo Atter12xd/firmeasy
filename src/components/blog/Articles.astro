@@ -1,7 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
 import Article from './Article.astro';
-import ArticleAd from './ArticleAd.astro';
 import { blog } from '@site';
 
 export interface ArticleType {
@@ -24,9 +23,9 @@ allBlogPosts.map(
 ---
 
 <section class="articles-grid">
-  <ArticleAd {...blog.ad} />
   {articles.map((article: ArticleType) => <Article {...article} />)}
 </section>
+
 <style>
   .articles-grid {
     display: grid;

@@ -1,7 +1,7 @@
 ---
 title: "Plataformas Legaltech en Perú"
 slug: "plataformas-legaltech-en-peru"
-date: "02 de julio 2024" # Fecha en formato ISO
+date: "28 de Octubre 2024" # Fecha en formato ISO
 resume: "Exploración de las principales plataformas legaltech en Perú que están transformando el sector legal."
 keywords: "legaltech, firma digital, Perú, plataformas legales"
 ---
