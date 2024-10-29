@@ -26,14 +26,31 @@ La **firma electrónica** y la **firma digital** son términos que a menudo se u
 - **Firma Digital:** Tiene un reconocimiento legal más robusto. Según la misma ley, las firmas digitales tienen la misma validez y fuerza probatoria que una firma manuscrita, siempre que sean generadas por un proveedor de servicios de certificación acreditado. Esto las convierte en la opción preferida para documentos críticos y transacciones importantes.
 <div class="video-container">
   <iframe
-    width="700"
-    height="420"
     src="https://www.youtube.com/embed/22dcKOfuKU8"
     frameborder="0"
     allowfullscreen
     title="Diferencias entre Firma Electrónica y Firma Digital"
   ></iframe>
 </div>
+
+<style>
+.video-container { 
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+</style>
+
 
 ### 4. **Uso y Aplicaciones**
 
