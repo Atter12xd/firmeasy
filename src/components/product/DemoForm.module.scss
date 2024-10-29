@@ -69,6 +69,14 @@
       }
     }
   }
+  .wrapper input:hover {
+    border: 1px solid var(--accent-color); /* Cambia el color del borde al pasar el cursor */
+  }
+  
+  a:hover {
+    color: var(--accent-color); /* Cambia el color del enlace al pasar el cursor */
+    text-decoration: underline; /* Subraya el texto al pasar el cursor */
+  }
 
   strong {
     text-align: center;

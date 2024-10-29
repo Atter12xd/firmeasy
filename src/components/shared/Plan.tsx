@@ -69,7 +69,7 @@ export default function Plan({ plan, period, type }: { plan: 'plan1' | 'plan2' |
   return (
     <article className={pricing[type][plan].recommended ? 'recommended' : ''}>
       <div className="info">
-        <h2 style={{
+        <h3 style={{
           fontSize: '1.3rem', 
           fontWeight: 600, 
           color: '#333', 
@@ -80,7 +80,7 @@ export default function Plan({ plan, period, type }: { plan: 'plan1' | 'plan2' |
         }} className="plan-heading">
           {pricing[type][plan].info.name}
           {pricing[type][plan].recommended && <>&nbsp;&nbsp;<ChipRecommended /></>}
-        </h2>
+        </h3>
         <p>{pricing[type][plan].info.documents[period]} {pricing[type][plan].info.documents.name} / {period === 'monthly' ? 'Mes' : 'Año'}</p>
         <h2>
           {pricing[type].coin}

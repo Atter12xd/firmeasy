@@ -9,7 +9,7 @@ import { overwall } from '@site';
       overwall.map((item) => (
         <article>
           <span>
-            <h2>{item.amount}</h2> <!-- Cambiado a h2 -->
+            <h3>{item.amount}</h3> <!-- Cambiado a h2 -->
             <p>{item.description}</p>
           </span>
         </article>
@@ -51,6 +51,19 @@ import { overwall } from '@site';
         // align-items: center;
         gap: 0.25rem;
         h2 {
+          font-size: var(--title-size-lg);
+          font-weight: 600;
+          text-wrap: balance;
+          max-width: 250px;
+          line-height: var(--title-line-height-xl);
+          background: var(--bg-gradient-text);
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          user-select: none;
+          width: fit-content;
+        }
+        h3{
           font-size: var(--title-size-lg);
           font-weight: 600;
           text-wrap: balance;

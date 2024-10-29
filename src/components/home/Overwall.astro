@@ -9,7 +9,7 @@ import { overwall } from '@site';
       overwall.map((item) => (
         <article>
           <span>
-            <h2>{item.amount}</h2> <!-- Cambiado a h2 -->
+            <h3>{item.amount}</h3> <!-- Cambiado a h2 -->
             <p>{item.description}</p>
           </span>
         </article>
@@ -60,6 +60,21 @@ import { overwall } from '@site';
           user-select: none;
           width: fit-content;
         }
+        h3 { // Cambiado de h1 a h2
+          font-size: var(--title-size-lg); /* Mantén el tamaño grande */
+          font-weight: 600;
+          text-wrap: balance;
+          max-width: 500px;
+          line-height: var(--title-line-height-xl);
+          background: var(--bg-gradient-text); /* Mismo efecto de gradiente */
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          user-select: none;
+          width: fit-content;
+        }
+        }
+
         p {
           font-size: var(--text-size);
           font-weight: 500;
@@ -67,5 +82,5 @@ import { overwall } from '@site';
         }
       }
     }
-  }
+  
 </style>
