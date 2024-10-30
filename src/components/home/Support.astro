@@ -11,13 +11,13 @@ import Title from '../shared/Title.astro';
       {
         support.images.map((item) => (
           <article>
-            
             <img 
               src={item.src} 
               alt={item.alt} 
               width={item.width} 
               height={item.height} 
-              loading="lazy"   
+              loading="lazy"
+              class="grayscale"  
             />
           </article>
         ))
@@ -26,10 +26,9 @@ import Title from '../shared/Title.astro';
   </div>
 </Section>
 
-
-
 <style lang="scss">
   @import '../../assets/breakpoints.scss';
+  
   .support {
     .grid {
       max-width: var(--container-max-width);
@@ -60,21 +59,30 @@ import Title from '../shared/Title.astro';
         border-radius: var(--border-radius);
         border: 1px solid var(--border-color);
         box-shadow: var(--shadow);
+        
         @include screen('sm') {
           min-width: 100px;
           max-width: 120px;
         }
+        
         @include screen('xsm') {
           min-width: 80px;
           max-width: 100px;
         }
+
         img {
           width: 100%;
           height: 36px;
           object-fit: contain;
-          .grayscale {
-    filter: grayscale(100%);
-}
+          transition: filter 0.3s ease;
+
+          &.grayscale {
+            filter: grayscale(100%);
+          }
+
+          &:hover {
+            filter: grayscale(0%);
+          }
         }
       }
     }

@@ -9,7 +9,7 @@ import { overwall } from '@site';
       overwall.map((item) => (
         <article>
           <span>
-            <h3>{item.amount}</h3> <!-- Cambiado a h2 -->
+            <h3>{item.amount}</h3>
             <p>{item.description}</p>
           </span>
         </article>
@@ -47,34 +47,18 @@ import { overwall } from '@site';
         display: flex;
         flex-direction: column;
         gap: 0.25rem;
-        h2 { // Cambiado de h1 a h2
-          font-size: var(--title-size-lg); /* Mantén el tamaño grande */
+        h2, h3 { 
+          font-size: var(--title-size-lg); /* Tamaño grande */
           font-weight: 600;
           text-wrap: balance;
-          max-width: 500px;
           line-height: var(--title-line-height-xl);
-          background: var(--bg-gradient-text); /* Mismo efecto de gradiente */
+          background: var(--bg-gradient-text);
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
           user-select: none;
-          width: fit-content;
+          width: fit-content; /* Asegura que el texto ocupe solo el espacio necesario */
         }
-        h3 { // Cambiado de h1 a h2
-          font-size: var(--title-size-lg); /* Mantén el tamaño grande */
-          font-weight: 600;
-          text-wrap: balance;
-          max-width: 500px;
-          line-height: var(--title-line-height-xl);
-          background: var(--bg-gradient-text); /* Mismo efecto de gradiente */
-          -webkit-background-clip: text;
-          background-clip: text;
-          -webkit-text-fill-color: transparent;
-          user-select: none;
-          width: fit-content;
-        }
-        }
-
         p {
           font-size: var(--text-size);
           font-weight: 500;
@@ -82,5 +66,5 @@ import { overwall } from '@site';
         }
       }
     }
-  
+  }
 </style>

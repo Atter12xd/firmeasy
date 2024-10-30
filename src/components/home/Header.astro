@@ -33,7 +33,12 @@ import ModalVideo from './ModalVideo.astro';
     </div>
     <div class="image">
       <div class="image image-wrapper">
-        <img src={header.image} alt="firmeasy" />
+        <img 
+        src={header.image.src} 
+        alt="firmeasy" 
+        width={header.image.width} 
+        height={header.image.height} 
+      />
       </div>
     </div>
   </div>

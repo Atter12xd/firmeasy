@@ -1,6 +1,6 @@
 ---
 title: 'Diferencias entre Firma Electrónica y Firma Digital: ¿Cuál Necesitas?'
-date: '02 Julio 2024'
+date: '29 Octubre 2024'
 resume: 'Entender las diferencias entre firma electrónica y firma digital es esencial para elegir la opción adecuada para tus necesidades comerciales y legales en Perú.'
 ---
 
