@@ -21,7 +21,11 @@
   "nav": {
     "menu": [
       {
-        "name": "Precios",
+        "name": "Recargas",
+        "link": "/recargas"
+      },
+      {
+        "name": "Planes",
         "link": "/precios"
       },
       {
@@ -76,8 +80,90 @@
       "Verificación segura de identidad por WhatsApp, correo o celular"
     ]
   },
+  
+  
+  "recargas": {
+    "title": "Recargas",
+    "description": "Explora nuestros paquetes de recarga.",
+    "paquetes": [
+      {
+        "name": "Paquete 10",
+        "description": "Válido para 10 Firmas",
+        "price": 10.00,
+        "discount": 0,
+        "button": {
+          "text": "Comprar Paquete",
+          "link": "#"
+        }
+      },
+      {
+        "name": "Paquete 20",
+        "description": "Válido para 20 Firmas",
+        "price": 19.00,
+        "discount": 1.00,
+        "button": {
+          "text": "Comprar Paquete",
+          "link": "#"
+        }
+      },
+      {
+        "name": "Paquete 50",
+        "description": "Válido para 50 Firmas",
+        "price": 45.00,
+        "discount": 5.00,
+        "button": {
+          "text": "Comprar Paquete",
+          "link": "#"
+        }
+      },
+      {
+        "name": "Paquete 100",
+        "description": "Válido para 100 Firmas",
+        "price": 85.00,
+        "discount": 15.00,
+        "button": {
+          "text": "Comprar Paquete",
+          "link": "#"
+        }
+      }
+    ]
+  },
+  "api": {
+    "title": "API",
+    "plans": [
+      {
+        "name": "API Start",
+        "description": "700 Firmas por mes",
+        "price": 118.00,
+        "button": {
+          "text": "Solicitar Plan",
+          "link": "#"
+        }
+      },
+      {
+        "name": "API Business",
+        "description": "2000 Firmas por mes",
+        "price": 250.00,
+        "button": {
+          "text": "Solicitar Plan",
+          "link": "#"
+        }
+      },
+      {
+        "name": "API Scale",
+        "description": "4500 Firmas por mes",
+        "price": 590.00,
+        "button": {
+          "text": "Solicitar Plan",
+          "link": "#"
+        }
+      }
+    ]
+  },
+
+
   "pricing": {
-    "title": "Precios y Planes",
+    "title": "Planes",
     "description": "",
     "discount": "34%",
     "web": {
