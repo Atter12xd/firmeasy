@@ -25,7 +25,7 @@
         "link": "/recargas"
       },
       {
-        "name": "Planes",
+        "name": "Suscripción",
         "link": "/precios"
       },
       {
@@ -163,7 +163,7 @@
 
 
   "pricing": {
-    "title": "Planes",
+    "title": "Suscripción",
     "description": "",
     "discount": "34%",
     "web": {
