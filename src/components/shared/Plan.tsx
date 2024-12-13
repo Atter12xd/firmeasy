@@ -66,37 +66,42 @@ function ChipRecommended() {
 }
 
 export default function Plan({ plan, period, type }: { plan: 'plan1' | 'plan2' | 'plan3', period: 'monthly' | 'yearly', type: 'web' | 'api' }) {
-  return (
-    <article className={pricing[type][plan].recommended ? 'recommended' : ''}>
-      <div className="info">
-        <h3 style={{
-          fontSize: '1.3rem', 
-          fontWeight: 600, 
-          color: '#333', 
-          textAlign: 'center', 
-          margin: '1rem 0', 
-          lineHeight: '1.6',
-          textDecoration: pricing[type][plan].recommended ? 'underline' : 'none'
-        }} className="plan-heading">
-          {pricing[type][plan].info.name}
-          {pricing[type][plan].recommended && <>&nbsp;&nbsp;<ChipRecommended /></>}
-        </h3>
-        <p>{pricing[type][plan].info.documents[period]} {pricing[type][plan].info.documents.name} / {period === 'monthly' ? 'Mes' : 'Año'}</p>
-        <h2>
-          {pricing[type].coin}
-          {pricing[type][plan].info.amount[period]}
-          <span> / {period === 'monthly' ? 'Mes' : 'Año'}</span>
-        </h2>
-      </div>
-      <ul>
-        {pricing[type][plan].items.map((item: any) => (
-          <li key={item}>
-            <i><IconCheck /></i>
-            <p>{item}</p>
-          </li>
-        ))}
-      </ul>
-      <a target="_blank" href={pricing[type][plan].button.link} className={`button ${pricing[type][plan].recommended ? 'gradient' : 'outline'} transition-up`}>{pricing[type][plan].button.text}</a>
-    </article>
-  )
-}
+    // Solo mostrar los planes de "Recargas" si el "period" es 'yearly'
+    if (period === 'monthly') {
+      return null; // No mostrar nada si el periodo es mensual
+    }
+  
+    return (
+      <article className={pricing[type][plan].recommended ? 'recommended' : ''}>
+        <div className="info">
+          <h3 style={{
+            fontSize: '1.3rem', 
+            fontWeight: 600, 
+            color: '#333', 
+            textAlign: 'center', 
+            margin: '1rem 0', 
+            lineHeight: '1.6',
+            textDecoration: pricing[type][plan].recommended ? 'underline' : 'none'
+          }} className="plan-heading">
+            {pricing[type][plan].info.name}
+            {pricing[type][plan].recommended && <>&nbsp;&nbsp;<ChipRecommended /></>}
+          </h3>
+          <p>{pricing[type][plan].info.documents[period]} {pricing[type][plan].info.documents.name} / {period === 'monthly' ? 'Mes' : 'Año'}</p>
+          <h2>
+            {pricing[type].coin}
+            {pricing[type][plan].info.amount[period]}
+            <span> / {period === 'monthly' ? 'Mes' : 'Año'}</span>
+          </h2>
+        </div>
+        <ul>
+          {pricing[type][plan].items.map((item: any) => (
+            <li key={item}>
+              <i><IconCheck /></i>
+              <p>{item}</p>
+            </li>
+          ))}
+        </ul>
+        <a target="_blank" href={pricing[type][plan].button.link} className={`button ${pricing[type][plan].recommended ? 'gradient' : 'outline'} transition-up`}>{pricing[type][plan].button.text}</a>
+      </article>
+    )
+  }

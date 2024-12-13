@@ -20,10 +20,7 @@
   },
   "nav": {
     "menu": [
-      {
-        "name": "Recargas",
-        "link": "/recargas"
-      },
+     
       {
         "name": "Suscripción",
         "link": "/precios"

@@ -2,9 +2,7 @@ export default function SwitchPlanType({ type, setType }: { type: 'web' | 'api',
   return (
     <div className="switch tiny" id="switch-type">
       <div className="switch-wrapper">
-        <span className={type === 'web' ? 'active' : ''} onClick={() => setType('web')}>
-          <p>WEB</p>
-        </span>
+        
        
       </div>
     </div>
