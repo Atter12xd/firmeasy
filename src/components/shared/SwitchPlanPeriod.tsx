@@ -1,65 +1,118 @@
   import { pricing } from '@site'
   
+  
   import { useState } from 'react';
 
-export default function SwitchPlanPeriod() {
-  const [period, setPeriod] = useState<'monthly' | 'yearly'>('monthly');
-  const [volume, setVolume] = useState(1000);
-
-  // Lógica para calcular los precios
-  function calculatePrices(volume) {
-    let firmEasyPrice = 0;
+  export default function SwitchPlanPeriod() {
+    const [period, setPeriod] = useState<'monthly' | 'yearly'>('monthly');
+    const [volume, setVolume] = useState(1000);
   
-    // Calcular precio basado en los rangos
-    if (volume <= 1000) {
-      firmEasyPrice = volume * 0.09;
-    } else if (volume <= 10000) {
-      firmEasyPrice = 1000 * 0.09 + (volume - 1000) * 0.07;
-    } else {
-      firmEasyPrice = 1000 * 0.09 + 9000 * 0.07 + (volume - 10000) * 0.05;
+    const plans = [
+      {
+        name: 'Plan Emprende - Firma Digital Básica',
+        monthlyPrice: 45,
+        yearlyPrice: 356, // Precio con descuento
+        benefits: [
+          '70 Firmas / Mes',
+          'Evidencia Certificada para Firma Digital Legal',
+          '2 usuarios',
+          'Firma Digital a través de métodos seguros: Dibujada, OTP, Selfie, Documento de Identidad',
+          'Verificación de Identidad Segura por WhatsApp, Correo o Celular',
+          'Reportes en tiempo real',
+          'Firma Electrónica Rápida a través de WhatsApp',
+        ],
+      },
+      {
+        name: 'Plan Estándar - Firma Digital con Certificado',
+        monthlyPrice: 99,
+        yearlyPrice: 784, // Precio con descuento
+        benefits: [
+          '250 Firmas / Mes',
+          'Incluye Plan Emprende',
+          '7 usuarios',
+          'Incluye 1 certificado digital (solo Perú)',
+          'Personalización de marca',
+          'Firma por formulario',
+          'Video firma',
+        ],
+      },
+      {
+        name: 'Plan Business - Firma Digital Masiva',
+        monthlyPrice: 150,
+        yearlyPrice: 1188, // Precio con descuento
+        benefits: [
+          '700 Firmas / Mes',
+          'Incluye Plan Estándar',
+          '14 usuarios',
+          'Incluye 1 certificado digital (solo Perú)',
+          'Envío masivo',
+        ],
+      },
+    ];
+  
+    // Lógica para calcular los precios
+    function calculatePrices(volume: number) {
+      let firmEasyPrice = 0;
+  
+      if (volume <= 1000) {
+        firmEasyPrice = volume * 0.09;
+      } else if (volume <= 10000) {
+        firmEasyPrice = 1000 * 0.09 + (volume - 1000) * 0.07;
+      } else {
+        firmEasyPrice = 1000 * 0.09 + 9000 * 0.07 + (volume - 10000) * 0.05;
+      }
+  
+      const docusignPriceLow = (volume * 0.2).toFixed(2);
+      const docusignPriceHigh = (volume * 0.3).toFixed(2);
+      const dropboxPriceLow = (volume * 0.5).toFixed(2);
+      const dropboxPriceHigh = (volume * 0.6).toFixed(2);
+  
+      return {
+        firmEasy: firmEasyPrice.toFixed(2),
+        docusign: `${docusignPriceLow} - ${docusignPriceHigh}`,
+        dropbox: `${dropboxPriceLow} - ${dropboxPriceHigh}`,
+      };
     }
   
-    // Precios para DocuSign y Dropbox (manteniendo lógica original)
-    const docusignPriceLow = (volume * 0.2).toFixed(2);
-    const docusignPriceHigh = (volume * 0.3).toFixed(2);
-    const dropboxPriceLow = (volume * 0.5).toFixed(2);
-    const dropboxPriceHigh = (volume * 0.6).toFixed(2);
+    const prices = calculatePrices(volume);
   
-    // Retornar los precios
-    return {
-      firmEasy: firmEasyPrice.toFixed(2), // Precio de FirmEasy con los nuevos rangos
-      docusign: `${docusignPriceLow} - ${docusignPriceHigh}`,
-      dropbox: `${dropboxPriceLow} - ${dropboxPriceHigh}`,
-    };
-  }
+    return (
+      <div className="switch" id="switch-period">
+        <div className="switch-wrapper">
+          <span
+            className={period === 'monthly' ? 'active' : ''}
+            onClick={() => setPeriod('monthly')}
+          >
+            <p>Suscripción</p>
+          </span>
+          <span
+            className={period === 'yearly' ? 'active' : ''}
+            onClick={() => setPeriod('yearly')}
+          >
+            <p>Recargas</p>
+          </span>
+        </div>
   
-  // Ejemplo de uso
-   
-  const prices = calculatePrices(volume);
-  console.log(prices);
-
-  return (
-    <div className="switch" id="switch-period">
-      <div className="switch-wrapper">
-        <span
-          className={period === 'monthly' ? 'active' : ''}
-          onClick={() => setPeriod('monthly')}
-        >
-          <p>Suscripción</p>
-        </span>
-        <span
-          className={period === 'yearly' ? 'active' : ''}
-          onClick={() => setPeriod('yearly')}
-        >
-          <p>Recargas</p>
-        </span>
-      </div>
+        <div className="toggle-buttons">
+          <button
+            className={`toggle-button ${period === 'monthly' ? 'active' : ''}`}
+            onClick={() => setPeriod('monthly')}
+          >
+            Mensual
+          </button>
+          <button
+            className={`toggle-button ${period === 'yearly' ? 'active' : ''}`}
+            onClick={() => setPeriod('yearly')}
+          >
+            Anual
+          </button>
+        </div>
 
       {/* Contenido de Recargas con Paquetes y Recargate a tu Medida */}
       {period === 'yearly' && (
         <div id="api-pricing">
           {/* Paquetes */}
-          <h2>RECARGAS</h2>
+          <h2 className='subti'>RECARGAS</h2>
           <div id="web-plans" className="plans">
             <div className="plan">
               <h3>Paquete 10</h3>
@@ -100,7 +153,7 @@ export default function SwitchPlanPeriod() {
           </div>
 
           {/* Recargate a tu Medida */}
-          <h2>RECARGATE A TU MEDIDA</h2>
+          <h2 className='subti'>RECARGATE A TU MEDIDA</h2>
           <p className="subtitle">
             Precios ajustados al volumen de firmas electrónicas y digitales. Sin costos ocultos ni compromisos anuales
           </p>
@@ -151,60 +204,51 @@ export default function SwitchPlanPeriod() {
       )}
 
       {/* Contenido de Suscripción */}
-      {period === 'monthly' && (
-       <div id="web-plans" className="plans">
-       <div className="plan">
-         <h3>Plan Emprende - Firma Digital Básica</h3>
-         <p><strong>70 Firmas / Mes</strong></p>
-         <h2>S/ 45.00 / Mes</h2>
-         <ul className="plan-benefits">
-           <li>Evidencia Certificada para Firma Digital Legal</li>
-           <li>2 usuarios</li>
-           <li>Firma Digital a través de métodos seguros: Dibujada, OTP, Selfie, Documento de Identidad</li>
-           <li>Verificación de Identidad Segura por WhatsApp, Correo o Celular</li>
-           <li>Reportes en tiempo real</li>
-           <li>Firma Electrónica Rápida a través de WhatsApp</li>
-         </ul>
-         <button className="cta-button">
-           <a href="https://app.firmeasy.legal/registro">Solicita tu Plan de Firma Digital</a>
-         </button>
-       </div>
-     
-       <div className="plan highlighted">
-         <h3>Plan Estándar - Firma Digital con Certificado</h3>
-         <p><strong>250 Firmas / Mes</strong></p>
-         <h2>S/ 99.00 / Mes</h2>
-         <ul className="plan-benefits">
-           <li>Incluye Plan Emprende</li>
-           <li>7 usuarios</li>
-           <li>Incluye 1 certificado digital (solo Perú)</li>
-           <li>Personalización de marca</li>
-           <li>Firma por formulario</li>
-           <li>Video firma</li>
-         </ul>
-         <button className="cta-button">
-           <a href="https://app.firmeasy.legal/registro">Solicita tu Plan de Firma Digital</a>
-         </button>
-       </div>
-     
-       <div className="plan">
-         <h3>Plan Business - Firma Digital Masiva</h3>
-         <p><strong>700 Firmas / Mes</strong></p>
-         <h2>S/ 150.00 / Mes</h2>
-         <ul className="plan-benefits">
-           <li>Incluye Plan Estándar</li>
-           <li>14 usuarios</li>
-           <li>Incluye 1 certificado digital (solo Perú)</li>
-           <li>Envío masivo</li>
-         </ul>
-         <button className="cta-button">
-           <a href="https://app.firmeasy.legal/registro">Solicita tu Plan de Firma Digital</a>
-         </button>
-       </div>
-     </div>
-      )}
-         <style jsx>{`
+      <div id="web-plans" className="plans">
+  {plans.map((plan) => {
+    // Calcular el precio original antes del descuento
+    const originalPrice = (plan.yearlyPrice / 0.66).toFixed(2); // 34% de descuento
+    return (
+      <div
+        key={plan.name}
+        className={`plan ${plan.name.includes('Estándar') ? 'highlighted' : ''}`}
+      >
+        <h3>{plan.name}</h3>
+        <p>
+          <strong>
+            {period === 'monthly'
+              ? `${plan.benefits[0]} Firmas / Mes`
+              : `${parseInt(plan.benefits[0]) * 12} Firmas / Año`}
+          </strong>
+        </p>
+        <h2>
+          S/. {period === 'monthly' 
+            ? plan.monthlyPrice.toFixed(2) 
+            : `${plan.yearlyPrice} / Año`} {/* Mostrar el precio con descuento */}
+        </h2>
+
+        {/* Mostrar el precio original tachado solo si es anual */}
+        {period === 'yearly' && (
+          <p className="original-price" style={{ textDecoration: 'line-through' }}>
+            S/. {originalPrice} / Año {/* Precio original antes del descuento */}
+          </p>
+        )}
+
+        <ul className="plan-benefits">
+          {plan.benefits.slice(1).map((benefit, index) => (
+            <li key={index}>{benefit}</li>
+          ))}
+        </ul>
+        <button className="cta-button">
+          <a href="https://app.firmeasy.legal/registro">Solicita tu Plan de Firma Digital</a>
+        </button>
+      </div>
+    );
+  })}
+</div>
+         <style>{`
         /* Añadir tu estilo aquí */
+        
           body, h1, h3, ul, li, p, button {
             margin: 0;
             padding: 0;
@@ -213,11 +257,25 @@ export default function SwitchPlanPeriod() {
             font-size: var(--text-size-sm);
         }
             h2 {
-                text-align: center;
+                text-align: left  ;
                 font-size: var(--title-size-lg);
                 font-weight: 500;
                 display: block;
                 font-size: 1.7em;
+                margin-block-start: 0.83em;
+                margin-block-end: 0.83em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                font-family: 'IBM Plex Sans', Arial, sans-serif;
+                font-weight: bold;
+                unicode-bidi: isolate;
+            }
+            .subti {
+            text-align: center  ;
+                font-size: var(--title-size-lg);
+                font-weight: 500;
+                display: block;
+                font-size: 1.4em;
                 margin-block-start: 0.83em;
                 margin-block-end: 0.83em;
                 margin-inline-start: 0px;
@@ -271,6 +329,29 @@ export default function SwitchPlanPeriod() {
             opacity: 0.9;
             box-shadow: 0 4px 10px rgba(60, 123, 232, 0.2); /* Hover con sombra */
         }
+            .toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.toggle-button {
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-button.active {
+  background-color: #00a28d;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
         /* Contenedor de los planes */
         .plans {
@@ -314,12 +395,22 @@ export default function SwitchPlanPeriod() {
   padding: 0;
   font-size: 14px;
   margin-top: 15px;
+  text-align: left;
 }
 
 .plan-benefits li {
-  margin: 10px 0;
-  font-weight: 500;
-  color: #555;
+display: flex;
+    align-items: center; /* Alinea verticalmente el ícono y el texto */
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #444;
+}
+    .plan-benefits li::before {
+    content: '✓'; /* Agrega el check */
+    color: #00a28d; /* Color del check */
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 8px; /* Espacio entre el check y el texto */
 }
 
 .plan-benefits li i {
@@ -333,27 +424,44 @@ export default function SwitchPlanPeriod() {
   font-weight: bold;
 }
 
+  .plan.highlighted {
+    border: 2px solidrgb(0, 1, 1);
+    background-color: #f8fdfb;
+    position: relative;
+}
+    .plan.highlighted::before {
+   
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:rgb(196, 233, 228);
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
         .plan:hover {
-            transform: translateY(-5px); /* Elevación suave */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más profunda */
-            border: 2px solid var(--accent-color); /* Cambia a color principal */
+            transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border: 2px solid #00a28d; /* Resalta el borde */
         }
 
-        /* Plan destacado */
-
-
-        /* Estilos de encabezados */
+        
         .plan h3 {
-            font-size: 22px;
-            color: #333;
-            margin-bottom: 15px;
-            font-weight: bold;
+            font-size: 1.2rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
         }
 
         .plan p {
-            font-size: 16px;
-            color: #606f7b;
-            margin-bottom: 15px;
+             font-size: 1rem;
+    color: #606f7b;
+    margin-bottom: 15px;
         }
 
         .plan strong {
@@ -379,18 +487,17 @@ export default function SwitchPlanPeriod() {
 
         /* Botón de acción */
         .cta-button {
-            background: #00a28d; /* Color del botón */
-            color: #fff; /* Color del texto */
-            border: none;
-            padding: 20px 40px;
-            border-radius: 6px;
-            font-size: 14px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease, transform 0.2s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            text-decoration: none; /* Elimina subrayados */
-            margin-top: 10px;
+             background-color: #00a28d;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 25px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
         }
 
         .cta-button a {
@@ -417,18 +524,7 @@ export default function SwitchPlanPeriod() {
         }
 
         /* Variables de colores */
-        :root {
-            --container-max-width: 1200px;
-            --container-max-width-md: 768px;
-            --accent-color: #00a280;
-            --tertiary-color: #4646a7;
-            --secondary-color: #01a182;
-            --bg-color: #f7f7f7;
-            --bg-gradient: linear-gradient(90deg, var(--accent-color) 0%, var(--secondary-color) 30%, var(--tertiary-color) 100%);
-            --bg-gradient-text: linear-gradient(90deg, var(--text-color) 0%, var(--accent-color) 100%);
-            --font: "IBM Plex Sans", sans-serif;
-            
-        }
+        
 
         @media (max-width: 576px) {
             .plan {
